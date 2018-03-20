@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to my Webpage!
+
+I'm Alvaro Silva. I work as an economist at CLAPES UC, Pontificia Universidad Católica de Chile. My research interests lie on Macroeconomics, Social and Economic Networks, and Empirical Economics, which includes International Trade and Applied Econometrics.
 
 You can use the [editor on GitHub](https://github.com/asilvub/asilvub.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
