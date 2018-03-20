@@ -1,6 +1,6 @@
 ## Welcome to my Webpage!
 
-I'm Alvaro Silva. I work as an economist at CLAPES UC, Pontificia Universidad Católica de Chile. My research interests lie on Macroeconomics, Social and Economic Networks, and Empirical Economics, which includes International Trade and Applied Econometrics.
+I work as an economist at [CLAPES UC](http://www.clapesuc.cl/), Pontificia Universidad Católica de Chile. My research interests lie on Macroeconomics in a very broad sense. I'm also interested in other topics such as Social and Economic Networks, International Trade, Applied Econometrics, and Computational Methods in Economics .
 
 You can use the [editor on GitHub](https://github.com/asilvub/asilvub.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
