@@ -1,6 +1,5 @@
-<!doctype html>
 <html>
-<title> Álvaro Silva </title>
+<h1> Álvaro Silva </h1>
   <body>
     <div class="wrapper">
       <header>
