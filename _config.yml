@@ -1,3 +1,11 @@
 theme: jekyll-theme-minimal
 title: Álvaro Silva 
 description: Hola Hola
+
+<div class="navbar">
+  <div class="navbar-inner">
+      <ul class="nav">
+          <li><a href="/pages/research.md">Research</a></li>
+      </ul>
+  </div>
+</div>
