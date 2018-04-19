@@ -32,7 +32,7 @@
       </header>
       <section>
         <h3><a id="updates" class="anchor" href="#updates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updates:</h3>
-	<p> I will be starting my PhD in Economics at the University of Maryland College Park during Fall 2018. </p>
+	<p> I will be starting my PhD in Economics at the University of Maryland College Park during Fall 2018 :D. </p>
 	      </section>
       </div>
     <script src="javascripts/scale.fix.js"></script>
