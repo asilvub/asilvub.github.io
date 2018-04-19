@@ -1,4 +1,14 @@
-I work as an economist at [CLAPES UC](http://www.clapesuc.cl/), Pontificia Universidad Católica de Chile. My research interests lie on Macroeconomics in a very broad sense. I'm also interested in a wide range of topics such as Social and Economic Networks, International Trade, Applied Econometrics, and Computational Methods in Economics .
+I work as an economist at [CLAPES UC](http://www.clapesuc.cl/), Pontificia Universidad Católica de Chile. My research interests lie on Macroeconomics in a very broad sense. I'm also interested in a wide range of topics such as Social and Economic Networks, International Trade, Applied Econometrics, and Computational Methods in Economics.
+
+
+<div class="navbar">
+  <div class="navbar-inner">
+      <ul class="nav">
+          <li><a href="/pages/research.md">Research</a></li>
+          <li><a href="/pages/research.md">Research</a></li>
+      </ul>
+  </div>
+</div>
 
 You can use the [editor on GitHub](https://github.com/asilvub/asilvub.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
