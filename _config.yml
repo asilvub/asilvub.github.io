@@ -1,7 +1,3 @@
 theme: jekyll-theme-minimal
 title: Álvaro Silva 
 description: Hola Hola
-webrick:
-  headers:
-    My-Header: Asd
-    My-Other-Header: As
