@@ -4,7 +4,7 @@ I work as an economist at [CLAPES UC](http://www.clapesuc.cl/), Pontificia Unive
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="/pages/research.md">Research</a></li>
+          <li><a href="/pages/research.html">Research</a></li>
           <li><a href="/ASU_CV_ENG_type3.pdf">CV</a></li>
       </ul>
   </div>
