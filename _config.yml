@@ -1,8 +1,5 @@
 theme: jekyll-theme-minimal
 title: Álvaro Silva 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+headers:
+    My-Header: My-Value
+    My-Other-Header: My-Other-Value
