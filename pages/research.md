@@ -8,7 +8,7 @@ with Rodrigo Cerda and J.T. Valente.
 ## Other Publications
 
 **Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step**
-Forthcoming *Latin America Policy Journal*
+Forthcoming *Latin American Policy Journal*
 
 ## Book Chapters
 
