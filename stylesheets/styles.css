@@ -61,6 +61,7 @@ a small {
 .classicbutton {
     border-color: #330980;
     color: #330980;
+    border-radius: 12px;
 }
 
 .classicbutton:hover {
