@@ -52,7 +52,7 @@ a small {
     background-color: white; /* Purple background */
     border: 1px solid #330980; /* Purple border */
     color: #330980; /* White text */
-    padding: 7px 14px; /* Some padding */
+    padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 50%; /* Set a width if needed */
     border-radius: 12px;
@@ -66,6 +66,7 @@ border-bottom: none; /* Prevent double borders */
 /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #330980;
+  color: white; /* White text */
 }
 .btn {
     border: 2px solid black;
