@@ -51,7 +51,7 @@ a small {
 .btn-group button {
     background-color: white; /* Purple background */
     border: 1px solid #330980; /* Purple border */
-    color: white; /* White text */
+    color: #330980; /* White text */
     padding: 7px 14px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 50%; /* Set a width if needed */
