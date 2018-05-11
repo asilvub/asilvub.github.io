@@ -92,6 +92,10 @@ img {
     border-radius: 50%;
 }
 
+iframe{
+	border-radius: 50%;
+}
+
 .fixed {
   position: fixed;
   top: 20px;
