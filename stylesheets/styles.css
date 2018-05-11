@@ -49,17 +49,17 @@ a small {
 }
 
 .btn-group button {
-    background-color: #330980; /* Purple background */
+    background-color: white; /* Purple background */
     border: 1px solid #330980; /* Purple border */
     color: white; /* White text */
-    padding: 5px 14px; /* Some padding */
+    padding: 7px 14px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 50%; /* Set a width if needed */
+    border-radius: 12px;
     display: block; /* Make the buttons appear below each other */
-  border-radius: 12px;
 }
 
-.btn-group button:not(last-child){
+.btn-group button:not(:last-child){
 border-bottom: none; /* Prevent double borders */
 }
 
