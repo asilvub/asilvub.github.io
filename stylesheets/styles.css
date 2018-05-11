@@ -54,7 +54,7 @@ a small {
     color: #330980; /* White text */
     padding: 5px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 70%; /* Set a width if needed */
+    width: 100%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
 }
 
