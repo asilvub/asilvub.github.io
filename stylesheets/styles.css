@@ -92,6 +92,29 @@ img {
     border-radius: 50%;
 }
 
+.fixed {
+  position: fixed;
+  top: 20px;
+  margin-left:5%;
+  max-width: 20%;
+  height:90%;
+  }
+.absolute {
+  position: absolute;
+  top: 20px;
+  margin-left:22.5%;	
+  max-width:37.5%;
+  text-aligned:justify;
+}
+		
+.third {
+  position: absolute;
+  top: 20px;
+  margin-left:61%;	
+  max-width:30%;
+  text-aligned:justify;
+}
+
 .wrapper {
   margin-right: 0px; /* 1 */
   margin-left:  160px; /* 1 */
