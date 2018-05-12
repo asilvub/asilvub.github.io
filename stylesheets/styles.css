@@ -27,6 +27,10 @@ h1 {
   font-size:28px;
 }
 
+h1.small{
+	font-size:28px;
+	line-height:0.5;
+}
 h2 {
   color:#393939;
 }
