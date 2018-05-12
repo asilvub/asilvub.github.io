@@ -8,6 +8,7 @@ body {
   color:#777;
   font-weight:400;
   text-align:justify;
+  background-color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +126,7 @@ img {
   text-aligned:justify;
   border-radius: 5px;
   border: 1px solid transparent;
+  background-color: white;
 }
 		
 .third {
