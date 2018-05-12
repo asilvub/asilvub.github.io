@@ -29,7 +29,7 @@ h1 {
 
 h1.small{
 	font-size:28px;
-	line-height:0.5;
+	line-height:0;
 }
 h2 {
   color:#393939;
