@@ -120,16 +120,16 @@ img {
 .absolute {
   position: absolute;
   top: 50px;
-  margin-left:35%;	
-  max-width:30%;
+  margin-left:33%;	
+  max-width:33%;
   text-aligned:justify;
 }
 		
 .third {
   position: absolute;
   top: 50px;
-  margin-left:80%;	
-  max-width:20%;
+  margin-left:70%;	
+  max-width:15%;
   text-align:justify;
 }
 
