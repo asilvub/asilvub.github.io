@@ -111,7 +111,7 @@ img {
 
 .fixed {
   position: fixed;
-  top: 20px;
+  top: 50px;
   margin-left:15%;
   max-width: 15%;
   height:100%;
@@ -119,18 +119,18 @@ img {
 
 .absolute {
   position: absolute;
-  top: 20px;
-  margin-left:22.5%;	
-  max-width:37.5%;
+  top: 50px;
+  margin-left:35%;	
+  max-width:30%;
   text-aligned:justify;
 }
 		
 .third {
   position: absolute;
-  top: 20px;
-  margin-left:61%;	
-  max-width:30%;
-  text-aligned:justify;
+  top: 50px;
+  margin-left:80%;	
+  max-width:20%;
+  text-align:justify;
 }
 
 .wrapper {
