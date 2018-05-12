@@ -20,7 +20,7 @@ p, ul, ol, table, pre, dl {
 }
 
 p.small {
-	padding: 7px;
+	padding: 7px 14px 15px 0px;
 }
 
 h1, h2, h3 {
