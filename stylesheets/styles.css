@@ -125,7 +125,7 @@ img {
   max-width:45%;
   text-aligned:justify;
   border-radius: 5px;
-  border: 1px solid transparent;
+  border: 1px solid;
   background-color: white;
   padding: 30px 30px 5px 30px; /* Some padding */
   box-shadow: 2px 2px 5px 5px grey;
