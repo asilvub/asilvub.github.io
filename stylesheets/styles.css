@@ -149,7 +149,7 @@ button.accordion2 {
       transition: 0.4s;
       background-color: #f8f8f8;
       }
-button.acordion2.active, button.accordion2:hover {
+button.accordion2.active, button.accordion2:hover {
     background-color: #fcfcfc;
 }
 button.accordion2:after {
