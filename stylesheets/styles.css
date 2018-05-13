@@ -138,7 +138,17 @@ img {
   max-width:15%;
   text-align:justify;
 }
-
+button.accordion2 {
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.4s;
+      background-color: #f8f8f8;
+      }
 .accordion {
     background-color: white;
     color: #494949;
