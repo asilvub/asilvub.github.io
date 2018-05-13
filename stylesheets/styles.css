@@ -153,12 +153,12 @@ button.accordion2.active, button.accordion2:hover {
     background-color: #fcfcfc;
 }
 button.accordion2:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
+      content: '[#]';
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
+      }
 
 button.accordion2.active:after {
     content: "\2212";
