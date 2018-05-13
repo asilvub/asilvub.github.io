@@ -33,6 +33,41 @@
     padding: 0px 0px 0px 0px;
     text-align: center;
 }
+	.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 	</style>
   <body>
 	  <div class="fixed">
@@ -54,12 +89,14 @@
     border-radius: 8px;
 		    }
 	    </style>   
-     <h2>Economic Uncertainty</h2>
-      <p> I've worked in the measurement of economic (policy) uncertainty (with Cerda and Valente) in Chile. In that journey, we've constructed two indices using the methods pioneered by <a href="https://academic.oup.com/qje/article/131/4/1593/2468873" target="_blank">Baker, Bloom and Davis (2016)</a>.</p>
-      <h3> Chilean Economic Uncertainty Index </h3>
+	    <h3>Economic Uncertainty</h3>
+	     <p> I've worked in the measurement of economic (policy) uncertainty (with Cerda and Valente) in Chile. In that journey, we've constructed two indices using the methods pioneered by <a href="https://academic.oup.com/qje/article/131/4/1593/2468873" target="_blank">Baker, Bloom and Davis (2016)</a>.</p>
+	       <button class="accordion"> <h3> Chilean Economic Uncertainty Index </h3></button>
+	<div class="panel">
         <p> The first index, which measure economic uncertainty, is updated monthly by the <a href="https://www.clapesuc.cl" target="_blank">Latin American Center for Economic and Social Policies (CLAPES), Pontificia Universidad Católica de Chile</a> and can be accessed from <a href="http://www.clapesuc.cl/indicador/indice-de-incertidumbre-economica-iiec/" target="_blank">here</a>.
      <p align="left"><img class="square" src="https://asilvub.github.io/iec.JPG" width=700 height=350></p>
-	     <h3> Chilean Economic Policy Uncertainty Index </h3>
+	</div>
+		<h3> Chilean Economic Policy Uncertainty Index </h3>
     <p> The second index, which measure economic policy uncertainty, is also updated monthly and is available  <a href="http://www.policyuncertainty.com/chile_monthly.html" target="_blank">here</a>. That website is hosted by professors Baker, Bloom, and Davis (yes, the same of the seminal paper!). We are grateful to them for consider our index as a source for their larger database.
      </div>
   </body>  
