@@ -139,6 +139,44 @@ img {
   text-align:justify;
 }
 
+.accordion {
+    background-color: white;
+    color: #494949;
+    cursor: pointer;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em ;
+    transition: 0.2s;
+    font-weight: 500;
+}
+.active, .accordion:hover {
+    background-color: #fcfcfc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 0px;
+    text-align: justify;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 .wrapper {
   margin-right: 0px; /* 1 */
   margin-left:  160px; /* 1 */
