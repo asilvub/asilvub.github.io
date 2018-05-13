@@ -149,6 +149,20 @@ button.accordion2 {
       transition: 0.4s;
       background-color: #f8f8f8;
       }
+button.acordion2.active, .accordion2:hover {
+    background-color: #fcfcfc;
+}
+button.accordion2:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accrordion2.active:after {
+    content: "\2212";
+}
 .accordion {
     background-color: white;
     color: #494949;
