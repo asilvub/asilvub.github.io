@@ -99,5 +99,21 @@
 		<h3> Chilean Economic Policy Uncertainty Index </h3>
     <p> The second index, which measure economic policy uncertainty, is also updated monthly and is available  <a href="http://www.policyuncertainty.com/chile_monthly.html" target="_blank">here</a>. That website is hosted by professors Baker, Bloom, and Davis (yes, the same of the seminal paper!). We are grateful to them for consider our index as a source for their larger database.
      </div>
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
   </body>  
 </html>   
