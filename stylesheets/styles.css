@@ -57,6 +57,12 @@ a.greenlink {
   text-decoration:none;
 }
 
+a.orangelink {
+  color:#d55e00;
+  font-weight:500;
+  text-decoration:none;
+}  
+
 a small {
   font-size:11px;
   color:#777;
