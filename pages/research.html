@@ -99,16 +99,21 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 <script src="https://asilvub.github.io/javascripts/scale.fix.js"></script>
-    <script> 
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
+    <script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.parentNode.nextElementSibling.classList.toggle("show");
-      }
-    }
-    </script>
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
   </body>  
 </html>    
