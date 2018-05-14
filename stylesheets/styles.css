@@ -180,6 +180,7 @@ img {
     font-size: 1em ;
     transition: 0.2s;
     font-weight: 500;
+    display: inline-block;
 }
 .active, .accordion:hover {
     background-color: #fcfcfc;
@@ -204,7 +205,7 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 12px
+    font-size: 12px;
 }
 
 .wrapper {
