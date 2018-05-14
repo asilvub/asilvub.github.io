@@ -148,7 +148,8 @@ img {
     text-align: left;
     outline: none;
     font-size: 16px;
-    transition: 0.4s;
+    transition: 0.4s; 
+    margin-bottom:5px;
 }
 
 .accordion2.active, .accordion2:hover {
