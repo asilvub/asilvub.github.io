@@ -205,7 +205,7 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .wrapper {
