@@ -192,7 +192,7 @@ button.accordion2.active:after {
     content: "\2212";
 }
 
-.panel {
+div.panel {
     padding: 0 0px;
     text-align: justify;
     background-color: white;
