@@ -142,7 +142,7 @@ img {
     background-color: #fff;
     color: #444;
     cursor: pointer;
-    padding: 0px;
+    padding: -20px;
     max-width: 100%;
     border: none;
     text-align: left;
