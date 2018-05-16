@@ -408,10 +408,11 @@ footer {
   }
 	
 	.absolute {
-  position: absolute;
-  top: 25%;
-  margin-left:5%;	
-  width:75%;
+  position: relative;
+  top: 80px;
+  margin-left:10%;
+  margin-right:10%;
+  width:70%;
   text-aligned:justify;
   border-radius: 5px;
   border: 1px solid;
