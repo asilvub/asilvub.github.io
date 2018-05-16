@@ -417,6 +417,14 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+  }	
+	
+.fixed {
+  position: fixed;
+  top: 50px;
+  margin-left:5%;
+  max-width: 95%;
+  height:100%;
   }
 
   header ul {
