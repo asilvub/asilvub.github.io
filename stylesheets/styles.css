@@ -397,11 +397,18 @@ footer {
 }
 
 @media print, screen and (max-width: 720px) {
-  body {
+.fixed {
+  position: fixed;
+  top: 50px;
+  margin-left:5%;
+  max-width: 95%;
+  height:100%;
+  }
+	body {
     word-wrap:break-word;
   }
 
-  header {
+header {
     padding:0;
   }
 
