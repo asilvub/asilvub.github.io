@@ -404,7 +404,6 @@ footer {
   margin-left:10%;
   width: 70%;
   margin-right:10%;
-  height:10%;
   }
 	
 	.absolute {
@@ -448,8 +447,7 @@ header {
   margin-left:10%;
   width: 70%;
   margin-right:10%;
-  height:10%;
-  }
+   }
 	
 	.absolute {
   position: relative;
