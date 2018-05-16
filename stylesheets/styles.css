@@ -401,10 +401,9 @@ footer {
 .fixed {
   position: relative;
   top: 50px;
-  margin-left:10%;
-  width: 70%;
-  margin-right:10%;
-  }
+  margin-left:20%;
+  margin-right:20%;
+   }
 	
 	.absolute {
   position: relative;
@@ -444,9 +443,8 @@ header {
 .fixed {
   position: relative;
   top: 50px;
-  margin-left:10%;
-  width: 70%;
-  margin-right:10%;
+  margin-left:20%;
+  margin-right:20%;
    }
 	
 	.absolute {
