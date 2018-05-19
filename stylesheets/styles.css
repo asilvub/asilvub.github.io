@@ -454,7 +454,6 @@ footer {
   top: 50px;
   width: 90%;
   margin-left:5%;
-  margin-right:5%;
   margin-bottom: 10%;
   text-align:justify;
   border-radius: 5px;
@@ -500,14 +499,12 @@ header {
   top: 50px;
   max-width: 100%;
   margin-left:10%;
-  margin-right:5%;
-   }
+  }
 	
 	.absolute {
   position: relative;
   top: 25px;
   margin-left:5%;
-  margin-right:5%;
   width:90%;
   text-align:justify;
   border-radius: 5px;
