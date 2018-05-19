@@ -480,9 +480,22 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
-  body {
+ body {
     padding:15px;
   }	
+    
+div.panel {
+    padding: 0 0px;
+    max-width: 100%;
+    text-align: justify;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 12px;
+    margin-bottom:15px;
+}
+    
 .btn-group button {
     background-color: white; /* Purple background */
     margin-left: 5%;
@@ -499,13 +512,13 @@ header {
   top: 50px;
   max-width: 100%;
   margin-left:10%;
-  }
+ }
 	
-	.absolute {
+.absolute {
   position: relative;
   top: 25px;
-  margin-left:5%;
-  width:90%;
+  margin-left:2.5%;
+  max-width:70%;
   text-align:justify;
   border-radius: 5px;
   border: 1px solid;
@@ -518,7 +531,6 @@ header {
     display:none;
   }
 }
-
 @media print {
   body {
     padding:0.4in;
