@@ -402,12 +402,8 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 1400px) {
+@media print, screen and (max-width: 1480px) {
 
-.column.side, .column.middle {
-    width: 100%;
-  }
-    
 .fixed {
    position: fixed;
   top: 50px;
