@@ -5,7 +5,7 @@
 body {
   padding:40px;
     
-font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #454545;
   font-weight: 500;
   text-align: justify;
@@ -45,11 +45,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:24px;
 }
 
 h1.small {
-	font-size:28px;
+	font-size:24px;
 	line-height:0.2;
 }
 h2 {
