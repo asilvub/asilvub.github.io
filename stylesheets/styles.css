@@ -68,7 +68,7 @@ a {
 }
 
 a.greenlink {
-  color:#6ca10b;
+  color:#d41158;
   font-weight:500;
   text-decoration:none;
 }
@@ -218,7 +218,7 @@ img {
 .accordion2 {
     background-color: #f4f4f4;
     /*color: #330980; /* White text */
-    color: #6ca10b;
+    color: #d41158;
     cursor: pointer;
     padding: 0px;
     max-width: 100%;
@@ -231,7 +231,7 @@ img {
 }
 
 .accordion2.active, .accordion2:hover {
-    background-color: #6ca10b;
+    background-color: #d41158;
     color: white;
 }
 
@@ -250,7 +250,7 @@ img {
 
 .accordion {
     background-color: #f4f4f4;
-    color: #6ca10b;
+    color: #d41158;
     cursor: pointer;
     padding: 5px 5px 5px 5px;
     width: 100%;
@@ -263,7 +263,7 @@ img {
     display: inline-block;
 }
 .active, .accordion:hover {
-    background-color: #6ca10b;
+    background-color: #d41158;
     color: #f4f4f4;
 }
 
@@ -287,7 +287,7 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom:15px;
 }
 
