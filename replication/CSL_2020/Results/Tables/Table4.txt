@@ -1,0 +1,20 @@
+		(1)	(2)	(3)	(4)	(5)
+VARIABLES	LABELS					
+						
+inf_a	Annual Inflation ($\vspace{0pt}\pi^a_t$)	0.013**	0.014***	0.014***		
+		(0.01)	(0.00)	(0.00)		
+free73_inf_a	$\vspace{0pt}D\vspace{0pt}_t^{73}\vspace{0pt}\times \vspace{0pt}\pi^a_t$		-0.003	-0.002		
+			(0.00)	(0.00)		
+free77_inf_a	$\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}\times \vspace{0pt}\pi^a_t$		-0.008***	-0.008***		
+			(0.00)	(0.00)		
+lsynth_cv	Lagged RPV	0.843***	0.849***	0.853***	0.880***	0.886***
+		(0.06)	(0.07)	(0.07)	(0.06)	(0.05)
+linf_a	log(1+$\vspace{0pt}\pi^a_t$)				0.021***	0.020***
+					(0.01)	(0.01)
+free73_linf_a	$\vspace{0pt}D\vspace{0pt}_t^{73}\vspace{0pt}\times \log(1+\vspace{0pt}\pi^a_t)$				-0.005	-0.004
+					(0.01)	(0.01)
+free77_linf_a	$\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}\times \log(1+\vspace{0pt}\pi^a_t)$				-0.012***	-0.012***
+					(0.00)	(0.00)
+						
+Observations		149	149	149	149	149
+Macroeconomic Control Variables				\checkmark		\checkmark
