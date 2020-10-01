@@ -437,9 +437,27 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 1440px) {
+
+/* Set additional styling options for the columns */
+.column {
+float: left;
+}
+
+/* Set width length for the left, right and middle columns */
+.left {
+width: 30%;
+margin-right:5%;
+}
+
+.right {
+width: 65%;
+}
+
+
+@media print, screen and (max-width: 1096px) {
 .column.side, .column.middle {
     width: 100%;
+    position: fixed;
   }
 p.small {
 	padding: 20px 14px 15px 0px;
@@ -553,7 +571,7 @@ p.small {
 }
 .column.side, .column.middle {
     width: 100%;
-    position: relative;
+    position: absolute;
   }
 .fixed {
    position: relative;
