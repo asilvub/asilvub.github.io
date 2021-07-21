@@ -23,12 +23,12 @@ font:16px/1.5 Lato, "Lato", sans-serif;
   width: 98%;
   height: 15px;
   z-index: -1;
-  background-color: #25065d;
+  background-color: #593688;
   /*background-color: #330980;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#25065d;
+  color:#593688;
   margin:0 0 20px;
 }
 
@@ -54,12 +54,12 @@ h1.small {
 	line-height:0.2;
 }
 h2 {
-  color:#25065d;
+  color:#593688;
 }
 
 h3, h4, h5, h6 {
   /*color:#494949;*/
-    color:#25065d;
+    color:#593688;
 }
 
 a {
@@ -69,7 +69,7 @@ a {
 }
 
 a.greenlink {
-  color:#d41158;
+  color:#007747;
   font-weight:500;
   text-decoration:none;
 }
@@ -92,8 +92,8 @@ a small {
 
 a.one:link, a.one:visited {
   background-color: white;
-  color: #25065d;
-  border: 1px solid #25065d;
+  color: #593688;
+  border: 1px solid #593688;
   padding: 4px 8px;
   text-align: center;
   text-decoration: none;
@@ -104,7 +104,7 @@ a.one:link, a.one:visited {
 }
 
 a.one:hover, a.one:active {
-  background-color: #25065d;
+  background-color: #593688;
   color: white;
 }
 
@@ -112,7 +112,7 @@ a.one:hover, a.one:active {
     border: 2px solid black;
     background-color: white;
     /*color: #330980; /* White text */
-    color: #25065d;
+    color: #593688;
     padding: 7px 14px 15px 0px;
     font-size: 18px;
     cursor: pointer;
@@ -120,9 +120,9 @@ a.one:hover, a.one:active {
 
 .btn-group button {
     background-color: white; /* Purple background */
-    border: 1px solid #25065d;  /* Purple border */
+    border: 1px solid #593688;  /* Purple border */
     /*color: #330980; /* White text */
-    color: #25065d;
+    color: #593688;
     padding: 5px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 100%; /* Set a width if needed */
@@ -136,7 +136,7 @@ border-bottom: none; /* Prevent double borders */
 
 /* Add a background color on hover */
 .btn-group button:hover {
-    background-color: #25065d;
+    background-color: #593688;
   color: white; /* White text */
 }
 
@@ -563,8 +563,8 @@ p.small {
 }
 .btn-group button {
     background-color: white; /* Purple background */
-    border: 1px solid #25065d; /* Purple border */
-    color:#25065d;/* White text */
+    border: 1px solid #593688; /* Purple border */
+    color:#593688;/* White text */
     padding: 5px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 95%; /* Set a width if needed */
@@ -610,7 +610,7 @@ p.small {
 .btn-group button {
     background-color: white; /* Purple background */
     margin-left: 20%;
-    border: 1px solid #25065d; /* Purple border */
+    border: 1px solid #593688; /* Purple border */
     color: #66027c; /* White text */
     padding: 5px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -711,8 +711,8 @@ div.panel {
 .btn-group button {
     background-color: white; /* Purple background */
     margin-left: 5%;
-    border: 1px solid #66027c; /* Purple border */
-    color: #66027c; /* White text */
+    border: 1px solid #593688; /* Purple border */
+    color: #593688; /* White text */
     padding: 5px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 85%; /* Set a width if needed */
@@ -772,7 +772,7 @@ div.panel {
   width: 98%;
   height: 15px;
   z-index: -1;
-  background-color: #25065d;
+  background-color: #593688;
 }
 
   header ul {
