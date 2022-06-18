@@ -26,7 +26,7 @@ body {
 
 body {
     overflow-x: hidden;
-    background-color:#f2f2f2 ;
+    background-color:rgb(51,51,51) ;
 }
 
 input,
@@ -38,13 +38,14 @@ textarea {
 a,
 a:hover {
     text-decoration: none;
-    color:rgba(51, 9, 128);
+    color:#ff7eb6;
 }
 
 p {
     font-size: 16px;
     line-height: 24px;
-    color: #555555;
+    /*color: #555555;*/
+    color: #e5e5e5;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -53,7 +54,8 @@ h3 {
     text-align: justify;
     text-justify: inter-word;
     font-size: 22px;
-    color: #555555;
+    /*color: #555555;*/
+    color: #c0c0c0;
     font-weight: 700;
     letter-spacing: 0.25px;
 }
@@ -61,7 +63,7 @@ h3 {
 h4 {
     font-size: 26px;
     font-weight: 700;
-    color: #555555;
+    color: #c0c0c0;
     letter-spacing: 0.25px;
 }
 
@@ -117,7 +119,7 @@ html {
 }
 
 .main-nav li:last-child a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #e5e5e5;
 }
 
 .main-nav li {
@@ -130,17 +132,18 @@ html {
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #e5e5e5;
     width: 100%;
     transition: all 0.5s;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #e5e5e5;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #fff;
+    background: #e5e5e5;
     /*color: #8c363e;*/
-    color: rgba(51, 9, 128, 0.7);
+    /*color: rgba(51, 9, 128);*/
+    color: #341462;
 }
 
 /* Sidebar Menu */
@@ -168,7 +171,7 @@ html {
 .menu .author-content span {
     font-size: 12px;
     font-style: italic;
-    color: #fff;
+    color: #e5e5e5;
 }
 
 .menu .social-network {
@@ -186,13 +189,13 @@ html {
     text-align: center;
     line-height: 40px;
     background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #e5e5e5;
     font-size: 14px;
     transition: all 0.5s;
 }
 
 .menu .social-network ul li a:hover {
-    background-color: #fff;
+    background-color: #e5e5e5;
     /*color: #a43f49;*/
     color: rgba(51, 9, 128, 0.7);
 }
@@ -240,7 +243,7 @@ html {
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
   /*background-color: #a43f49;*/
-  background-color: rgba(51, 9, 128, 0.7);
+  background-color: #341462;
   box-sizing: border-box;
   height: 100vh;  
   max-height: 100vh !important;
@@ -272,7 +275,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    color: #a43f49;
+    color: #341462;
     background-color: #fff;
     width: 60px;
     height: 60px;
@@ -288,7 +291,7 @@ html {
 #menu-close {
     cursor: pointer;
     text-align: right;
-    color: #a43f49;
+    color: #341462;
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -301,7 +304,7 @@ html {
 /* Section */
 
 .section {
-    color: #555555;
+    color: #fff;
     width: 55%;
     right: 10%;
     left: 35%;
@@ -319,21 +322,21 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #555555;
+    color: #fff;
 }
 
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
     /*background-color: #a43f49;*/
-    background-color:#007747;
+    background-color:#ff7eb6;
     margin: 10px auto;
 }
 
 .section-heading span {
     margin-top: 5px;
     font-size: 16px;
-    color: #555555;
+    color: #fff;
     letter-spacing: 0.5px;
 }
 
@@ -345,7 +348,7 @@ html {
     padding: 12px 20px;
     background-color: #fff;
     /*color: #a43f49;*/
-    color: #007747;
+    color: #ff7eb6;
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -354,7 +357,7 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #007747;
+    background-color: #ff7eb6;
     color: #fff;
 }
 
@@ -362,7 +365,7 @@ button {
     display: inline-block;
     padding: 12px 20px;
     background-color: #fff;
-    color: #007747;
+    color: #ff7eb6;
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -375,7 +378,7 @@ button {
 
 button:hover {
     outline: none;
-    background-color: #007747;
+    background-color: #ff7eb6;
     color: #fff;
 }
 
@@ -594,7 +597,7 @@ figure.snip1321 span {
     font-size: 14px;
     font-style: italic;
     display: block;
-    color: #7a7a7a;
+    color: #e5e5e5;
 }
 figure.snip1321 i {
   position: relative!important;
