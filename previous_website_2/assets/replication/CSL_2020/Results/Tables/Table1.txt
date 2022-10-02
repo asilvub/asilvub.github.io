@@ -1,0 +1,14 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS			
+				
+inf_a	Annual Inflation ($\vspace{0pt}\pi^a_t$)	0.020***	0.024**	0.026**
+		(0.01)	(0.01)	(0.01)
+free73_inf_a	$\vspace{0pt}D\vspace{0pt}_t^{73}\vspace{0pt}\times \vspace{0pt}\pi^a_t$		-0.006	-0.008
+			(0.01)	(0.01)
+free77_inf_a	$\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}\times \vspace{0pt}\pi^a_t$		-0.021**	-0.021**
+			(0.01)	(0.01)
+lclassicrpvm	Lagged RPV	0.385*	0.381*	0.394*
+		(0.21)	(0.20)	(0.20)
+				
+Observations		149	149	149
+Macroeconomic Control Variables				\checkmark

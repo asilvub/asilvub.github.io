@@ -1,0 +1,16 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	Classic	Classic	CD	CD
+					
+linf_a	log(1+$\vspace{0pt}\pi^a_t$)	0.040**	0.042**	0.026*	0.028*
+		(0.02)	(0.02)	(0.01)	(0.01)
+free73_linf_a	$\vspace{0pt}D\vspace{0pt}_t^{73}\vspace{0pt}\times \log(1+\vspace{0pt}\pi^a_t)$	-0.008	-0.010	-0.008	-0.011
+		(0.02)	(0.02)	(0.01)	(0.01)
+free77_linf_a	$\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}\times \log(1+\vspace{0pt}\pi^a_t)$	-0.031**	-0.031**	-0.023**	-0.023**
+		(0.01)	(0.01)	(0.01)	(0.01)
+lclassicrpvm	Lagged RPV	0.385*	0.398*		
+		(0.21)	(0.21)		
+lcdrpv	Lagged RPV			0.432**	0.452**
+				(0.18)	(0.18)
+					
+Observations		149	149	149	149
+Macroeconomic Control Variables			\checkmark		\checkmark
