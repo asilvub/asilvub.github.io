@@ -23,21 +23,66 @@ a {
   color: #005B8D;
   text-decoration: none;
 }
+
+
+
+
 /* link color when pressing
  \definecolor{title}{HTML}{800020} 
  \definecolor{highlight}{HTML}{20853b}
  \definecolor{stabilo}{HTML}{005B8D}
  \definecolor{carandache}{HTML}{FF727C}
+ not saturated -> #FF727C
+ desaturated-> ea878e
  */
 a:hover {
   text-decoration: underline;
-  color: #FF727C;
+  color: #ea878e;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
 a:focus {
+  text-decoration: none;
+}
+
+/* Link without colors */
+
+a.one {
+  color: #545E6C;
+  text-decoration: none;
+}
+
+a.one:hover {
+  text-decoration: underline;
+  color: #ea878e;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+a.one:focus {
+  text-decoration: none;
+}
+
+a.two {
+  color: #005B8D;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.two:hover {
+  text-decoration: underline;
+  color: #ea878e;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+a.two:focus {
   text-decoration: none;
 }
 
@@ -59,17 +104,25 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 button:hover {
-  background-color: #005B8D; /* Green */
+  background-color: #005B8D; 
   color: white;
 }
 
+
+
+
+
+
+
+
 .wrapper {
   background: #800020;
-  max-width: 960px;
+  max-width: 1920px;
   margin: 0 auto;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -216,7 +269,7 @@ button:hover {
   padding-top: 2px;
 }
 .main-wrapper .section-title .icon-holder .svg-inline--fa {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 6px;
 }
 .main-wrapper .section {
@@ -231,18 +284,19 @@ button:hover {
   margin-bottom: 2px;
 }
 .main-wrapper .job-title {
-  color: #005B8D;
+  color: #545E6C;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: bold;
+
 }
 .main-wrapper .journal {
   color: #005B8D;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: monospace;
 }
 .main-wrapper .time {
@@ -253,7 +307,7 @@ button:hover {
 }
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color: #545E6C;
 }
 .main-wrapper .project-title {
   font-size: 16px;
