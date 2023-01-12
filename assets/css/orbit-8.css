@@ -293,7 +293,7 @@ button:hover {
 }
 .main-wrapper .journal {
   color: #005B8D;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -308,6 +308,7 @@ button:hover {
 .main-wrapper .company {
   margin-bottom: 10px;
   color: #545E6C;
+  font-size: 14px;
 }
 .main-wrapper .project-title {
   font-size: 16px;
