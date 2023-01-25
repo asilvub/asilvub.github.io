@@ -71,6 +71,7 @@ a.two {
   color: #005B8D;
   text-decoration: underline;
   font-weight: bold;
+  font-size: 14px;
 }
 
 a.two:hover {
@@ -292,12 +293,12 @@ button:hover {
 
 }
 .main-wrapper .journal {
-  color: #005B8D;
-  font-size: 14px;
+  /*color: #005B8D;*/
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 500;
-  font-family: monospace;
+  font-weight: bold;
+  /*font-family: monospace;*/
 }
 .main-wrapper .time {
   position: absolute;
@@ -306,6 +307,11 @@ button:hover {
   color: #97AAC3;
 }
 .main-wrapper .company {
+  margin-bottom: 10px;
+  color: #545E6C;
+  font-size: 16px;
+}
+.main-wrapper .abstract {
   margin-bottom: 10px;
   color: #545E6C;
   font-size: 14px;
