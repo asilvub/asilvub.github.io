@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  26 JAN 2023 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  30 JAN 2023 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,64 +654,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
+Underfull \hbox (badness 10000) in paragraph at lines 188--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 193.
+(Font)              <12> on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 193.
+(Font)              <8> on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 193.
+(Font)              <6> on input line 196.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
 
  []
 
-[2] [3] (/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.aux)
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
+
+ []
+
+[3] (/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.aux)
 Package rerunfilecheck Info: File `AS_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -724,7 +724,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  126i,5n,130p,1256b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (3 pages, 51530 bytes).
+Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (3 pages, 51627 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
