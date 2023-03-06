@@ -1,6 +1,7 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 %\usepackage{mathpazo}
 \usepackage{times}
+\usepackage{array}
 %\usepackage[sfdefault]{roboto}
 %\usepackage{libertine}
 %\usepackage[sfdefault]{roboto}
@@ -9,6 +10,7 @@
 %\usepackage[T1]{fontenc}
 %\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 \usepackage{genealogytree}
+\usepackage{enumitem}
 
 \usepackage{pagecolor}
 \usepackage[paper=letterpaper,
@@ -21,7 +23,7 @@
 \usepackage[skip=3pt, indent=40pt]{parskip}
 \usepackage{fontawesome}
 %\marginsize{1in}{1in}{0.2in}{1in}
-\marginsize{.8in}{.8in}{.3in}{.8in}
+\marginsize{.6in}{.6in}{.3in}{.6in}
 %\newlength{\oldparindent}
 %\setlength{\oldparindent}{\parindent}
 %\newcommand{\myindent}{\hspace{\oldparindent}}      
@@ -93,19 +95,7 @@
 %\usepackage[defaultfam]{montserrat}
 %\renewcommand{\mddefault}{l}
 %\usepackage{utopia}
-\newenvironment{myitemize}
-{ \begin{itemize}[leftmargin=.55in, label={}]
-    \setlength{\itemsep}{-10pt}
-    \setlength{\parskip}{-10pt}
-    \setlength{\parsep}{-10pt}     }
-{ \end{itemize}                  } 
-\newenvironment{myitemize1}
-{ \begin{itemize}[leftmargin=0.25in, label={}]
-    \setlength{\topsep}{0pt}    
-    \setlength{\itemsep}{10pt}
-    \setlength{\parskip}{-10pt}
-    \setlength{\parsep}{-10pt}     }
-{ \end{itemize}                  } 
+\newlist{myitemize}{itemize}{5}
 
 \newcommand{\makeheading}[2][]%
         {\hspace*{-\marginparsep minus \marginparwidth}%
@@ -119,8 +109,13 @@
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
-
+\setlength{\parindent}{0pt}
 %\AtBeginDocument{\globalcolor{white}}
+\newlist{myitemize2}{itemize}{5}
+\setlist[myitemize2]{label=\textbullet,labelsep=0.5cm, labelwidth = 50pt, leftmargin=45mm,font=\bf,itemsep=0pt,topsep=0pt, wide = 0pt}
+
+
+
 \begin{document}
 
 \begin{center}
@@ -130,10 +125,10 @@
 
 \vspace*{0.2in}
 Department of Economics\hfill asilvub@umd.edu, asilvub@gmail.com \\
-University of Maryland \hfill Website: \href{https://asilvub.github.io/}{https://asilvub.github.io/} \\
+University of Maryland \hfill \href{https://asilvub.github.io/}{https://asilvub.github.io/} \\
 \hfill \emph{Updated: \today}\\
 
-\vspace*{-0.1in}
+%\vspace*{-0.1in}
 %Primary: Macroeconomics, Computational Economics, Applied Econometrics\\
 %Secondary: International Trade, Social and Economic Networks
 
@@ -144,105 +139,81 @@ University of Maryland \hfill Website: \href{https://asilvub.github.io/}{https:/
 %\emph{Primary}: Macroeconomics and International Trade\\
 %\emph{Secondary}: Labor 
 
-\textbf{\normalsize Research Interests: } International Macroeconomics, Network Economics
-
-\section*{Education}
-{\itshape University of Maryland College Park}\\
-Ph.D. in Economics, 2018 --  Present\\
-M.A. in Economics, 2020 \\[-0.1in]
-
-{\itshape Universidad de Concepci\'on, Chile}\\
+\begin{description}[leftmargin=10em,style=nextline]
+    \item[Research Interests] (International) Macroeconomics, Network Economics
+    \item[Education] {\itshape University of Maryland College Park}\\
+    Ph.D. in Economics, 2018 --  Present\\
+    M.A. in Economics, 2020\\ 
+    \\[-0.1in]
+{\itshape Universidad de Concepci\'on}\\
 M.Sc. in Applied Economics (with honors), 2016 \\
-B.Sc. in Economics (with honors), 2013
+B.Sc. in Economics (with honors), 2013\\[-.1in]
+    \item[Working Papers] ``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks"\\
+    with Jorge Miranda-Pinto and Eric R. Young.\\
+    \textbf{\textit{R\&R Journal of Monetary Economics}}\\
+    \\[-0.1in]
+     ``Commodity Price Shocks and Production Networks in Small Open Economies"\\
+     with Petre Caraiani, Jorge Miranda-Pinto, and Juan Olaya-Agudelo.\\
+    \\[-0.1in]
+      ``Career Effects of Working at a Startup"\\
+     with Gonzalo Garc\'ia-Trujillo and Nathalie Gonz\'alez-Prieto.\\
+     \item[Work in Progress] ``Sectoral Shocks and Inflation in Small Open Economies''\\
+     \\[-0.1in]
+     ``Commodity Price Shocks, Production Networks, and Aggregate Output: The Role of Financial Frictions''\\
+      with Alvaro Castillo Aguilera, Luis F. C\'espedes, and Jorge Miranda-Pinto\\[-.1in]
+     \item[Published Papers ] ``Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints"\\
+      with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+      \textbf{Forthcoming. \textit{American Economic Association, Papers \& Proceedings}}. 2023.\\
+     \\[-0.1in]
+      ``Global Supply Chain Pressures, International Trade and Inflation"\\
+     with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+     \textbf{\textit{Conference Proceedings ECB Forum: ``Challenges for Monetary Policy in a Rapidly Changing World''}}, 2022.\\
+    \\[-0.2in]
+    \item[Pre Ph.D.]
+     ``Price Controls, Hyperinflation, and the Inflation-Relative Price Variability Relationship"\\[-.225in]
+     \item[Publications]
+     with Rodrigo Cerda and Rolf L\"{u}ders. \\
+     \textbf{\textit{Empirical Economics}}, \emph{61}(4), pp. 1725--1748. 2021.\\
+    \\[-0.1in]
+     ``Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile"\\
+     with Rodrigo Cerda and Jos\'e Tom\'as Valente. \\
+     \textbf{\textit{Applied Economics}}, \textit{50}(26), pp. 2894 - 2908. 2018.\\
+    \\[-0.1in]
+     ``Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step" \\
+     \textbf{\textit{Latin American Policy Journal}}, Volume 7, Spring: pp. 68-73. 2018.\\
+    \\[-0.1in]
+     ``School Funding in Chile"\\
+     with Sergio Urz\'ua \\
+     In  \textbf{\textit{Ideas en Educaci\'on II: Definiciones en Tiempos de Cambio}}, Chapter 7 (In Spanish). 2018$^{**}$.\\[-0.1in]
+     \item[Conference] 2023: ASSA*\\[-0.225in]
+      \item[Presentations] 2022: \underline{NBER IFM Meeting Fall}, Carnegie-Rochester-NYU Conference in Public Policy$^\ast$, NBER EFG Meeting Fall$^\ast$, Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$.\\
+      2021: Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$, Universidad de Chile$^\ast$, Central Bank of Chile$^\ast$.\\
+      ({\footnotesize $^{*}$ co-author presented})\\[-.1in]
+      \item[Invited Seminars] 2023: Central Bank of Brazil (Scheduled)\\
+      2022: Bielefeld Trade Group (Online)\\[-.1in]
+      \item[Referee]  \emph{Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia}.\\[-.1in]
+      \item[Relevant] Aide to the Minister of Finance, Ministry of Finance, Chile, 2021\\[-0.22in]
+      \item[Experience]  Research Assistant to Professor \c{S}ebnem Kalemli-\"{O}zcan, University of Maryland, 2020 -- Present\\
+      Macro Modeling Consultant,  Interamerican Development Bank (IDB), 2020\\
+      Young Researcher, CLAPES UC, PUC Chile, 2016 -- 2018\\
+      Research Assistant to Professor Rodrigo Cerda, PUC Chile, 2015 -- 2016\\
+      Research Assistant to Professor Felipe V\'asquez, UdeC, 2014 -- 2016\\[-.1in]
 
-%\section*{Research Interests}
-%\textbf{Research Interests: }(International) Macro and Trade
-%(International) Macro and Trade
-%\end{enumerate}
-%\end{myitemize}
-%\subsection*{Working Papers}
+      \item[Teaching Experience] \textit{As Main Instructor}: Introduction to Macroeconomic Theory (UdeC, G), Topics in Macroeconomics (UdeC, U), Economic Policy (UdeC, U), International Economics (UdeC, U), Time Series Econometrics (UdeC, U)\\
+      \textit{As Teaching Assistant}: Heterogeneity in Macroeconomics (UAI Chile, G), International Economics (MBA, PUC Chile, G), Global Macroeconomic Environment (MBA, PUC Chile, G), Topics in Macroeconomics (PUC Chile, G), Topics in Applied Economics (PUC Chile, G), Macroeconomics I (UdeC, U), Macroeconomics III (UdeC, U), Economics II (UdeC, U), International Macroeconomics (PUC Chile, U)\\[-.1in]
 
-\section*{Working Papers}
-``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks"\\
- with Jorge Miranda-Pinto and Eric R. Young.\\
- \textbf{\textit{R\&R Journal of Monetary Economics}}\\[-0.1in]
-
-``Commodity Price Shocks and Production Networks in Small Open Economies"\\
- with Petre Caraiani, Jorge Miranda-Pinto, and Juan Olaya-Agudelo.\\[-0.1in]
-
- ``Career Effects of Working at a Startup"\\
- with Gonzalo Garc\'ia-Trujillo and Nathalie Gonz\'alez-Prieto.
-
-\section*{Work in Progress}
-
-``Sectoral Shocks and Inflation in Small Open Economies''\\[-0.1in]
-
-``Commodity Price Shocks, Production Networks, and Aggregate Output: The Role of Financial Frictions''\\
-with Alvaro Castillo Aguilera, Luis F. C\'espedes, and Jorge Miranda-Pinto\\[-0.1in]
-
-
-
-
-
-
-
-%``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks'' (with \href{https://sites.google.com/site/cokeconphd/}{Miranda-Pinto} and \href{https://sites.google.com/view/ericyoung/home}{Young})
-%in preparation for the \emph{Carnegie-Rochester-NYU Conference Series on Public Policy (2022)}.
-
-
-\section*{Published and Forthcoming Papers}
-
-%\subsection*{Peer-Reviewed Publications}
-``Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints"\\
-with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
-Forthcoming. \textbf{\textit{American Economic Association, Papers \& Proceedings}}. 2023.\\[-0.1in]
-
-``Global Supply Chain Pressures, International Trade and Inflation"\\
-with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
-\textbf{\textit{Conference Proceedings ECB Forum: ``Challenges for Monetary Policy in a Rapidly Changing World''}}, 2022.\\[-0.1in]
-
-\section*{Pre-Ph.D Publications}
-``Price Controls, Hyperinflation, and the Inflation-Relative Price Variability Relationship"\\
- with Rodrigo Cerda and Rolf L\"{u}ders. \\
- \textbf{\textit{Empirical Economics}}, \emph{61}(4), pp. 1725--1748. 2021.\\[-0.1in]
-
-``Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile"\\
- with Rodrigo Cerda and Jos\'e Tom\'as Valente. \\
- \textbf{\textit{Applied Economics}}, \textit{50}(26), pp. 2894 - 2908. 2018.\\[-0.1in]
-
-%\subsection*{Non-Refereed, Invited Publications, Book Chapters and Others}
-
-
-``Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step" \\
-\textbf{\textit{Latin American Policy Journal}}, Volume 7, Spring: pp. 68-73. 2018.\\[-0.1in]
-
-``School Funding in Chile"\\
- with Sergio Urz\'ua \\
-In  \textbf{\textit{Ideas en Educaci\'on II: Definiciones en Tiempos de Cambio}}, Chapter 7 (In Spanish). 2018.
-
-\section*{Conference and Seminar Presentations (since 2021)}
-
-\emph{Conferences} ({\footnotesize $^\ast$ participated in conference but coauthor presented.})
-
-2023: ASSA$^\ast$.
-
-2022: \underline{NBER IFM Meeting Fall}, Carnegie-Rochester-NYU Conference in Public Policy$^\ast$, NBER EFG Meeting Fall$^\ast$, Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$.
-
-2021: Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$, Universidad de Chile$^\ast$, Central Bank of Chile$^\ast$.
+  \item[Grants and Awards] Graduate Summer Research Fellowship, University of Maryland College Park, 2021\\
+  Princeton Initiative: Macro, Money, and Finance, \emph{Selected Student}, Princeton University, 2020\\
+  Becas Chile Scholarship, ANID, 2019 - 2022\\
+  Graduate Assistantship, University of Maryland College Park, 2018 - 2022\\
+  Fellowship for RIDGE, Summer School in Economics, \emph{Selected Student}, Uruguay, 2016\\
+  Outstanding Thesis (Highest score), M. Sc. in Applied Economics, UdeC, 2016\\
+  Graduate Student Fellowship, UdeC, 2014 -- 2016\\[-.1in]
+  \item[Others] Languages: Spanish (Native), English (Fluent). Status: Married; Citizenship: Chilean; Born: 1991.\\
+  Softwares/Programming Languages: Stata, \LaTeX, \Matlab, Python, EViews, Julia, and HTML.\\
+  \end{description}
 
 
-
-\emph{Invited Seminars}
-
-2023: Central Bank of Brazil (Scheduled)
-
-2022:  Bielefeld Trade Group (Online)
-
-
-
-
-\section*{Professional Activities}
-Referee Work:  \emph{Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia}.
 %\section*{Referee Work}
 %\textbf{Referee Work: } Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia.
 
@@ -262,32 +233,14 @@ Referee Work:  \emph{Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia}.
 
 
 
-\section*{Relevant Experience}
-
-
-Aide to the Minister of Finance, Ministry of Finance, Chile, 2021 \\
-Research Assistant to Professor \c{S}ebnem Kalemli-\"{O}zcan, University of Maryland, 2020 -- Present\\
-Macro Modeling Consultant,  Interamerican Development Bank (IDB), 2020\\
-Young Researcher, CLAPES UC, PUC Chile, 2016 -- 2018\\
-Research Assistant to Professor Rodrigo Cerda, PUC Chile, 2015 -- 2016\\
-Research Assistant to Professor Felipe V\'asquez, UdeC, 2014 -- 2016
 
 
 
-\section*{Teaching Experience (\footnotesize G: Graduate, U: Undergraduate)}
-
-\textit{As Main Instructor}: Introduction to Macroeconomic Theory (UdeC, G), Topics in Macroeconomics (UdeC, U), Economic Policy (UdeC, U), International Economics (UdeC, U), Time Series Econometrics (UdeC, U)\\
-\textit{As Teaching Assistant}: Heterogeneity in Macroeconomics (UAI Chile, G), International Economics (MBA, PUC Chile, G), Global Macroeconomic Environment (MBA, PUC Chile, G), Topics in Macroeconomics (PUC Chile, G), Topics in Applied Economics (PUC Chile, G), Macroeconomics I (UdeC, U), Macroeconomics III (UdeC, U), Economics II (UdeC, U), International Macroeconomics (PUC Chile, U)
 
 
-\section*{Fellowships and Awards}
-Graduate Summer Research Fellowship, University of Maryland College Park, 2021\\
-Princeton Initiative: Macro, Money, and Finance, \emph{Selected Student}, Princeton University, 2020\\
-Becas Chile Scholarship, ANID, 2019 - 2022\\
-Graduate Assistantship, University of Maryland College Park, 2018 - 2022\\
-Fellowship for RIDGE, Summer School in Economics, \emph{Selected Student}, Uruguay, 2016\\
-Outstanding Thesis (Highest score), M. Sc. in Applied Economics, UdeC, 2016\\
-Graduate Student Fellowship, UdeC, 2014 -- 2016
+
+
+
 %Ranked 42th in World Championship, Pokemon Trading Card Game, Anaheim, California, 2006.\\
 %National Champion, Pokemon Trading Card Game (out of 100 players), 2006.
 
@@ -301,10 +254,7 @@ Graduate Student Fellowship, UdeC, 2014 -- 2016
 
 %\section*{Services}
 %Graduate Studies Committee, Student Member, University of Maryland College Park, 2021
-\section*{Others}
 
-Languages: Spanish (Native), English (Fluent). Status: Married; Citizenship: Chilean; Born: 1991.\\[0.2em]
-Softwares/Programming Languages: Stata, \LaTeX, \Matlab, Python, EViews, Julia, and HTML.\\[0.2em]
 
 \iffalse
 \section*{References}
