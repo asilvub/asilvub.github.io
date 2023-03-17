@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  2 MAR 2023 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  17 MAR 2023 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -716,7 +716,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 227.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 
  []
 
@@ -727,13 +727,13 @@ Package rerunfilecheck Info: File `AS_CV.out' has not changed.
 Here is how much of TeX's memory you used:
  27747 strings out of 478994
  552669 string characters out of 5858185
- 916861 words of memory out of 5000000
+ 917861 words of memory out of 5000000
  44761 multiletter control sequences out of 15000+600000
  424391 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  126i,5n,130p,1256b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (3 pages, 79600 bytes).
+Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (3 pages, 79980 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
