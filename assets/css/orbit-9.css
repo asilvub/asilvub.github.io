@@ -7,16 +7,22 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 body {
-  font-family: "Roboto";
+  /*font-family: "Roboto";*/
+  font-family: 'Source Sans Pro', sans-serif;
   color: #545E6C;
+  /*color: black;*/
   background: #f5f5f5;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-weight: 700;
+}
+
+h3{
+  font-size: 18px;
 }
 /* link color */
 a {
@@ -37,7 +43,7 @@ a {
  */
 a:hover {
   text-decoration: underline;
-  color: #ea878e;
+  color: #009e73;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -71,7 +77,7 @@ a.two {
   color: #4E2B7B;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.7em;
 }
 
 a.two:hover {
@@ -115,14 +121,32 @@ button:hover {
 }
 
 
+.highlight{
+  color: rgb(198,42,136);
+}
 
+.others{
+  font-size: 0.8em;
+}
+
+.news{
+  margin-top: 30px;
+  padding-left: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: -5px;
+  padding-left: 30px;
+  overflow: hidden;
+}
 
 
 
 
 
 .wrapper {
-  background: #800020;
+  background: #4E2B7B;
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
@@ -286,15 +310,16 @@ button:hover {
 }
 .main-wrapper .job-title {
   color: #545E6C;
-  font-size: 16px;
+  font-size: 1em;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: bold;
+  font-weight: 600;
 
 }
 .main-wrapper .journal {
   /*color: #005B8D;*/
-  font-size: 16px;
+  color: rgb(198,42,136);
+  font-size: 0.9em;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
@@ -309,13 +334,13 @@ button:hover {
 .main-wrapper .company {
   margin-bottom: 0px;
   color: #545E6C;
-  font-size: 16px;
+  font-size: 0.95em;
 }
 .main-wrapper .abstract {
   margin-bottom: 10px;
   margin-top: 10px;
   color: #545E6C;
-  font-size: 14px;
+  font-size: 0.8em;
   text-indent: 0px;
   font-style: oblique;
 }
