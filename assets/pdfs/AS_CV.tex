@@ -1,6 +1,7 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 %\usepackage{mathpazo}
-\usepackage{times}
+%\usepackage{times}
+%\usepackage{indentfirst}
 %\usepackage[sfdefault]{roboto}
 %\usepackage{libertine}
 %\usepackage{newtxmath}
@@ -26,7 +27,7 @@
 %\newcommand{\myindent}{\hspace{\oldparindent}}      
 %\newlength\tindent
 %\setlength{\tindent}{\parindent}
-\setlength{\parindent}{0pt}
+%\setlength{\parindent}{0pt}
 %\renewcommand{\indent}{\hspace*{\tindent}}
 \usepackage{xcolor,hyperref}
 \definecolor{wine}{HTML}{800020}
@@ -75,8 +76,8 @@
 %\usepackage[defaultfam]{montserrat}
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{\baselineskip}{0.5\baselineskip}
-%\titleformat{\section}[block]{\large \color{green} \bfseries}{}{0em}{}
-\titleformat{\section}[block]{\large \bfseries}{}{0em}{}
+%\titleformat{\section}[block]{\normalsize \color{green} \bfseries}{}{0em}{}
+\titleformat{\section}[block]{\normalsize \bfseries}{}{0em}{}
 \titleformat{\subsection}[block]{\small \scshape}{}{0em}{}
 %\usepackage{lmodern}
 %\usepackage[T1]{fontenc}
@@ -118,9 +119,11 @@
   \color{#1}\global\let\default@color\current@color
 }
 \makeatother
-\setlength{\parindent}{0pt}
-\newcommand{\forceindent}{\leavevmode{\parindent=2em\indent}}
+%\setlength{\parindent}{0pt}
+%\newcommand{\forceindent}{\leavevmode{\parindent=2em\indent}}
 %\AtBeginDocument{\globalcolor{white}}
+
+\setlength{\parindent}{25pt}
 \begin{document}
 
 \begin{center}
@@ -129,7 +132,7 @@
 
 
 \vspace*{0.2in}
-Department of Economics\hfill asilvub@umd.edu, asilvub@gmail.com \\
+\noindent Department of Economics\hfill asilvub@umd.edu, asilvub@gmail.com \\
 University of Maryland \hfill Website: \href{https://asilvub.github.io/}{https://asilvub.github.io/} \\
 \hfill \emph{Last Updated: \today}\\
 
@@ -144,16 +147,16 @@ University of Maryland \hfill Website: \href{https://asilvub.github.io/}{https:/
 %\emph{Primary}: Macroeconomics and International Trade\\
 %\emph{Secondary}: Labor 
 
-\textbf{\normalsize Research Interests: } (International) Macroeconomics and Trade
+\noindent \textbf{\normalsize Research Interests: } (International) Macroeconomics and Trade
 
 \section*{Education}
 {\itshape University of Maryland College Park}\\
-Ph.D. in Economics, 2018 --  May 2024 (Expected)\\
-M.A. in Economics, 2020 \\[-0.1in]
+\indent Ph.D. in Economics, 2018 --  May 2024 (Expected)\\
+\indent M.A. in Economics, 2020 \\[-0.1in]
 
-{\itshape Universidad de Concepci\'on, Chile}\\
-M.Sc. in Applied Economics (with honors), 2016 \\
-B.Sc. in Economics (with honors), 2013
+\noindent {\itshape Universidad de Concepci\'on, Chile}\\
+\indent M.Sc. in Applied Economics (with honors), 2016 \\
+\indent B.Sc. in Economics (with honors), 2013
 
 %\section*{Research Interests}
 %\textbf{Research Interests: }(International) Macro and Trade
@@ -164,57 +167,68 @@ B.Sc. in Economics (with honors), 2013
 
 \section*{Working Papers}
 
-``Commodity Price Shocks and Production Networks in Small Open Economies"\\ with Petre Caraiani, Jorge Miranda-Pinto, and Juan Olaya-Agudelo.\\[-0.125in]
+    ``Commodity Price Shocks and Production Networks in Small Open Economies"\\
+        \indent with Petre Caraiani, Jorge Miranda-Pinto, and Juan Olaya-Agudelo\\[-0.125in]
 
- ``Startup Employment and Career Trajectories"\\
-  with Gonzalo Garc\'ia-Trujillo and Nathalie Gonz\'alez-Prieto.
+\noindent ``Startup Employment and Career Trajectories"\\
+\indent with Gonzalo Garc\'ia-Trujillo and Nathalie Gonz\'alez-Prieto
+
+
 
 \section*{Work in Progress}
 
 ``Beyond the Aggregates: Unpacking Inflation in Small Open Economies''\\[-0.125in]
 
-``Sectoral Working Capital Constraints and Aggregate Productivity''\\[-0.125in]
+\noindent ``Sectoral Working Capital Constraints and Aggregate Productivity''\\[-0.125in]
 
-``Commodity Price Shocks, Production Networks, and Aggregate Output: The Role of Financial Frictions''\\
- with Alvaro Castillo Aguilera, Luis F. C\'espedes, and Jorge Miranda-Pinto
+\noindent ``Commodity Price Shocks, Production Networks, and Aggregate Output: The Role of Financial Frictions''\\
+\indent with Alvaro Castillo, Luis F. C\'espedes, and Jorge Miranda-Pinto
 
 
 
 
 \section*{Published and Forthcoming Papers}
+\iffalse
+\begin{enumerate}[wide, labelwidth=!,labelindent=5pt]
+    \item Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks (2023), with Jorge Miranda-Pinto and Eric R. Young, accepted, \emph{\bfseries Journal of Monetary Economics}.
+    \item Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints (2023), with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m, Forthcoming, \emph{\bfseries American Economic Association, Papers \& Proceedings}.
+    \item Global Supply Chain Pressures, International Trade and Inflation (2022), with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m,  \textit{\bfseries Conference Proceedings ECB Forum: ``Challenges for Monetary Policy in a Rapidly Changing World''}
+    \item Price Controls, Hyperinflation, and the Inflation-Relative Price Variability Relationship (2021), with Rodrigo Cerda and Rolf L\"{u}ders,  \textbf{\textit{Empirical Economics}}, \emph{61}(4), pp. 1725--1748.
+\end{enumerate}
+\fi
 
-``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks"\\
- with Jorge Miranda-Pinto and Eric R. Young.\\
-\textbf{\textit{Journal of Monetary Economics}}, Accepted\\[-0.125in]
+ ``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks"\\
+ \indent with Jorge Miranda-Pinto and Eric R. Young\\
+\indent \textit{Journal of Monetary Economics,} Forthcoming\\[-0.125in]
 
 
 %\subsection*{Peer-Reviewed Publications}
-``Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints"\\
- with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
-\textbf{\textit{American Economic Association, Papers \& Proceedings}}, Forthcoming\\[-0.125in]
+\noindent ``Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints"\\
+\indent with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+\indent \textit{American Economic Association, Papers \& Proceedings}, Forthcoming\\[-0.125in]
 
-``Global Supply Chain Pressures, International Trade and Inflation"\\
- with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
-\textbf{\textit{Conference Proceedings ECB Forum: ``Challenges for Monetary Policy in a Rapidly Changing World''}}, 2022\\[-0.125in]
+\noindent ``Global Supply Chain Pressures, International Trade and Inflation"\\
+\indent with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+\indent \textit{Conference Proceedings ECB Forum: Challenges for Monetary Policy in a Rapidly Changing World}, 2022\\[-0.125in]
 
 \section*{Pre-Ph.D Publications}
 ``Price Controls, Hyperinflation, and the Inflation-Relative Price Variability Relationship"\\
- with Rodrigo Cerda and Rolf L\"{u}ders. \\
- \textbf{\textit{Empirical Economics}}, \emph{61}(4), pp. 1725--1748. 2021\\[-0.125in]
+\indent with Rodrigo Cerda and Rolf L\"{u}ders. \\
+\indent \textit{Empirical Economics}, \emph{61}(4), pp. 1725--1748. 2021\\[-0.125in]
 
-``Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile"\\
- with Rodrigo Cerda and Jos\'e Tom\'as Valente. \\
- \textbf{\textit{Applied Economics}}, \textit{50}(26), pp. 2894 - 2908. 2018\\[-0.125in]
+\noindent ``Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile"\\
+\indent with Rodrigo Cerda and Jos\'e Tom\'as Valente. \\
+\indent \textit{Applied Economics}, \textit{50}(26), pp. 2894 - 2908. 2018\\[-0.125in]
 
 %\subsection*{Non-Refereed, Invited Publications, Book Chapters and Others}
 
 
-``Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step" \\
-\textbf{\textit{Latin American Policy Journal}}, Volume 7, Spring: pp. 68-73. 2018\\[-0.125in]
+\noindent ``Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step" \\
+\indent \textit{Latin American Policy Journal}, Volume 7, Spring: pp. 68-73. 2018\\[-0.125in]
 
-``School Funding in Chile"\\
- with Sergio Urz\'ua \\
-In  \textbf{\textit{Ideas en Educaci\'on II: Definiciones en Tiempos de Cambio}}, Chapter 7 (In Spanish). 2018
+\noindent ``School Funding in Chile"\\
+\indent with Sergio Urz\'ua \\
+\indent In  \textit{Ideas en Educaci\'on II: Definiciones en Tiempos de Cambio}, Chapter 7 (In Spanish). 2018
 
 \section*{Conference and Invited Seminar Presentations (since 2022)}
 
@@ -282,9 +296,9 @@ Teaching Assistant& Heterogeneity in Macroeconomics (UAI Chile, G), Internationa
 
 
 \section*{Fellowships and Awards}
-Ann G. Wylie Dissertation Fellowship, University of Maryland College Park, Fall 2023 \\
-%Federal Reserve Board Dissertation Fellow, International Finance Division, Summer 2023 \\
-NBER Graduate Student Workshop on Heterogeneous-Agent Macroeconomics,  Summer 2023\\
+Ann G. Wylie Dissertation Fellowship, University of Maryland College Park, Fall 2023  (Scheduled)\\
+Federal Reserve Board Dissertation Fellow, Summer 2023  (Scheduled)\\
+NBER Graduate Student Workshop on Heterogeneous-Agent Macroeconomics,  Summer 2023 (Scheduled)\\
 Graduate Summer Research Fellowship, University of Maryland College Park, Summer 2021\\
 Princeton Initiative: Macro, Money, and Finance, Princeton University, 2020\\
 Becas Chile Scholarship, ANID, Fall 2019 - Spring 2022\\

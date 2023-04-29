@@ -27,6 +27,7 @@ h3{
 /* link color */
 a {
   color: #4E2B7B;
+  /*color: #009e73;*/
   text-decoration: none;
 }
 
@@ -43,7 +44,9 @@ a {
  */
 a:hover {
   text-decoration: underline;
-  color: #009e73;
+  /*color: #009e73;*/
+  /*color:rgb(198,42,136);*/
+  color: #4E2B7B;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -219,7 +222,7 @@ ul {
   margin-bottom: 5px;
 }
 .sidebar-wrapper .education-container .item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .sidebar-wrapper .education-container .item:last-child {
   margin-bottom: 0;
@@ -301,7 +304,7 @@ ul {
   margin-bottom: 60px;
 }
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -317,13 +320,14 @@ ul {
 
 }
 .main-wrapper .journal {
-  /*color: #005B8D;*/
+  /*color: #4E2B7B;*/
   color: rgb(198,42,136);
   font-size: 0.9em;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: bold;
-  /*font-family: monospace;*/
+  /*font-weight: bold;*/
+  /*font-family: italic;*/
+  font-style: italic;
 }
 .main-wrapper .time {
   position: absolute;
@@ -349,17 +353,17 @@ ul {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
-  color: #4E2B7B;
+  /*color: #4E2B7B;*/
 }
 .main-wrapper .projects-section .intro {
   margin-bottom: 30px;
 }
 .main-wrapper .projects-section .item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .skillset .item {
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   overflow: hidden;
 }
 .skillset .level-title {
