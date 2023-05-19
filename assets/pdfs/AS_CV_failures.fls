@@ -1051,10 +1051,8 @@ INPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failur
 INPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.out
 OUTPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.out
 OUTPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.aux
 INPUT /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.out

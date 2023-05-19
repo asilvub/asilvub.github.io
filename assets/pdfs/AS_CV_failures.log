@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  9 MAY 2023 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  16 MAY 2023 12:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,15 +649,15 @@ Package rerunfilecheck Info: File `AS_CV_failures.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27648 strings out of 478994
- 551480 string characters out of 5858185
+ 27644 strings out of 478994
+ 551432 string characters out of 5858185
  912755 words of memory out of 5000000
- 44690 multiletter control sequences out of 15000+600000
- 404988 words of font info for 32 fonts, out of 8000000 for 9000
+ 44687 multiletter control sequences out of 15000+600000
+ 404382 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  126i,5n,130p,1265b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf (1 page, 46081 bytes).
+Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf (1 page, 46288 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
