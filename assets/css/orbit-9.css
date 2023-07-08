@@ -65,7 +65,8 @@ a.one {
 
 a.one:hover {
   text-decoration: underline;
-  color: #009e73;
+   /*color: #009e73;*/
+   color:#EF8354;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -85,7 +86,8 @@ a.two {
 
 a.two:hover {
   text-decoration: underline;
-  color: #009e73;
+  /*color: #009e73;*/
+  color:#EF8354;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -340,13 +342,14 @@ ul {
 }
 .main-wrapper .journal {
   /*color: #4E2B7B;*/
-  color: rgb(198,42,136);
-  font-size: 0.9em;
+  /*color: rgb(198,42,136);*/
+  color: #EF8354;
+  font-size: 0.85em;
   margin-top: 0;
   margin-bottom: 10px;
-  /*font-weight: bold;*/
+  font-weight: bold;
   /*font-family: italic;*/
-  font-style: italic;
+  /*font-style: italic;*/
 }
 .main-wrapper .time {
   position: absolute;
