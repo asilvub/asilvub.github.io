@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1690665070 "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.tex" "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf" "AS_CV" 1690665072
+["pdflatex"] 1690665070 "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.tex" "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf" "AS_CV" 1690665526
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.aux" 1690665071 737 1de6855d40368d47cbc26be6946fe978 ""
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.tex" 1690665070 16184 3a2e538e26d7322ae81117c5c910f5ca ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -198,9 +198,9 @@
   "AS_CV.out" 1690665071 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "AS_CV.tex" 1690665070 16184 3a2e538e26d7322ae81117c5c910f5ca ""
   (generated)
+  "AS_CV.log"
+  "AS_CV.out"
   "AS_CV.pdf"
   "AS_CV.aux"
-  "AS_CV.out"
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf"
-  "AS_CV.log"
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.log"
