@@ -1,0 +1,335 @@
+\documentclass[11pt]{article}
+%\usepackage{mathpazo}
+\usepackage{times}
+%\usepackage[sfdefault]{roboto}
+%\usepackage{libertine}
+%\usepackage[sfdefault]{roboto}
+%\usepackage{newtxmath}
+%\usepackage[sfdefault, extralight]{FiraSans}
+%\usepackage[T1]{fontenc}
+%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\usepackage{genealogytree}
+
+\usepackage{pagecolor}
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            %marginparwidth=1.2in,     % Length of section titles
+            %marginparsep=0in,       % Space between titles and text
+            margin=0.8in
+            ]{geometry}   
+\usepackage{anysize}
+\usepackage[skip=3pt, indent=40pt]{parskip}
+\usepackage{fontawesome}
+%\marginsize{1in}{1in}{0.2in}{1in}
+\marginsize{.8in}{.8in}{.3in}{.8in}
+%\newlength{\oldparindent}
+%\setlength{\oldparindent}{\parindent}
+%\newcommand{\myindent}{\hspace{\oldparindent}}      
+%\newlength\tindent
+%\setlength{\tindent}{\parindent}
+\setlength{\parindent}{0pt}
+%\renewcommand{\indent}{\hspace*{\tindent}}
+\usepackage{xcolor,hyperref}
+\definecolor{wine}{HTML}{800020}
+\definecolor{myblue}{HTML}{005B8D}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+%\definecolor{darkred}{RGB}{128,0,0}
+%\definecolor{darkred}{RGB}{0,0,128}
+\definecolor{blue}{RGB}{22,150,210}
+\definecolor{red}{RGB}{213,94,0}
+\definecolor{green}{RGB}{0,158,11}
+\definecolor{greenweb}{HTML}{20853b}
+\definecolor{orange}{RGB}{230,159,0}
+%\definecolor{darkred}{RGB}{51,9,128}
+\definecolor{darkred}{RGB}{84,39,143}
+\definecolor{morado}{HTML}{4B0082}
+%\definecolor{morado}{RGB}{37,6,93} % Usual purple
+\definecolor{MyBackground}{RGB}{39,40,34}
+\definecolor{blue}{RGB}{0,114,178}
+\definecolor{nblue}{RGB}{121,171,255}
+\definecolor{ceru}{RGB}{82,227,246}
+\definecolor{npink}{RGB}{255,0,127}
+\definecolor{green}{RGB}{0,158,115}
+\definecolor{npinke}{RGB}{196,140,255}
+\definecolor{nwhite}{RGB}{207,191,173}
+\definecolor{newpink}{HTML}{ff7eb6}
+\definecolor{dukeblue}{rgb}{0.0, 0.0, 0.61}
+%\definecolor{morado}{HTML}{FF8C00}
+\definecolor{morado}{HTML}{341462}
+\definecolor{webcream}{HTML}{ea878e}
+\definecolor{webblue}{HTML}{005B8D}
+%\definecolor{morado}{RGB}{120, 72, 157}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=morado,urlcolor=morado,
+            anchorcolor=morado,citecolor=morado}
+ \hypersetup{pdfpagemode=UseNone, pdfstartview={XYZ null null 1.00}}
+\usepackage{tabularx}
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+\newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+\bibliographystyle{aer}
+%\usepackage[T1]{fontenc}
+%\usepackage[defaultsans]{lato}
+%\usepackage[defaultfam]{montserrat}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{\baselineskip}{0.5\baselineskip}
+%\titleformat{\section}[block]{\large \color{green} \bfseries}{}{0em}{}
+\titleformat{\section}[block]{\large \bfseries}{}{0em}{}
+\titleformat{\subsection}[block]{\small \scshape}{}{0em}{}
+%\usepackage{lmodern}
+%\usepackage[T1]{fontenc}
+
+
+\usepackage{bold-extra}
+\usepackage{etaremune}
+\usepackage{scrextend}
+\usepackage{enumitem}
+%\changefontsizes[11pt]{9pt}
+%\usepackage[default]{lato}
+%\usepackage[sfdefault]{cabin}
+%\usepackage[defaultfam]{montserrat}
+%\renewcommand{\mddefault}{l}
+%\usepackage{utopia}
+\newenvironment{myitemize}
+{ \begin{itemize}[leftmargin=.55in, label={}]
+    \setlength{\itemsep}{-10pt}
+    \setlength{\parskip}{-10pt}
+    \setlength{\parsep}{-10pt}     }
+{ \end{itemize}                  } 
+\newenvironment{myitemize1}
+{ \begin{itemize}[leftmargin=0.25in, label={}]
+    \setlength{\topsep}{0pt}    
+    \setlength{\itemsep}{10pt}
+    \setlength{\parskip}{-10pt}
+    \setlength{\parsep}{-10pt}     }
+{ \end{itemize}                  } 
+
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+%\renewcommand{\familydefault}{\sfdefault}
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+%\AtBeginDocument{\globalcolor{white}}
+\begin{document}
+
+\begin{center}
+\begin{Large} \bfseries Alvaro Silva\end{Large}
+\end{center}
+
+
+\vspace*{0.2in}
+Department of Economics\hfill asilvub@umd.edu, asilvub@gmail.com \\
+University of Maryland \hfill Website: \href{https://asilvub.github.io/}{https://asilvub.github.io/} \\
+\hfill \emph{Updated: \today}\\
+
+\vspace*{-0.1in}
+%Primary: Macroeconomics, Computational Economics, Applied Econometrics\\
+%Secondary: International Trade, Social and Economic Networks
+
+%\end{tabularx}
+%{\textwidth}{@{}L{1} L{1.1} R{0.9}@{}}
+%\section*{Research Interests} 
+%Macroeconomics and International Trade
+%\emph{Primary}: Macroeconomics and International Trade\\
+%\emph{Secondary}: Labor 
+
+\textbf{\normalsize Research Interests: } International Macroeconomics, Network Economics
+
+\section*{Education}
+{\itshape University of Maryland College Park}\\
+Ph.D. in Economics, 2018 --  Present\\
+M.A. in Economics, 2020 \\[-0.1in]
+
+{\itshape Universidad de Concepci\'on, Chile}\\
+M.Sc. in Applied Economics (with honors), 2016 \\
+B.Sc. in Economics (with honors), 2013
+
+%\section*{Research Interests}
+%\textbf{Research Interests: }(International) Macro and Trade
+%(International) Macro and Trade
+%\end{enumerate}
+%\end{myitemize}
+%\subsection*{Working Papers}
+
+\section*{Working Papers}
+
+
+``Commodity Price Shocks and Production Networks in Small Open Economies"\\
+ with Petre Caraiani, Jorge Miranda-Pinto, and Juan Olaya-Agudelo.\\[-0.1in]
+
+ ``Career Effects of Working at a Startup"\\
+ with Gonzalo Garc\'ia-Trujillo and Nathalie Gonz\'alez-Prieto.
+
+\section*{Work in Progress}
+
+``Inflation in Disaggregated Small Open Economies''\\[-0.1in]
+
+``Commodity Price Shocks, Production Networks, and Aggregate Output: The Role of Financial Frictions''\\
+with Alvaro Castillo Aguilera, Luis F. C\'espedes, and Jorge Miranda-Pinto\\[-0.1in]
+
+
+
+
+
+
+
+%``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks'' (with \href{https://sites.google.com/site/cokeconphd/}{Miranda-Pinto} and \href{https://sites.google.com/view/ericyoung/home}{Young})
+%in preparation for the \emph{Carnegie-Rochester-NYU Conference Series on Public Policy (2022)}.
+
+
+\section*{Published and Forthcoming Papers}
+
+``Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks"\\
+ with Jorge Miranda-Pinto and Eric R. Young.\\
+ Forthcoming. \textbf{\textit{Journal of Monetary Economics}}\\[-0.1in]
+
+``Quantifying the Inflationary Impact of Fiscal Stimulus Under Supply Constraints"\\
+with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+Forthcoming. \textbf{\textit{American Economic Association, Papers \& Proceedings}}. 2023.\\[-0.1in]
+
+``Global Supply Chain Pressures, International Trade and Inflation"\\
+with Julian di Giovanni, \c{S}ebnem Kalemli-\"{O}zcan, and Muhammed A. Y{\i}ld{\i}r{\i}m. \\
+\textbf{\textit{Conference Proceedings ECB Forum: ``Challenges for Monetary Policy in a Rapidly Changing World''}}, 2022.\\[-0.1in]
+
+\section*{Pre-Ph.D Publications}
+``Price Controls, Hyperinflation, and the Inflation-Relative Price Variability Relationship"\\
+ with Rodrigo Cerda and Rolf L\"{u}ders. \\
+ \textbf{\textit{Empirical Economics}}, \emph{61}(4), pp. 1725--1748. 2021.\\[-0.1in]
+
+``Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile"\\
+ with Rodrigo Cerda and Jos\'e Tom\'as Valente. \\
+ \textbf{\textit{Applied Economics}}, \textit{50}(26), pp. 2894 - 2908. 2018.\\[-0.1in]
+
+%\subsection*{Non-Refereed, Invited Publications, Book Chapters and Others}
+
+
+``Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step" \\
+\textbf{\textit{Latin American Policy Journal}}, Volume 7, Spring: pp. 68-73. 2018.\\[-0.1in]
+
+``School Funding in Chile"\\
+ with Sergio Urz\'ua \\
+In  \textbf{\textit{Ideas en Educaci\'on II: Definiciones en Tiempos de Cambio}}, Chapter 7 (In Spanish). 2018.
+
+\section*{Conference and Seminar Presentations (since 2021)}
+
+\emph{Conferences} ({\footnotesize $^\ast$ participated in conference but coauthor presented.})
+
+2023: ASSA$^\ast$.
+
+2022: \underline{NBER IFM Meeting Fall}, Carnegie-Rochester-NYU Conference in Public Policy$^\ast$, NBER EFG Meeting Fall$^\ast$, Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$.
+
+2021: Maryland Macro Brown Bag, LACEA-LAMES Annual Conference$^\ast$, Universidad de Chile$^\ast$, Central Bank of Chile$^\ast$.
+
+
+
+\emph{Invited Seminars}
+
+2023: Central Bank of Brazil (Scheduled)
+
+2022:  Bielefeld Trade Group (Online)
+
+
+
+
+\section*{Professional Activities}
+Referee Work:  \emph{Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia}.
+%\section*{Referee Work}
+%\textbf{Referee Work: } Economic Letters, Econom\'ia (LACEA), Ecos de Econom\'ia.
+
+%\emph{Conference Presentations (since 2021)}: 
+%Maryland Macro Brown Bag (x2), NBER IFM Meeting Fall 2022
+%
+%\emph{Invited Seminar Presentations by Me}: Central Bank of Brazil %(Scheduled), Bielefeld Trade Group (Online)
+%
+%\emph{Conference Presentations By Coauthors}: ASSA$^\ast$, %Carnegie-Rochester-NYU Conference in Public Policy (2022)$^\ast$, NBER EFG %Meeting Fall (2022)$^\ast$, LACEA-LAMES Annual Conference$^\ast$, %Universidad de Chile$^\ast$, Central Bank of Chile$^\ast$.
+%
+%$^\ast$ participated in conference but coauthor presented.
+
+%\section*{Conference and Seminar Presentations ({\footnotesize I: Invited; since 2021})}
+
+%\emph{By Me}: Maryland Macro Brown Bag, NBER IFM Meeting Fall 2022, Bielefeld Trade Group (I)
+%\\[.1in]
+
+
+
+\section*{Relevant Experience}
+
+
+Aide to the Minister of Finance, Ministry of Finance, Chile, 2021 \\
+Research Assistant to Professor \c{S}ebnem Kalemli-\"{O}zcan, University of Maryland, 2020 -- Present\\
+Macro Modeling Consultant,  Interamerican Development Bank (IDB), 2020\\
+Young Researcher, CLAPES UC, PUC Chile, 2016 -- 2018\\
+Research Assistant to Professor Rodrigo Cerda, PUC Chile, 2015 -- 2016\\
+Research Assistant to Professor Felipe V\'asquez, UdeC, 2014 -- 2016
+
+
+
+\section*{Teaching Experience (\footnotesize G: Graduate, U: Undergraduate)}
+
+\textit{As Main Instructor}: Introduction to Macroeconomic Theory (UdeC, G), Topics in Macroeconomics (UdeC, U), Economic Policy (UdeC, U), International Economics (UdeC, U), Time Series Econometrics (UdeC, U)\\
+\textit{As Teaching Assistant}: Heterogeneity in Macroeconomics (UAI Chile, G), International Economics (MBA, PUC Chile, G), Global Macroeconomic Environment (MBA, PUC Chile, G), Topics in Macroeconomics (PUC Chile, G), Topics in Applied Economics (PUC Chile, G), Macroeconomics I (UdeC, U), Macroeconomics III (UdeC, U), Economics II (UdeC, U), International Macroeconomics (PUC Chile, U)
+
+
+\section*{Fellowships and Awards}
+Ann G. Wylie Dissertation Fellowship, University of Maryland College Park, Fall 2023\\
+Graduate Summer Research Fellowship, University of Maryland College Park, 2021\\
+Princeton Initiative: Macro, Money, and Finance, \emph{Selected Student}, Princeton University, 2020\\
+Becas Chile Scholarship, ANID, 2019 - 2022\\
+Graduate Assistantship, University of Maryland College Park, 2018 - 2022\\
+Fellowship for RIDGE, Summer School in Economics, \emph{Selected Student}, Uruguay, 2016\\
+Outstanding Thesis (Highest score), M. Sc. in Applied Economics, UdeC, 2016\\
+Graduate Student Fellowship, UdeC, 2014 -- 2016
+%Ranked 42th in World Championship, Pokemon Trading Card Game, Anaheim, California, 2006.\\
+%National Champion, Pokemon Trading Card Game (out of 100 players), 2006.
+
+\iffalse
+\section*{Datasets}
+
+``\emph{Chilean Economic Uncertainty Index}", which tracks economic uncertainty in the Chilean economy. Reported monthly by \href{http://www.clapesuc.cl/indicador/indice-de-incertidumbre-economica-iiec/}{CLAPES UC}.\\
+``\emph{Chilean Economic Policy Uncertainty Index}", which tracks economic policy uncertainty in the Chilean economy. Reported monthly at the \href{http://www.policyuncertainty.com/chile_monthly.html}{Economic Policy Uncertainty} website managed by Scott Baker (Northwestern-Kellogg), Nicholas Bloom (Stanford) and Steve Davis (Chicago-Booth).
+\fi
+
+\section*{Ph.D. Macroeconomic Courses}
+\hspace*{-0.125in}
+\begin{tabular}{ll}
+    Macroeconomic Analysis I & Prof. John Shea and Allan Drazen\\
+    Macroeconomic Analysis II & Prof. Boragan Aruoba and John Haltiwanger\\
+    Advanced Macroeconomics I & Prof. Luminita Stevens\\
+    Advanced Macroeconomics II & Prof. John Haltiwanger\\
+    The Macroeconomic of Imperfect Capital Markets & Prof. Thomas Drechsel\\
+    Advanced International Economics I & Prof. Felipe Saffie \\
+    Topics in International Finance & Prof. \c{S}ebnem Kalemli-\"{O}zcan    
+\end{tabular}
+
+
+
+
+%\section*{Services}
+%Graduate Studies Committee, Student Member, University of Maryland College Park, 2021
+\section*{Others}
+
+Languages: Spanish (Native), English (Fluent). Status: Married; Citizenship: Chilean; Born: 1991.\\[0.2em]
+Softwares/Programming Languages: Stata, \LaTeX, \Matlab, Python, EViews, Julia, and HTML.\\[0.2em]
+
+\iffalse
+\section*{References}
+
+\begin{tabular}{@{}l@{\hspace{1in}}l}
+Prof. \c{S}ebnem Kalemli-\"{O}zcan & Prof. John Shea\\
+Neil Mozkowitz Professor of Economics & Associate Professor, Director of Graduate Studies\\
+University of Maryland, College Park &  University of Maryland, College Park\\
+\email{kalemli@umd.edu} & \email{jshea1@umd.edu}
+\end{tabular}
+\fi
+\end{document}

@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+%\usepackage{mathpazo}
+%\usepackage{times}
+%\usepackage{indentfirst}
+%\usepackage[sfdefault]{roboto}
+%\usepackage{libertine}
+%\usepackage{newtxmath}
+%\usepackage[sfdefault, extralight]{FiraSans}
+%\usepackage[T1]{fontenc}
+%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\usepackage{genealogytree}
+
+\usepackage{pagecolor}
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            %marginparwidth=1.2in,     % Length of section titles
+            %marginparsep=0in,       % Space between titles and text
+            margin=1in
+            ]{geometry}   
+\usepackage{anysize}
+\usepackage[skip=3pt, indent=40pt]{parskip}
+\usepackage{fontawesome}
+%\marginsize{1in}{1in}{0.2in}{1in}
+\marginsize{.7in}{.7in}{.3in}{.3in}
+%\newlength{\oldparindent}
+%\setlength{\oldparindent}{\parindent}
+%\newcommand{\myindent}{\hspace{\oldparindent}}      
+%\newlength\tindent
+%\setlength{\tindent}{\parindent}
+%\setlength{\parindent}{0pt}
+%\renewcommand{\indent}{\hspace*{\tindent}}
+\usepackage{xcolor,hyperref}
+\definecolor{wine}{HTML}{800020}
+\definecolor{myblue}{HTML}{005B8D}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+%\definecolor{darkred}{RGB}{128,0,0}
+%\definecolor{darkred}{RGB}{0,0,128}
+\definecolor{blue}{RGB}{22,150,210}
+\definecolor{red}{RGB}{213,94,0}
+\definecolor{green}{RGB}{0,158,11}
+\definecolor{greenweb}{HTML}{20853b}
+\definecolor{orange}{RGB}{230,159,0}
+%\definecolor{darkred}{RGB}{51,9,128}
+\definecolor{darkred}{RGB}{84,39,143}
+\definecolor{morado}{HTML}{4B0082}
+%\definecolor{morado}{RGB}{37,6,93} % Usual purple
+\definecolor{MyBackground}{RGB}{39,40,34}
+\definecolor{blue}{RGB}{0,114,178}
+\definecolor{nblue}{RGB}{121,171,255}
+\definecolor{ceru}{RGB}{82,227,246}
+\definecolor{npink}{RGB}{255,0,127}
+\definecolor{green}{RGB}{0,158,115}
+\definecolor{npinke}{RGB}{196,140,255}
+\definecolor{nwhite}{RGB}{207,191,173}
+\definecolor{newpink}{HTML}{ff7eb6}
+\definecolor{dukeblue}{rgb}{0.0, 0.0, 0.61}
+%\definecolor{morado}{HTML}{FF8C00}
+\definecolor{morado}{HTML}{341462}
+\definecolor{webcream}{HTML}{ea878e}
+\definecolor{webblue}{HTML}{005B8D}
+%\definecolor{morado}{RGB}{120, 72, 157}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=morado,urlcolor=morado,
+            anchorcolor=morado,citecolor=morado}
+ \hypersetup{pdfpagemode=UseNone, pdfstartview={XYZ null null 1.00}}
+\usepackage{tabularx}
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+\newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+\bibliographystyle{aer}
+%\usepackage[T1]{fontenc}
+%\usepackage[defaultsans]{lato}
+%\usepackage[defaultfam]{montserrat}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{\baselineskip}{0.5\baselineskip}
+%\titleformat{\section}[block]{\normalsize \color{green} \bfseries}{}{0em}{}
+\titleformat{\section}[block]{\normalsize \bfseries}{}{0em}{}
+\titleformat{\subsection}[block]{\small \scshape}{}{0em}{}
+%\usepackage{lmodern}
+%\usepackage[T1]{fontenc}
+
+
+\usepackage{bold-extra}
+\usepackage{etaremune}
+\usepackage{scrextend}
+\usepackage{enumitem}
+%\changefontsizes[11pt]{9pt}
+%\usepackage[default]{lato}
+%\usepackage[sfdefault]{cabin}
+%\usepackage[defaultfam]{montserrat}
+%\renewcommand{\mddefault}{l}
+%\usepackage{utopia}
+\newenvironment{myitemize}
+{ \begin{itemize}[leftmargin=.55in, label={}]
+    \setlength{\itemsep}{-10pt}
+    \setlength{\parskip}{-10pt}
+    \setlength{\parsep}{-10pt}     }
+{ \end{itemize}                  } 
+\newenvironment{myitemize1}
+{ \begin{itemize}[leftmargin=0.25in, label={}]
+    \setlength{\topsep}{0pt}    
+    \setlength{\itemsep}{10pt}
+    \setlength{\parskip}{-10pt}
+    \setlength{\parsep}{-10pt}     }
+{ \end{itemize}                  } 
+
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+%\renewcommand{\familydefault}{\sfdefault}
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+%\setlength{\parindent}{0pt}
+%\newcommand{\forceindent}{\leavevmode{\parindent=2em\indent}}
+%\AtBeginDocument{\globalcolor{white}}
+
+\setlength{\parindent}{25pt}
+\begin{document}
+
+\begin{flushleft}
+\textbf{Alvaro Silva}\\
+\emph{Last Updated: \today}\\
+\hfill \emph{Acepten la injusticia, traguen el veneno; que todo se equilibra al final. --- Marcelo Bielsa}
+\end{flushleft}
+
+\section*{Rejections}
+This is the list of rejections I have had so far. I do this to keep in mind that this is a long game. We have far more rejections than acceptances along the way. Always remember to enjoy process and do not frustrate too much!
+
+\textbf{Rejected from Econ or similar Ph.D programs}\\
+ U. of Chicago, Columbia University, U. of Minnesota, Financial Economics Northwestern University, Boston University
+
+\textbf{Journal Rejections}\\
+2023 Quarterly Journal of Economics, Journal of Monetary Economics, Journal of Labor Economics, Review of Economics and Statistics
+
+\textbf{Fellowship and/or Internship Rejections}\\
+2023 Central Bank of Chile, International Monetary Fund, San Francisco FED, New York FED, St. Louis FED\\
+2022 Central Bank of Chile
+
+\textbf{Conference Rejections}\\
+2023 SED Meetings, Barcelona GSE Forum, CEBRA\\ 
+2022 SED Meetings
+\end{document}
