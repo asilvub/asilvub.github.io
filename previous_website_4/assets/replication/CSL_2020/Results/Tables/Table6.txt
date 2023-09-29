@@ -1,0 +1,21 @@
+		(1)	(2)	(3)	(4)	(5)
+VARIABLES	LABELS					
+						
+inf_a	Annual Inflation $\left[\phi_1\right]$	0.092***	0.062	-0.111	0.011***	0.038***
+		(0.01)	(0.06)	(0.13)	(0.00)	(0.00)
+dperiod_1977	Liberalization Period ($\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt})$		-0.023		0.007	
+			(0.12)		(0.01)	
+dint_2	$\vspace{0pt} D_{i}\times \vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}$		0.352**	0.352**	0.051***	0.043***
+			(0.14)	(0.14)	(0.01)	(0.01)
+dtreated_1977_inf_a	$\vspace{0pt}D_i \vspace{0pt}\times \pi_t^a \left[\phi_2\right]$		0.237***	0.237***	0.033***	0.027***
+			(0.08)	(0.08)	(0.01)	(0.00)
+dperiod_1977_inf_a	$\vspace{0pt}D\vspace{0pt}_t^{77}\vspace{0pt}\times \pi_t^a \left[\phi_3\right]$		0.028		-0.011**	
+			(0.11)		(0.01)	
+dint2_inf_a	$\vspace{0pt}D\vspace{0pt}_{it}^{77}\times \pi_t^a \left[\phi_4\right]$		-0.256*	-0.256*	-0.026***	-0.020***
+			(0.12)	(0.13)	(0.01)	(0.01)
+						
+Observations		2,369	2,369	2,369	2,369	2,369
+Product FE		\checkmark	\checkmark	\checkmark	\checkmark	\checkmark
+Month FE				\checkmark		\checkmark
+Year FE				\checkmark		\checkmark
+Month $\times$ Year FE				\checkmark		\checkmark
