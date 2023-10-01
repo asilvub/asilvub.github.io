@@ -30,6 +30,8 @@
 </head> 
 
 <body>
+    <!-- Simulate a smartphone / tablet -->
+
     <div class="wrapper mt-lg-5">
         <div class="sidebar-wrapper">
             <div class="profile-container">
@@ -37,18 +39,39 @@
                 <h1 class="name">Alvaro Silva</h1>
                 <h3 class="tagline">PhD (c) Economics</h3>
                 <h3 class="tagline">University of Maryland</h3>
-                <h3 class="tagline"><a href="assets/pdfs/AS_CV.pdf" target="_blank"><b> Curriculum Vitae <i class="fas fa-file-download"></i> </b></a> </h3>
-               
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: asilvub@gmail.com">asilvub@gmail.com</a></li>
+                    <li><a href="assets/pdfs/AS_CV.pdf" target="_blank"><b> Curriculum Vitae <i class="fas fa-file-download"></i> </b></a></li>
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: asilvub@gmail.com">asilvub@gmail.com</a><li>
                     <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: asilvub@umd.edu">asilvub@umd.edu</a></li>
-                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/asilvub" target="_blank">@asilvub</a></li>
+                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/asilvub"target="_blank">@asilvub</a></li>
                     <!--<li class="tagline"><a href="./picture_section.html">Picture Section</a></li> -->
                 </ul>
-            </div><!--//contact-container-->
+                <div class="mobile-container">
+
+                    <!-- Top Navigation Menu -->
+                    <div class="topnav">
+                      <a href="#About">About</a>
+                      <a href="#Working Papers">Working Papers</a>
+                      <a href="#Work in Progress">Work in Progress</a>
+                      <a href="#Publications">Publications</a>
+                      <a href="#Pre-PhD Publications">Pre-Ph.D. Publications</a>
+                      <a href="#Datasets">Datasets</a>
+                      <!--<div id="myLinks">
+                        <a href="#news">About</a>
+                        <a href="#news">Working Papers</a>
+                        <a href="#contact">Work in Progress</a>
+                        <a href="#about">Publications</a>
+                        <a href="#about">Pre-Ph.D. Publications</a>
+                        <a href="#about">Datasets</a>
+                      </div>
+                    
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>-->
+                    </div>
+                    <!-- End smartphone / tablet look -->
+                    </div>
+            </div><!--//profile-container-->
             <!-- 
             <div class="education-container container-block">
                 <h2 class="container-block-title">Education</h2>
@@ -88,10 +111,10 @@
             
             <section class="section summary-section">
                 <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>About</h2>-->
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title" id="About">About</h2>
                 <div class="about">
                     <p>Welcome to my webpage! I am a PhD Student in Economics at the University of Maryland College Park.</p> 
-                        <p>My main research interests are in International Macroeconomics and Trade with a focus on propagation and aggregation.</p>
+                        <p>My main research interests are in International Macroeconomics with a focus on propagation and aggregation.</p>
                         <p>Feel free to reach me via email at asilvub@umd.edu or asilvub@gmail.com.</p>
                     <p><b style="color:#EF8354;">Update:</b> I'll be on the Academic Job Market in 2023 -- 2024! You can visit my university job market website <a href = "https://sites.google.com/umd.edu/econ-jmc-alvaro-silva"> here</a></p>
                     
@@ -111,7 +134,7 @@
             
             <section class="section experiences-section">
                 <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-battery-3"></i></span>Working Papers</h2>-->
-                <h2 class="section-title">Working Papers</h2>
+                <h2 class="section-title" id="Working Papers">Working Papers</h2>
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
@@ -147,7 +170,7 @@
 
             <section class="section experiences-section">
                 <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-hiking"></i></span>Work in Progress</h2>-->
-                <h2 class="section-title">Work in Progress</h2>
+                <h2 class="section-title" id="Work in Progress">Work in Progress</h2>
                 
                 <div class="item">
                     <div class="meta">
@@ -172,7 +195,7 @@
 
             <section class="section experiences-section">
                <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-battery-full"></i></span>Publications</h2>-->
-               <h2 class="section-title">Publications</h2>
+               <h2 class="section-title" id="Publications">Publications</h2>
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
@@ -246,7 +269,7 @@
             
             <section class="section projects-section">
                 <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-baby"></i></span>Pre-Ph.D. Publications</h2>-->
-                <h2 class="section-title">Pre-Ph.D. Publications</h2>
+                <h2 class="section-title" id="Pre-PhD Publications">Pre-Ph.D. Publications</h2>
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
@@ -361,7 +384,7 @@
 
         <section class="section projects-section">
             <!--<h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-building"></i></span>Data Construction</h2>-->
-            <h2 class="section-title">Data Construction</h2>
+            <h2 class="section-title" id="Datasets">Datasets</h2>
             <!--
             <div class="intro">
                 <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
@@ -409,7 +432,17 @@
             <small class="copyright">Designed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers and edited by Alvaro Silva</small>
         </div><!--//container-->
     </footer><!--//footer-->
-        
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html> 
 
