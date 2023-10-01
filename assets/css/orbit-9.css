@@ -165,6 +165,7 @@ ul {
   height: 500px;
   color: black;
   border-radius: 10px;
+  display: none;
 }
 
 .topnav {
@@ -518,6 +519,10 @@ ul {
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
+
+  .mobile-container {
+    display: block;
+   }
 }
 @media (min-width: 992px) {
   .skillset .level-title {
@@ -527,3 +532,5 @@ ul {
     margin-bottom: 0;
   }
 }
+
+
