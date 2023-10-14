@@ -37,13 +37,15 @@ h1, h2, h4, h5, h6 {
 
 h3{
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
   font-family: 'Open Sans', serif;
 }
 /* link color */
 a {
-  color: #4E2B7B;
+  /*color: #4E2B7B;*/
   /*color: #009e73;*/
+  color:#4E2B7B;
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -62,7 +64,8 @@ a:hover {
   text-decoration: underline;
   /*color: #009e73;*/
   /*color:rgb(198,42,136);*/
-  color: #4E2B7B;
+  /*color: #4E2B7B;*/
+  color:#EF8354;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -75,7 +78,9 @@ a:focus {
 /* Link without colors */
 
 a.one {
-  color: #4E2B7B;
+  /*color: #4E2B7B;*/
+  font-weight: normal;
+  color:rgb(100,100,100);
   text-decoration: none;
 }
 
@@ -94,9 +99,10 @@ a.one:focus {
 }
 
 a.two {
-  color: #4E2B7B;
-  text-decoration: underline;
+  /*color: #4E2B7B;*/
+  color:#4E2B7B;
   font-weight: bold;
+  text-decoration: underline;
   font-size: 0.7em;
 }
 
@@ -415,7 +421,8 @@ ul {
 .main-wrapper .journal {
   /*color: #4E2B7B;*/
   /*color: rgb(198,42,136);*/
-  color: #EF8354;
+  /*color: #EF8354;*/
+  color: black;
   font-size: 0.85em;
   margin-top: 0;
   margin-bottom: 10px;
