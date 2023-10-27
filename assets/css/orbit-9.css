@@ -449,6 +449,8 @@ ul {
   font-size: 0.75em;
   text-indent: 0px;
   font-style: oblique;
+  width: 80%;
+  text-align: justify;
 }
 
 .main-wrapper .about {
