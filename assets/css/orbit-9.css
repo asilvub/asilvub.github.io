@@ -158,8 +158,9 @@ button:hover {
 }
 
 .others{
-  font-size: 0.9em;
-  margin-top: -1px;
+  font-size: 0.8em;
+  margin-top: -2px;
+  margin-left: -10px;
 }
 
 .news{
@@ -311,6 +312,7 @@ ul {
 }
 .sidebar-wrapper .education-container .item {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 .sidebar-wrapper .education-container .item:last-child {
   margin-bottom: 0;
@@ -405,6 +407,8 @@ ul {
 }
 .main-wrapper .experiences-section .item {
   margin-bottom: 10px;
+  font-size: 1em;
+  width: 100%;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -416,14 +420,15 @@ ul {
   font-size: 0.9em;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
 
 }
 .main-wrapper .journal {
   /*color: #4E2B7B;*/
   /*color: rgb(198,42,136);*/
   /*color: #EF8354;*/
-  color: black;
+ /* color: black;*/
+  color:#2B7B4E;
   font-size: 0.85em;
   margin-top: 0;
   margin-bottom: 10px;
