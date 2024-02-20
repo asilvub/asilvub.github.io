@@ -392,7 +392,7 @@ ul {
   font-size: 24px;
   margin-top: 6px;
 }
-
+/*
 .section-title:after
 {
     content:' ';
@@ -401,9 +401,10 @@ ul {
     margin: 5px 0 0px 30px; 
     width: 80%; 
 }
-
+*/
 .main-wrapper .section {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 .main-wrapper .experiences-section .item {
   margin-bottom: 10px;
@@ -432,10 +433,9 @@ ul {
   font-size: 0.85em;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Poppins', serif;
-  /*font-family: italic;*/
-  /*font-style: italic;*/
+  font-weight: 500;
+  font-family: 'Open Sans', serif;
+  font-style: italic;
   -webkit-font-smoothing: antialiased;
 }
 .main-wrapper .time {
@@ -464,7 +464,7 @@ ul {
   margin-bottom: 10px;
   margin-top: 10px;
   color: #545E6C;
-  font-size: 0.85em;
+  font-size: 0.9em;
   text-indent: 0px;
   width: 80%;
   /*font-style: oblique;*/
