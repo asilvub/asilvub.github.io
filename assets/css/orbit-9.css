@@ -6,6 +6,7 @@
  * Twitter: @3rdwave_themes
  * Website: http://themes.3rdwavemedia.com/
 */
+
 @import 'https://fonts.googleapis.com/css?family=Fauna+One:400,300';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300);
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:600,500,400,300);
@@ -16,6 +17,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed:600,500,400,300);
 @import url(https://fonts.googleapis.com/css?family=Poppins:600,500,400,300);
 @import url(https://fonts.googleapis.com/css?family=Anton:400,300);
+@import url(https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
 body {
   /*font-family: "Roboto";*/
   /*font-family: 'Source Sans Pro', sans-serif;*/
@@ -29,23 +31,25 @@ body {
 }
 
 h1, h2, h4, h5, h6 {
-  font-weight: 500;
-  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  font-size: 28px;
+  /*font-family: 'Open Sans', serif;*/
+  font-family: 'Saira Condensed', sans-serif;
   /*font-family: 'Poppins';*/
   /*font-family: 'Bebas Neue';*/
 }
 
 h3{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  font-family: 'Open Sans', serif;
+  /*font-family: 'Open Sans', serif;*/
+  font-family: 'Saira Condensed', sans-serif;
 }
 /* link color */
 a {
   /*color: #4E2B7B;*/
   /*color: #009e73;*/
   color:#4E2B7B;
-  font-weight: normal;
   text-decoration: none;
 }
 
@@ -158,7 +162,7 @@ button:hover {
 }
 
 .others{
-  font-size: 0.8em;
+  font-size: 0.85em;
   margin-top: -2px;
   margin-left: -10px;
 }
@@ -265,17 +269,18 @@ ul {
 }
 .sidebar-wrapper .name {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 10px;
 }
 .sidebar-wrapper .tagline {
   /*color: rgba(255, 255, 255, 0.6);*/
   color: rgb(85,85,85);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
@@ -354,13 +359,13 @@ ul {
 /*This controls the body */
 .main-wrapper {
   background: #fff;
-  padding: 60px;
-  padding-right: 100px;
+  padding: 40px;
+  padding-right: 0px;
   padding-left: 280px;
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #4E2B7B;
   position: relative;
@@ -418,10 +423,10 @@ ul {
 }
 .main-wrapper .job-title {
   color: #545E6C;
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
 
 }
 .main-wrapper .journal {
@@ -430,12 +435,13 @@ ul {
   /*color: #EF8354;*/ 
  /* color: black;*/
   /*color:#2B7B4E;*/
-  font-size: 0.85em;
+  font-size: 1em;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 500;
-  font-family: 'Open Sans', serif;
-  font-style: italic;
+  font-weight: 700;
+  /*font-family: 'Open Sans', serif;*/
+  font-family: 'Saira Condensed', sans-serif;
+  /*font-style: italic;*/
   -webkit-font-smoothing: antialiased;
 }
 .main-wrapper .time {
@@ -447,7 +453,7 @@ ul {
 .main-wrapper .company {
   margin-bottom: 0px;
   color: #545E6C;
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 .main-wrapper .abstract {
   margin-bottom: 10px;
@@ -464,7 +470,7 @@ ul {
   margin-bottom: 10px;
   margin-top: 10px;
   color: #545E6C;
-  font-size: 0.9em;
+  font-size: 1em;
   text-indent: 0px;
   width: 80%;
   /*font-style: oblique;*/
