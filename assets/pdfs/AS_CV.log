@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  30 APR 2024 08:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  11 JUN 2024 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,11 +696,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
  []
 
 
-Overfull \hbox (8.54558pt too wide) in paragraph at lines 180--181
-\OT1/LinuxLibertineT-TLF/b/n/10 Commodity Prices and Pro-duc-tion Net-works in Small Open Economies\OT1/LinuxLibertineT-TLF/m/n/10 , with Pe-tre Cara-iani, Jorge Miranda-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
@@ -790,15 +785,15 @@ Package rerunfilecheck Info: File `AS_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28793 strings out of 478994
- 574221 string characters out of 5858185
- 933440 words of memory out of 5000000
- 45789 multiletter control sequences out of 15000+600000
+ 28792 strings out of 478994
+ 574213 string characters out of 5858185
+ 931440 words of memory out of 5000000
+ 45788 multiletter control sequences out of 15000+600000
  423061 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  126i,10n,130p,1256b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (2 pages, 274468 bytes).
+Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (2 pages, 280923 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
