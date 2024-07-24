@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  21 JUL 2024 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.9)  24 JUL 2024 09:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,8 +22,6 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/genealogytree/genealogytree.sty
 Package: genealogytree 2020/07/28 version 2.01 genealogy trees
  (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -553,10 +551,6 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box85
 \enit@count@id=\count300
 \enitdp@description=\count301
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 127.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.aux)
 \openout1 = `AS_CV.aux'.
 
@@ -653,23 +647,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 169.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 169.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+Overfull \hbox (43.49025pt too wide) in paragraph at lines 169--176
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
@@ -678,68 +671,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 197.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 197.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 206.
+(enumitem)                sense, on input line 214.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Overfull \hbox (11.82346pt too wide) in paragraph at lines 227--237
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Overfull \hbox (11.82352pt too wide) in paragraph at lines 235--245
 [] 
  []
 
 
-Overfull \hbox (11.82346pt too wide) in paragraph at lines 238--242
+Overfull \hbox (11.82352pt too wide) in paragraph at lines 246--250
 [] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 247.
+(Font)              <8> on input line 255.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 247.
+(Font)              <6> on input line 255.
+
+Overfull \hbox (43.49025pt too wide) in paragraph at lines 287--296
+[] 
+ []
+
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.59695pt too wide) in paragraph at lines 295--299
+Overfull \hbox (17.30695pt too wide) in paragraph at lines 305--309
 [] 
  []
 
 
-Overfull \hbox (0.21834pt too wide) in paragraph at lines 325--327
-\OT1/ptm/m/n/10 Referee for: \OT1/ptm/m/it/10 Jour-nal of Mon-e-tary Eco-nomics, Jour-nal of Macroe-co-nomics, Eco-nomic Let-ters, Econom[]^^Pa (LACEA)\OT1/ptm/m/n/10 . 
+Overfull \hbox (43.49025pt too wide) in paragraph at lines 312--334
+[] 
  []
 
 [2] (/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.aux)
@@ -747,18 +746,18 @@ Package rerunfilecheck Info: File `AS_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27741 strings out of 478994
- 552642 string characters out of 5858185
- 920797 words of memory out of 5000000
- 44755 multiletter control sequences out of 15000+600000
- 419629 words of font info for 51 fonts, out of 8000000 for 9000
+ 27689 strings out of 478994
+ 551800 string characters out of 5858185
+ 922650 words of memory out of 5000000
+ 44715 multiletter control sequences out of 15000+600000
+ 407421 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 126i,10n,130p,1256b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (2 pages, 68233 bytes).
+ 126i,12n,130p,1256b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on /Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV.pdf (2 pages, 134583 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
