@@ -47,9 +47,12 @@ h3{
 }
 /* link color */
 a {
-  /*color: #4E2B7B;*/
+  color: #4E2B7B;
   /*color: #009e73;*/
-  color:#4E2B7B;
+  /*color: #8A1ACB;*/
+  /*color: rgb(0,0,0);*/
+  /*color:#4E2B7B;*/
+  /*color:rgb(198,42,136);*/
   text-decoration: none;
 }
 
@@ -158,12 +161,18 @@ button:hover {
 
 
 .highlight{
-  color: rgb(198,42,136);
+  /*color: rgb(198,42,136);*/
+  color: #2B7B4E;
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .others{
   font-size: 0.85em;
-  margin-top: -2px;
+  margin-top: 0px;
   margin-left: -10px;
 }
 
@@ -177,8 +186,9 @@ button:hover {
 ul {
   list-style-type: none;
   margin-top: 0px;
-  padding-left: 30px;
+  padding-left: 15px;
   overflow: hidden;
+  margin-bottom: -1px;
 }
 
 /* */
@@ -433,19 +443,20 @@ ul {
 }
 .main-wrapper .journal {
   /*color: #4E2B7B;*/
-  color: rgb(198,42,136);
+  /*color: rgb(198,42,136);*/
+  /*color: #6EBF8B;*/
   /*color: #EF8354;*/ 
  /* color: black;*/
-  /*color:#2B7B4E;*/
-  font-size: 1.2em;
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-left: 0px;
+  color:#2B7B4E;
+  font-size: 1.1em;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  margin-left: 5px;
   font-weight: 600;
   /*font-family: 'Open Sans', serif;*/
   font-family: 'Saira Condensed', sans-serif;
   /*font-style: italic;*/
-  -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;*/
 }
 .main-wrapper .time {
   position: absolute;
