@@ -140,10 +140,13 @@ p {
 }
 
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10%;
   width: 200px;
   height: 200px;
-  margin-left: 10px;
+
 }
 
 button {
@@ -200,7 +203,7 @@ ul {
 
 .mobile-container {
   max-width: 480px;
-  margin: auto;
+  /*margin: auto;*/
   background-color: #fff;
   height: 500px;
   color: black;
@@ -221,7 +224,7 @@ ul {
 
 .topnav a {
   color: #341462;
-  padding: 14px 16px;
+  padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-size: 15px;
   font-family: 'Ubuntu', sans-serif;
