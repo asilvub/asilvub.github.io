@@ -19,11 +19,12 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed:600,500,400,300);
 @import url(https://fonts.googleapis.com/css?family=Poppins:600,500,400,300);
 @import url(https://fonts.googleapis.com/css?family=Anton:400,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,300);
 @import url(https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); /* Add this line to import Ubuntu font */
 
 body {
-  font-family: "Arimo", serif;
+  font-family: "Open Sans", sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Open Sans', sans-serif;*/
@@ -33,12 +34,13 @@ body {
   background: #f5f5f5;
   font-size: 18px;
   line-height: 1.8!important;
+  font-weight: 400;
 }
 
 h1, h2, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 22px;
-  font-family: 'Arimo', serif;
+  font-family: 'Open Sans', sans-serif;
   /*font-family: 'Saira Condensed', sans-serif;*/
   /*font-family: 'Poppins';*/
   /*font-family: 'Bebas Neue';*/
@@ -46,8 +48,9 @@ h1, h2, h4, h5, h6 {
 
 h3{
   font-size: 18px;
+  font-weight: 300;
   /*font-weight: bold;*/
-  font-family: 'Arimo', serif;
+  font-family: 'Open Sans', sans-serif;
   /*font-family: 'Saira Condensed', sans-serif;*/
 }
 /* link color */
@@ -137,7 +140,7 @@ p {
   line-height: 1;
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Nunito Sans', sans-serif;*/
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin-top: 0px;
 }
@@ -230,7 +233,7 @@ ul {
   padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-size: 15px;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: block;
   font-weight: 600;
 }
@@ -259,7 +262,7 @@ ul {
 .wrapper {
   background: #4E2B7B;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0px 0px 0px 10px;
   position: relative;
   /*-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);*/
   /*-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);*/
@@ -268,10 +271,10 @@ ul {
 
 .sidebar-wrapper {
   /*background: #4E2B7B;*/
-  background: white;
+  /*background: white;*/
   position: absolute;
-  right: 150;
-  width: 300px;
+  /*right: 20px;*/
+  width: 320px;
   height: 100%;
   min-height: 800px;
   /*color: #fff;*/
@@ -284,9 +287,9 @@ ul {
   color: black;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px 30px 30px 50px;
+  padding: 25px 25px 25px 25px;
   /*background: rgba(0, 0, 0, 0.2);*/
-  background: white;
+  /*background: white;*/
   text-align: justify;
  /* color: #fff;*/
  /*color: rgb(85,85,85);*/
@@ -306,7 +309,7 @@ ul {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
@@ -450,7 +453,7 @@ ul {
 .main-wrapper .job-title {
   /*color: rgb(85,85,85);;*/
   color: black;
-  font-size: 90%;
+  font-size: 95%;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 600;
@@ -466,10 +469,27 @@ ul {
   font-size: 90%;
   /*margin-top: -5px;*/
   margin-bottom: 0px;
-  /*margin-left: 5px;*/
   font-weight: 400;
+  /*margin-left: 5px;*/
   /*font-family: 'Noto Sans', serif;*/
-  font-family: 'Arimo', serif;
+  font-family: 'Open Sans', serif;
+  /*font-style: italic;*/
+  /*-webkit-font-smoothing: antialiased;*/
+}
+.main-wrapper .journal2 {
+  /*color: #4E2B7B;*/
+  /*color: rgb(198,42,136);*/
+  /*color: #6EBF8B;*/
+  /*color: #EF8354;*/ 
+ /* color: black;*/
+  /*color:#2B7B4E;*/
+  font-size: 90%;
+  /*margin-top: -5px;*/
+  margin-bottom: 0px;
+  font-weight: 400;
+  /*margin-left: 5px;*/
+  /*font-family: 'Noto Sans', serif;*/
+  font-family: 'Open Sans', serif;
   /*font-style: italic;*/
   /*-webkit-font-smoothing: antialiased;*/
 }
@@ -574,7 +594,7 @@ ul {
   }
 
   .main-wrapper {
-    padding: 30px;
+    padding: 50px;
   }
 
   .main-wrapper .time {
