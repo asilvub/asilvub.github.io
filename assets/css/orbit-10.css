@@ -75,6 +75,11 @@ h1{
   font-weight: 600;
 }
 
+h2{
+  font-size:28px;
+  font-weight: 600;
+}
+
 
 /*h1, h2, h4, h5, h6 {
   font-size:28px;
@@ -435,7 +440,7 @@ ul {
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #4E2B7B;
   position: relative;
@@ -494,7 +499,7 @@ ul {
 .main-wrapper .job-title {
   /*color: rgb(85,85,85);;*/
   color: black;
-  font-size: 95%;
+  font-size: 90%;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 600;
@@ -507,7 +512,7 @@ ul {
   /*color: #EF8354;*/ 
  /* color: black;*/
   /*color:#2B7B4E;*/
-  font-size: 90%;
+  font-size: 85%;
   /*margin-top: -5px;*/
   margin-bottom: 0px;
   font-weight: 400;
