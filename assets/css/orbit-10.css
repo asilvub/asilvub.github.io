@@ -23,8 +23,41 @@
 @import url(https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); /* Add this line to import Ubuntu font */
 
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot");
+  src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix") format("embedded-opentype"), local("Noto Sans"), local("Noto-Sans-regular"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2") format("woff2"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff") format("woff"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf") format("truetype"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans") format("svg")
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot");
+  src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("../fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("../fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"), url("../fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"), url("../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg")
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot");
+  src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Italic"), local("Noto-Sans-italic"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2") format("woff2"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff") format("woff"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf") format("truetype"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans") format("svg")
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot");
+  src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold Italic"), local("Noto-Sans-700italic"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2") format("woff2"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff") format("woff"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf") format("truetype"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans") format("svg")
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font: 17px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Open Sans', sans-serif;*/
@@ -32,25 +65,31 @@ body {
   color: black;
   /*color: black;*/
   background: #f5f5f5;
-  font-size: 18px;
-  line-height: 1.8!important;
+  /*font-size: 18px;*/
+  line-height: 1.2!important;
   font-weight: 400;
 }
 
-h1, h2, h4, h5, h6 {
-  font-weight: 300;
-  font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
+h1{
+  font-size:28px;
+  font-weight: 600;
+}
+
+
+/*h1, h2, h4, h5, h6 {
+  font-size:28px;
+  font-weight: 600;
+  /*font-family: 'Open Sans', sans-serif;*/
   /*font-family: 'Saira Condensed', sans-serif;*/
   /*font-family: 'Poppins';*/
   /*font-family: 'Bebas Neue';*/
-}
+/*}*/
 
 h3{
-  font-size: 18px;
-  font-weight: 300;
+  /*font-size: 18px;*/
+  font-weight: 500;
   /*font-weight: bold;*/
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   /*font-family: 'Saira Condensed', sans-serif;*/
 }
 /* link color */
@@ -140,7 +179,7 @@ p {
   line-height: 1;
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Nunito Sans', sans-serif;*/
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   font-weight: 400;
   margin-top: 0px;
 }
@@ -233,7 +272,7 @@ ul {
   padding: 10px 10px 10px 0px;
   text-decoration: none;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   display: block;
   font-weight: 600;
 }
@@ -248,7 +287,7 @@ ul {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fff;
   color: black;
 }
 
@@ -260,7 +299,7 @@ ul {
 /* This control sidebars*/
 
 .wrapper {
-  background: #4E2B7B;
+  background: #fff;
   max-width: 1920px;
   margin: 0px 0px 0px 10px;
   position: relative;
@@ -272,14 +311,16 @@ ul {
 .sidebar-wrapper {
   /*background: #4E2B7B;*/
   /*background: white;*/
-  position: absolute;
+  position: fixed;
   /*right: 20px;*/
-  width: 320px;
+  width: 25%;
+  padding-left: 100px;
   height: 100%;
   min-height: 800px;
   /*color: #fff;*/
   /*color: rgb(85,85,85);*/
   color: black;
+  overflow-x: auto;
 }
 .sidebar-wrapper a {
   /*color: #fff;*/
@@ -309,7 +350,7 @@ ul {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
@@ -388,9 +429,9 @@ ul {
 /*This controls the body */
 .main-wrapper {
   background: #fff;
-  padding: 40px;
+  padding: 0px;
   padding-right: 0px;
-  padding-left: 300px;
+  padding-left: 400px;
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
@@ -415,7 +456,7 @@ ul {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #4E2B7B;
+  background: #fff;
   text-align: center;
   font-size: 24px;
   position: relative;
@@ -472,7 +513,7 @@ ul {
   font-weight: 400;
   /*margin-left: 5px;*/
   /*font-family: 'Noto Sans', serif;*/
-  font-family: 'Open Sans', serif;
+  /*font-family: 'Open Sans', serif;*/
   /*font-style: italic;*/
   /*-webkit-font-smoothing: antialiased;*/
 }
@@ -489,7 +530,7 @@ ul {
   font-weight: 400;
   /*margin-left: 5px;*/
   /*font-family: 'Noto Sans', serif;*/
-  font-family: 'Open Sans', serif;
+  /*font-family: 'Open Sans', serif;*/
   /*font-style: italic;*/
   /*-webkit-font-smoothing: antialiased;*/
 }
@@ -571,7 +612,7 @@ ul {
   background-clip: padding-box;
 }
 .skillset .theme-progress-bar {
-  background: #5f8697;
+  background: #fff;
 }
 
 .footer {
