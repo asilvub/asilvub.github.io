@@ -318,7 +318,7 @@ ul {
   /*background: white;*/
   position: fixed;
   /*right: 20px;*/
-  width: 25%;
+  width: 30%;
   padding-left: 100px;
   height: 100%;
   min-height: 800px;
@@ -437,6 +437,7 @@ ul {
   padding: 0px;
   padding-right: 0px;
   padding-left: 400px;
+  padding-top: 25px;
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
@@ -634,35 +635,64 @@ ul {
 }
 
 @media (max-width: 767.98px) {
+   /* Set the parent container to flexbox */
+   .parent-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    width: 100%;
+    padding: 0; /* Remove extra padding */
+  }
   .sidebar-wrapper {
     position: static;
-    width: inherit;
+    width: 100%;
+    padding: 0px;
+    height: auto;
+  }
+
+  .mobile-container {
+    max-width: 100%;
+    /*margin: auto;*/
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
   }
 
   .main-wrapper {
-    padding: 50px;
+    padding: 0px;
+    margin-top: -280px; /* Remove any margin */
+    width: 100%; /* Full width to align with mobile-container */
+    box-sizing: border-box; /* Consistent width with padding/border */
+    text-align: left; /* Force content left-aligned */
+    float: left; /* Force the wrapper to align to the left */
   }
 
   .main-wrapper .time {
     position: static;
     display: block;
-    margin-top: 5px;
+    margin: 0px;
   }
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
 
-  .mobile-container {
-    display: block;
-   }
+   /* Ensure no extra space between mobile-container and main-wrapper */
+   .mobile-container + .main-wrapper {
+    margin-top: 0; /* Remove any top margin */
+  }
+
 }
-@media (min-width: 992px) {
-  .skillset .level-title {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    margin-bottom: 0;
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sidebar-wrapper {
+    width: 35%; /* Adjust width for medium screens */
+    padding-right: 1%; /* Adjust padding as needed */
   }
 }
 
