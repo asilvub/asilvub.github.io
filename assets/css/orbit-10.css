@@ -664,7 +664,7 @@ ul {
 
   .main-wrapper {
     padding: 0px;
-    margin-top: -60px; /* Remove any margin */
+    margin-top: -45px; /* Remove any margin */
     width: 100%; /* Full width to align with mobile-container */
     box-sizing: border-box; /* Consistent width with padding/border */
     text-align: left; /* Force content left-aligned */
