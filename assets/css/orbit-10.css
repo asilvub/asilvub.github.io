@@ -194,8 +194,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10%;
-  width: 200px;
-  height: 200px;
+  width: 80%;
+  height: 80%;
 
 }
 
@@ -318,8 +318,8 @@ ul {
   /*background: white;*/
   position: fixed;
   /*right: 20px;*/
-  width: 28%;
-  padding-left: 100px;
+  width: 25%;
+  padding-left: 1%;
   height: 100%;
   min-height: 800px;
   /*color: #fff;*/
@@ -436,8 +436,8 @@ ul {
   background: #fff;
   padding: 0px;
   padding-right: 0px;
-  padding-left: 400px;
-  padding-top: 25px;
+  padding-left: 25%;
+  padding-top: 1%;
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
@@ -663,7 +663,8 @@ ul {
   }
 
   .main-wrapper {
-    padding: 0px;
+    padding: 0%;
+    padding-left: 0%;
     margin-top: -45px; /* Remove any margin */
     width: 100%; /* Full width to align with mobile-container */
     box-sizing: border-box; /* Consistent width with padding/border */
@@ -691,8 +692,18 @@ ul {
 /* Styles for medium screens */
 @media (min-width: 768px) and (max-width: 1200px) {
   .sidebar-wrapper {
-    width: 35%; /* Adjust width for medium screens */
+    width: 25%; /* Adjust width for medium screens */
     padding-right: 1%; /* Adjust padding as needed */
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+  
   }
 }
 
