@@ -57,7 +57,7 @@
 
 body {
   /*font-family: "Open Sans", sans-serif;*/
-  font: 17px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 20px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Open Sans', sans-serif;*/
@@ -71,12 +71,12 @@ body {
 }
 
 h1{
-  font-size:28px;
+  font-size:30px;
   font-weight: 600;
 }
 
 h2{
-  font-size:28px;
+  font-size:30px;
   font-weight: 600;
 }
 
@@ -276,7 +276,7 @@ ul {
   color: #341462;
   padding: 10px 10px 10px 0px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   /*font-family: 'Open Sans', sans-serif;*/
   display: block;
   font-weight: 600;
@@ -351,7 +351,7 @@ ul {
   /*color: rgba(255, 255, 255, 0.6);*/
   /*color: rgb(85,85,85);*/
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
@@ -362,11 +362,11 @@ ul {
 }
 .sidebar-wrapper .contact-list .svg-inline--fa {
   margin-right: 5px;
-  font-size: 12px;
+  font-size: 14px;
   vertical-align: middle;
 }
 .sidebar-wrapper .contact-list li {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 .sidebar-wrapper .contact-list li:last-child {
@@ -665,7 +665,7 @@ ul {
   .main-wrapper {
     padding: 0%;
     padding-left: 0%;
-    margin-top: -45px; /* Remove any margin */
+    margin-top: 1%; /* Remove any margin */
     width: 100%; /* Full width to align with mobile-container */
     box-sizing: border-box; /* Consistent width with padding/border */
     text-align: left; /* Force content left-aligned */
