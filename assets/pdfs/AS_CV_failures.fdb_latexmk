@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1735001584 "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.tex" "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf" "AS_CV_failures" 1735001585
-  "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.aux" 1735001584 737 bb11764ad55833d5cf067353e936ce20 ""
-  "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.tex" 1735001583 6526 5e349b21eeb8d6c1add3f4853e36fcd8 ""
+["pdflatex"] 1744726391 "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.tex" "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf" "AS_CV_failures" 1744726392
+  "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.aux" 1744726392 737 bb11764ad55833d5cf067353e936ce20 ""
+  "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.tex" 1744726391 6490 c219b7bab2a175bef7d0cedba95e9e80 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -185,13 +185,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1644452604 2724739 caf9addc0a1836337d7ab6b61ab38d95 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "AS_CV_failures.aux" 1735001584 737 bb11764ad55833d5cf067353e936ce20 "pdflatex"
-  "AS_CV_failures.out" 1735001584 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "AS_CV_failures.tex" 1735001583 6526 5e349b21eeb8d6c1add3f4853e36fcd8 ""
+  "AS_CV_failures.aux" 1744726392 737 bb11764ad55833d5cf067353e936ce20 "pdflatex"
+  "AS_CV_failures.out" 1744726392 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "AS_CV_failures.tex" 1744726391 6490 c219b7bab2a175bef7d0cedba95e9e80 ""
   (generated)
-  "AS_CV_failures.log"
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.log"
+  "AS_CV_failures.aux"
+  "AS_CV_failures.log"
   "/Users/asilvub/Documents/GitHub/asilvub.github.io/assets/pdfs/AS_CV_failures.pdf"
   "AS_CV_failures.pdf"
-  "AS_CV_failures.aux"
   "AS_CV_failures.out"
