@@ -57,7 +57,8 @@
 
 body {
   /*font-family: "Open Sans", sans-serif;*/
-  font: 20px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font: 20px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
   /*font-family: 'Fauna One', serif;*/
   /*font-family: 'Open Sans', sans-serif;*/
@@ -65,7 +66,7 @@ body {
   color: black;
   /*color: black;*/
   background: #f5f5f5;
-  /*font-size: 18px;*/
+  font-size: 19px;
   line-height: 1.2!important;
   font-weight: 400;
 }
@@ -530,7 +531,7 @@ ul {
   /*color: #EF8354;*/ 
  /* color: black;*/
   /*color:#2B7B4E;*/
-  font-size: 90%;
+  font-size:85%;
   /*margin-top: -5px;*/
   margin-bottom: 0px;
   font-weight: 400;
