@@ -93,7 +93,8 @@ ul {
 #workingpapers ul li, 
 #workinprogress ul li,
 #publications ul li,
-#otherpublications ul li {
+#otherpublications ul li 
+#discussions ul li{
   margin-bottom: 0.5rem;
 }
 
@@ -102,6 +103,7 @@ ul {
 #workinprogress a,
 #publications a,
 #otherpublications a,
+#discussions a,
 #datasets a  {
   color: rgb(136, 34, 85);
   font-weight: bold;
@@ -112,6 +114,7 @@ ul {
 #workinprogress a:hover,
 #publications a:hover,
 #otherpublications a:hover,
+#discussions a:hover,
 #datasets a:hover {
   text-decoration: underline;
 }
@@ -121,6 +124,7 @@ ul {
 #workingpapers a.uncolored-link,
 #publications a.uncolored-link, 
 #otherpublications a.uncolored-link, 
+#discussions a.uncolored-link,
 #datasets a.uncolored-link {
   color: inherit !important;  /* or use #333 if you want a fixed color */
   font-weight: normal;
