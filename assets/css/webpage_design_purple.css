@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --primary-color: rgb(102, 51, 153);
+  --secondary-color: #444;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Define local color to be used throughout the site*/
+
+
+
+.journal {
+  color: #444;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Left Navigation Panel */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0 1rem;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-color) 50%;
+    text-decoration: underline;
+}
+
+.nobold-link {
+    font-weight: normal;
+}
+
+/* Colored links – used for emphasis or primary navigation */
+.uncolored-link {
+  color: #555;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.uncolored-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Optional: make co-authors stand out slightly */
+ul li em {
+  font-style: normal;
+  color: #555;
+  list-style-type: none;
+  padding-left:0;
+}
+
+ol {
+  list-style-type: decimal; /* Default numbering: 1, 2, 3... */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+.featured {
+  display: block;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
+.numbered-list {
+  list-style-type: decimal; /* Default numbering: 1, 2, 3... */
+  padding-left: 0px;
+}
+
+.uncolored-link:hover {
+  text-decoration: underline;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.1);
+    border-left-color: var(--primary-color);
+    transform: translateX(5px);
+    font-weight: normal;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem 3rem;
+    max-width: calc(100% - 250px);
+}
+
+.section {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.section.active {
+    display: block;
+    /* justified text */
+    text-align: justify;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* Home Section Content */
+.home-section-content {
+    text-align: justify;;
+    padding: 3rem 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 2rem;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.home-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.home-section .subtitle {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.home-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Content Sections */
+.content-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.content-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.research-item, 
+.course-item, 
+.cv-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-item:hover, 
+.course-item:hover, 
+.cv-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.research-item h4, 
+.course-item h4, 
+.cv-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+
+/* Family Section - Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.photo-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.family-photo {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover .family-photo {
+    transform: scale(1.05);
+}
+
+.photo-caption {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    text-align: left;
+    margin: 0;
+    min-height: 60px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-section h2 {
+        font-size: 2rem;
+    }
+}
