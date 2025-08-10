@@ -6,6 +6,7 @@
 :root {
   --primary-color: rgb(102, 51, 153);
   --secondary-color: #444;
+  --accent-color: rgb(51, 102, 153);
 }
 
 body {
@@ -59,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary-color) 50%;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
