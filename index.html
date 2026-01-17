@@ -1,278 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8N8HLF5BXM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8N8HLF5BXM');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N8HLF5BXM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8N8HLF5BXM');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvaro Silva - Website</title>
-    <link rel="stylesheet" href="./assets/css/webpage_design_purple.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --purple: #5b2c6f;
+            --terracotta: #c85a3f;
+            --cream: #faf8f5;
+            --dark: #2d2d2d;
+            --gray: #6b7280;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--cream);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--purple);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--purple);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-text {
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            color: var(--dark);
+        }
+
+        .intro-text a {
+            color: var(--purple);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .intro-text a:hover {
+            border-bottom: 1px solid var(--purple);
+        }
+
+        .disclaimer {
+            max-width: 700px;
+            margin: 1rem auto;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--gray);
+        }
+
+        section {
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            color: var(--purple);
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid var(--terracotta);
+        }
+
+        .paper {
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #f0e6dc;
+        }
+
+        .paper:last-child {
+            border-bottom: none;
+        }
+
+        .paper-title {
+            color: var(--dark);
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.25rem;
+        }
+
+        .paper-title a {
+            color: var(--dark);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .paper-title a:hover {
+            border-bottom: 1px solid var(--terracotta);
+        }
+
+        .paper-authors {
+            color: var(--gray);
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .paper-authors a {
+            color: var(--gray);
+            text-decoration: none;
+        }
+
+        .paper-authors a:hover {
+            color: var(--purple);
+        }
+
+        .paper-venue {
+            color: var(--purple);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+
+        .paper-versions {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .paper-versions a {
+            color: var(--purple);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+            margin-right: 0.75rem;
+        }
+
+        .paper-versions a:hover {
+            border-bottom: 1px solid var(--purple);
+        }
+
+        .paper-featured {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .paper-featured strong {
+            color: var(--terracotta);
+            font-weight: 500;
+        }
+
+        .paper-featured a {
+            color: var(--purple);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .paper-featured a:hover {
+            border-bottom: 1px solid var(--purple);
+        }
+
+        .paper-summary {
+            color: var(--terracotta);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-top: 0.75rem;
+            padding: 0.75rem;
+            background-color: rgba(200, 90, 63, 0.1);
+            border-radius: 4px;
+            border-left: 3px solid var(--terracotta);
+            display: block;
+        }
+
+        .wip-list, .dataset-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .wip-list li, .dataset-list li {
+            padding: 0.5rem 0;
+            color: var(--dark);
+        }
+
+        .wip-list li a, .dataset-list li a {
+            color: var(--purple);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .wip-list li a:hover, .dataset-list li a:hover {
+            border-bottom: 1px solid var(--purple);
+        }
+
+        .cat-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .cat-photo-item {
+            text-align: center;
+        }
+
+        .cat-photo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+
+        .cat-caption {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--gray);
+            border-top: 1px solid #e5e7eb;
+            margin-top: 3rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            
+            h1 { 
+                font-size: 1.75rem; 
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .paper-title {
+                font-size: 0.95rem;
+            }
+            
+            .paper-authors, .paper-venue, .paper-versions, .paper-featured, .paper-summary {
+                font-size: 0.8rem;
+            }
+            
+            .cat-gallery { 
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+            
+            .cat-photo {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
+            .cat-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Left Navigation Panel -->
-        <nav class="sidebar">
+        <header>
+            <img src="./assets/images/profile_market.png" alt="Alvaro Silva" class="profile-pic">
             <h1>Alvaro Silva</h1>
-            <ul class="nav-menu">
-                <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
-                <!-- <li><a href="#" onclick="showSection('about')">About</a></li>-->
-                <li><a href="#" onclick="showSection('research')">Research</a></li>
-                 <li><a href="#" onclick="showSection('discussions')">Discussions</a></li>
-                 <li><a href="#" onclick="showSection('datasets')">Datasets</a></li>
-                <!--<li><a href="#" onclick="showSection('teaching')">Teaching</a></li>-->
-                <!--<li><a href="#" onclick="showSection('cv')">CV</a></li>-->
-                <li><a href="#" onclick="showSection('family')">Cats</a></li>
+            <div class="intro-text">
+                <p>I am an economist at the Federal Reserve Bank of Boston. I work on international economics.</p>
+                <p>Here are my <a href="assets/pdfs/out/AS_CV.pdf" target="_blank">CV</a> and <a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank">CV of failures</a>.</p>
+                <p>My Boston Fed website is <a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank">here</a>.</p>
+                <p>Feel free to reach me at: <a href="mailto:asilvub@gmail.com">asilvub@gmail.com</a></p>
+                <p>X: <a href="https://twitter.com/Asilvub" target="_blank">@asilvub</a></p>
+            </div>
+            <p class="disclaimer">Disclaimer: The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
+        </header>
+
+        <section id="working-papers">
+            <h2>Working Papers</h2>
+            
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target="_blank">Connected for Better or Worse? The Role of Production Networks in Financial Crises</a></div>
+                <div class="paper-authors">with <a href="https://sites.google.com/site/cokeconphd/" target="_blank">Miranda-Pinto</a>, <a href="https://sites.google.com/site/erojasba1/home" target="_blank">Rojas</a>, and <a href="https://sites.google.com/site/fesaffie/home" target="_blank">Saffie</a></div>
+                <div class="paper-venue">December 2025. First draft: December 2025.</div>
+                <div class="paper-versions">
+                    <a href="https://x.com/Asilvub/status/2005773585814806609" target="_blank">X - Thread</a>
+                    <a href="https://www.nber.org/papers/w34604" target="_blank">NBER WP</a>
+                    <a href="https://www.bostonfed.org/publications/research-department-working-paper/2026/the-role-of-production-networks-in-financial-crises.aspx" target="_blank">Boston Fed WP</a>
+                </div>
+                <div class="paper-summary">Networks doom economies, surprisingly often. Wrong friends make crises worse. Diagonal economies collapse harder, basically.</div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/us_firms_exposure_tariffs_BSSS.pdf" target="_blank">US Firms Exposure to Tariffs: A Comparison of the 2018 and 2025 Episodes</a></div>
+                <div class="paper-authors">with <a href="https://obarbiero.github.io" target="_blank">Barbiero</a>, <a href="https://sites.google.com/site/viacheslavsheremirov/" target="_blank">Sheremirov</a> and <a href="https://www.hillary-stein.com/home" target="_blank">Stein</a></div>
+                <div class="paper-venue">November 2025. First draft: November 2025.</div>
+                <div class="paper-summary">Trade wars strike back harder. Firms remember 2018, still unprepared. Ten-fold exposure this round.</div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/AS_JMP.pdf" target="_blank">Inflation in Disaggregated Small Open Economies</a></div>
+                <div class="paper-venue">September 2024. First draft: October 2023.</div>
+                <div class="paper-versions">
+                    <a href="https://twitter.com/Asilvub/status/1724901408871440570" target="_blank">X - Thread</a>
+                    <a href="http://arxiv.org/abs/2410.00705" target="_blank">arXiv</a>
+                    <a href="https://www.bostonfed.org/publications/research-department-working-paper/2024/inflation-in-disaggregated-small-open-economies.aspx" target="_blank">Boston Fed WP</a>
+                </div>
+                <div class="paper-summary">Small countries, big inflation problems. Sectors matter more than expected. Aggregation hides the messy truth.</div>
+                <div class="paper-featured"><strong>Featured in:</strong> <a href="https://www.imf.org/en/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024" target="_blank">WEO October 2024 IMF</a> [<a href="assets/papers/commodityspecialfeature.pdf" target="_blank">Local PDF</a>], <a href="https://www.bostonfed.org/publications/current-policy-perspectives/2025/the-impact-of-tariffs-on-inflation.aspx" target="_blank">Boston Fed CPP 25-2</a>, <a href="https://www.imf.org/en/publications/weo/issues/2025/10/14/world-economic-outlook-october-2025" target="_blank">WEO October 2025 IMF</a> [<a href="assets/papers/commodityspecialfeature_2025.pdf" target="_blank">Local PDF</a>]</div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank">Pandemic-Era Inflation Drivers and Global Spillovers</a></div>
+                <div class="paper-authors">with <a href="https://julian.digiovanni.ca" target="_blank">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank">Kalemli-Özcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank">Yıldırım</a></div>
+                <div class="paper-venue">July 2024</div>
+                <div class="paper-versions">
+                    <a href="https://www.nber.org/papers/w31887" target="_blank">NBER WP</a>
+                    <a href="https://cepr.org/publications/dp18628" target="_blank">CEPR WP</a>
+                    <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1080.pdf" target="_blank">NYFED WP</a>
+                </div>
+                <div class="paper-summary">Pandemic broke everything, including models. Supply chains matter. Who knew? Global shocks spread faster now.</div>
+                <div class="paper-featured"><strong>Slides:</strong> <a href="./assets/slides/dGKSY_SFFed_2024.pdf" target="_blank">Pacific Basin Conference 2024</a></div>
+                <div class="paper-featured"><strong>Featured in:</strong> Chapter 1 <a href="https://www.whitehouse.gov/wp-content/uploads/2025/01/ERP-2025.pdf" target="_blank">Economic Report of the President 2025</a></div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/GGS_Startups.pdf" target="_blank">Startup Employment and Career Trajectories</a></div>
+                <div class="paper-authors">with <a href="https://sites.google.com/view/gonzalogarciatrujillo/home?authuser=0" target="_blank">Garcia-Trujillo</a> and <a href="https://sites.google.com/umd.edu/nathaliegonzalez-prieto/" target="_blank">Gonzalez-Prieto</a></div>
+                <div class="paper-venue">April 2023</div>
+                <div class="paper-versions">
+                    <a href="https://www.bcentral.cl/en/content/-/details/working-papers-n-978" target="_blank">CBCh WP</a>
+                </div>
+                <div class="paper-summary">Startups promise glory, deliver uncertainty. Career trajectories bend, not break. Entrepreneurship: the scenic route forward.</div>
+            </div>
+        </section>
+
+        <section id="work-in-progress">
+            <h2>Work in Progress</h2>
+            <ul class="wip-list">
+                <li>Optimal Monetary and Exchange Rate Policy in Disaggregated Small Open Economies</li>
+                <li>Sectoral Working Capital Constraints and Measured Total Factor Productivity in Emerging Markets</li>
+                <li>Revisiting Terms of Trade Shocks in Small Open Economies, with <a href="https://sites.google.com/site/cokeconphd/" target="_blank">Miranda-Pinto</a></li>
             </ul>
-        </nav>
+        </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Home Section -->
-            <section id="home" class="section active">
-                <div class="home-section">
-                    <img src="./assets/images/profile_market.png" alt="Profile Photo" class="profile-image">
-                    <h2> Alvaro Silva</h2>
-                     <div class="home-section-content">
-                    <!--<p class="subtitle">Associate Professor of Computer Science</p>-->
-                    <p>I am an economist at the Federal Reserve Bank of Boston. I work on international economics. <br> Here are my  <a href="assets/pdfs/out/AS_CV.pdf" target="_blank">CV</a> and  <a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank">CV of failures</a>.</br> My Boston Fed website is <a href = "https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target = "_blank"> here</a>.  <br>Feel free to reach me at: <a href="mailto:asilvub@gmail.com" class = "uncolored-link">asilvub@gmail.com</a>.</br>
-      X: <a href="https://twitter.com/Asilvub" target="_blank">@asilvub</a></p><br> </br>
-      <p > <i>Disclaimer: The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</i></p>
-      </div>
+        <section id="publications">
+            <h2>Publications</h2>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S016518892400160X" target="_blank">Commodity Prices and Production Networks in Small Open Economies</a></div>
+                <div class="paper-authors">with Caraiani, <a href="https://sites.google.com/site/cokeconphd/" target="_blank">Miranda-Pinto</a>, and Olaya-Agudelo</div>
+                <div class="paper-venue">Journal of Economic Dynamics and Control, 2024</div>
+                <div class="paper-versions">
+                    <a href="assets/papers/CMPOS_Commodity.pdf" target="_blank">Local PDF</a>
                 </div>
-            </section>
+                <div class="paper-summary">Commodity shocks ripple through networks. Production links amplify price swings. Small economies feel big impacts.</div>
+                <div class="paper-featured"><strong>Slides:</strong> <a href="assets/slides/Commodity_networks_slides.pdf" target="_blank">CEBRA</a></div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://www.sciencedirect.com/science/article/pii/S030439322300065X" target="_blank">Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks</a></div>
+                <div class="paper-authors">with <a href="https://sites.google.com/site/cokeconphd/" target="_blank">Miranda-Pinto</a> and <a href="https://sites.google.com/view/ericyoung/home" target="_blank">Young</a></div>
+                <div class="paper-venue">Journal of Monetary Economics, 2023</div>
+                <div class="paper-versions">
+                    <a href="assets/papers/CRN_MPSY_2022.pdf" target="_blank">Local PDF</a>
+                </div>
+                <div class="paper-summary">Recessions hit harder than booms. Network structure explains asymmetric pain. Downturns aren't just reverse expansions.</div>
+                <div class="paper-featured"><strong>Comment:</strong> <a href="https://static1.squarespace.com/static/57844f0d6a4963df86dbda1a/t/643da2a1183c6c700a06e17a/1681760929604/MirandaPintoSilvaYoung.WrittenDiscussion.pdf" target="_blank">Saki Bigio</a></div>
+                <div class="paper-featured"><strong>Featured in:</strong> <a href="https://faculti.net/business-cycle-asymmetry-and-input-output-structure-the-role-of-firm-to-firm-networks/" target="_blank">Faculti</a></div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://link.springer.com/article/10.1007/s00181-020-01953-w" target="_blank">Price Controls, Hyperinflation and the Inflation - Relative Price Variability Relationship</a></div>
+                <div class="paper-authors">with Cerda and Luders</div>
+                <div class="paper-venue">Empirical Economics, 2020</div>
+                <div class="paper-versions">
+                    <a href="assets/papers/CLS_RPV.pdf" target="_blank">Local PDF</a>
+                </div>
+                <div class="paper-summary">Price controls backfire spectacularly always. Hyperinflation makes everything extremely messy. Relative prices tell chaotic stories.</div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://www.tandfonline.com/doi/full/10.1080/00036846.2017.1412076" target="_blank">Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile</a></div>
+                <div class="paper-authors">with Cerda and Valente</div>
+                <div class="paper-venue">Applied Economics, 2017</div>
+                <div class="paper-versions">
+                    <a href="assets/papers/Uncertainty_CSV_v2.pdf" target="_blank">Local PDF</a>
+                </div>
+                <div class="paper-summary">Uncertainty paralyzes small open economies. Chile proves volatility matters tons. Policy makers hate this fact.</div>
+            </div>
+        </section>
+
+        <section id="other-publications">
+            <h2>Other Publications</h2>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20231028" target="_blank">Quantifying the Inflationary Impact of Fiscal Stimulus under Supply Constraints</a></div>
+                <div class="paper-authors">with <a href="https://julian.digiovanni.ca" target="_blank">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank">Kalemli-Özcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank">Yıldırım</a></div>
+                <div class="paper-venue">AEA Papers and Proceedings, 2023</div>
+                <div class="paper-versions">
+                    <a href="assets/papers/dGKOSY_AEAPP_23.pdf" target="_blank">Local PDF</a>
+                    <a href="https://cepr.org/publications/dp17828" target="_blank">CEPR WP</a>
+                    <a href="https://www.nber.org/papers/w30892" target="_blank">NBER WP</a>
+                    <a href="https://www.newyorkfed.org/research/staff_reports/sr1050" target="_blank">NYFED WP</a>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="https://www.ecb.europa.eu/pub/pdf/sintra/ecb.forumcentbank202206~a6bc0541ca.en.pdf" target="_blank">Global Supply Chain Pressures, International Trade, and Inflation</a></div>
+                <div class="paper-authors">with <a href="https://julian.digiovanni.ca" target="_blank">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank">Kalemli-Özcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank">Yıldırım</a></div>
+                <div class="paper-venue">Proceedings of the ECB Forum on Central Banking: "Challenges for Monetary Policy in a Rapidly Changing World", 2022</div>
+                <div class="paper-versions">
+                    <a href="https://www.nber.org/papers/w30240" target="_blank">NBER WP</a>
+                    <a href="https://cepr.org/active/publications/discussion_papers/dp.php?dpno=17449" target="_blank">CEPR WP</a>
+                    <a href="https://www.newyorkfed.org/research/staff_reports/sr1024" target="_blank">NYFED WP</a>
+                </div>
+                <div class="paper-featured"><strong>Featured in:</strong> <a href="https://www.bloomberg.com/news/articles/2022-07-24/fed-to-inflict-more-pain-on-economy-as-it-readies-big-rate-hike" target="_blank">Bloomberg</a>, <a href="https://www.economist.com/finance-and-economics/2023/01/19/could-europe-end-up-with-a-worse-inflation-problem-than-america" target="_blank">The Economist</a>, <a href="https://www.ft.com/content/da283616-c30b-4274-9278-4f82ef562243" target="_blank">Financial Times</a>, <a href="https://libertystreeteconomics.newyorkfed.org/2022/08/how-much-did-supply-constraints-boost-u-s-inflation/" target="_blank">NYFED Blog</a>, <a href="https://cepr.org/voxeu/columns/supply-chains-trade-and-inflation" target="_blank">VOXEU</a>, <a href="https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm" target="_blank">Chair Powell's 2024 Jackson Hole Speech</a></div>
+                <div class="paper-featured"><strong>Video:</strong> <a href="https://www.youtube.com/watch?v=Vk5VDLMGBlE&t=1s" target="_blank">SINTRA Sebnem's Presentation</a></div>
+                <div class="paper-featured"><strong>Slides:</strong> <a href="assets/slides/DKSY_NBER_IFM_oct14_2022.pdf" target="_blank">NBER IFM Meeting Fall 2022</a></div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/papers/LAPJ_Silva_2018.pdf" target="_blank">Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step</a></div>
+                <div class="paper-venue">Latin American Policy Journal, 2018</div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">School Funding in Chile</div>
+                <div class="paper-authors">with <a href="http://econweb.umd.edu/~urzua/" target="_blank">Urzua</a></div>
+                <div class="paper-venue">In Ideas en Educación II: Definiciones en Tiempos de Cambio, 2018</div>
+            </div>
+        </section>
+
+        <section id="discussions">
+            <h2>Discussions</h2>
             
-            <!-- About Section -->
-             <!--
-            <section id="about" class="section">
-                <div class="content-section">
-                    <h2>About Me</h2>
-                    <p>I am a PhD Student in Agricultural and Resource Economics at the University of Maryland College Park.</p>
-                    <p> My research interests are in labor and gender economics.</p>
+            <div class="paper">
+                <div class="paper-title"><a href="assets/slides/discussions/FKLY_Discussion_Silva_Handout.pdf" target="_blank">An Anatomy of U.S. Establishments' Trade Linkages in Global Value Chains</a></div>
+                <div class="paper-authors">by Flaaen, Kamal, Lee and Yi</div>
+                <div class="paper-venue">May 2025</div>
+                <div class="paper-featured"><strong>System Committee on International Economic Analysis</strong></div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title"><a href="assets/slides/discussions/CQRS_Discussion_Silva_Handout.pdf" target="_blank">Trade Costs and Inflation Dynamics</a></div>
+                <div class="paper-authors">by Cuba-Borda, Queralto, Reyes-Heroles, and Skaramucci</div>
+                <div class="paper-venue">August 2025</div>
+                <div class="paper-featured"><strong>CEBRA Annual Conference</strong></div>
+            </div>
+        </section>
+
+        <section id="datasets">
+            <h2>Datasets</h2>
+            <p>I helped to construct two economic uncertainty indices for Chile prior to my Ph.D. I am not in charge of updating them anymore but they are regularly updated. Feel free to use them and remember to cite our work!</p>
+            <ul class="dataset-list">
+                <li><a href="https://clapesuc.cl/indicadores/indice-de-incertidumbre-economica-iiec" target="_blank">Chile's Economic Uncertainty Index</a></li>
+                <li><a href="https://www.policyuncertainty.com/chile_monthly.html" target="_blank">Chile's Economic Policy Uncertainty Index</a></li>
+            </ul>
+        </section>
+
+        <section id="cats">
+            <h2>Cats</h2>
+            <p>Here are some pictures of our cats Kuina and Zoro. Yep, we like One Piece! Coincidentally, Zoro was almost blind in one eye when we adopted him.</p>
+            <div class="cat-gallery">
+                <div class="cat-photo-item">
+                    <img src="./assets/images/Kuina_3.jpeg" alt="Kuina" class="cat-photo">
+                    <p class="cat-caption">Kuina</p>
                 </div>
-            </section>
-        -->
-            <!-- Research Section -->
-            <section id="research" class="section">
-                <div class="content-section">
-                    <h2>Research</h2>
-                    <p>My research focuses on international economics.</p>
-                    <h3>Working Papers</h3>
-                    <ul>
-               <li><a href = "assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target = "_blank">Connected for Better or Worse? The Role of Production Networks in Financial Crises</a>, with <a href = "https://sites.google.com/site/cokeconphd/" class ="uncolored-link" target = "_blank">Miranda-Pinto</a>, <a href = "https://sites.google.com/site/erojasba1/home" class ="uncolored-link" target = "_blank">Rojas</a>, and <a href = "https://sites.google.com/site/fesaffie/home" class ="uncolored-link" target = "_blank">Saffie</a>  <br />
-       December 2025. First draft: December 2025.<br /> 
-    [<a href="https://x.com/Asilvub/status/2005773585814806609" class = "uncolored-link" target="_blank">X - Thread</a>] [<a class = "uncolored-link" href="https://www.nber.org/papers/w34604?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" target="_blank">NBER WP</a>] [<a class = "uncolored-link" href="https://www.bostonfed.org/publications/research-department-working-paper/2026/the-role-of-production-networks-in-financial-crises.aspx" target="_blank">Boston Fed WP</a>]
-    </li> 
-              <li><a href="assets/papers/us_firms_exposure_tariffs_BSSS.pdf" target = "_blank">US Firms Exposure to Tariffs: A Comparison of the 2018 and 2025 Episodes</a>, with <a href = "https://obarbiero.github.io" class ="uncolored-link" target = "_blank">Barbiero</a>, <a href = "https://sites.google.com/site/viacheslavsheremirov/" class ="uncolored-link" target = "_blank">Sheremirov</a> and <a href = "https://www.hillary-stein.com/home" class ="uncolored-link" target = "_blank"> Stein</a>                      <br />
-       November 2025. First draft: November 2025. <br /> </li> 
-
-        <li><a href="assets/papers/AS_JMP.pdf" target="_blank">Inflation in Disaggregated Small Open Economies</a>
-       <br />
-       September 2024. First draft: October 2023.<br />
-       [<a href="https://twitter.com/Asilvub/status/1724901408871440570" class = "uncolored-link" target="_blank">X - Thread</a>]  [<a class = "uncolored-link" href="http://arxiv.org/abs/2410.00705" target="_blank">arXiv</a>] [<a class = "uncolored-link" href = "https://www.bostonfed.org/publications/research-department-working-paper/2024/inflation-in-disaggregated-small-open-economies.aspx" target = "_blank" >Boston Fed WP</a>]
-        <span class="featured">Featured:  <a href="https://www.imf.org/en/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024" class = "uncolored-link" target="_blank">WEO October 2024 IMF</a> [<a class = "uncolored-link" href="assets/papers/commodityspecialfeature.pdf" target="_blank">Local PDF</a>], <a class = "uncolored-link" href = "https://www.bostonfed.org/publications/current-policy-perspectives/2025/the-impact-of-tariffs-on-inflation.aspx" target = "_blank">Boston Fed CPP 25-2</a>, <a href="https://www.imf.org/en/publications/weo/issues/2025/10/14/world-economic-outlook-october-2025" class = "uncolored-link" target="_blank">WEO October 2025 IMF</a> [<a class = "uncolored-link" href="assets/papers/commodityspecialfeature_2025.pdf" target="_blank">Local PDF</a>] </span>
-    </li>
-
-     <li><a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank"> Pandemic-Era Inflation Drivers and Global Spillovers</a>, with <a href="https://julian.digiovanni.ca" class ="uncolored-link" target="_blank" > di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" class ="uncolored-link" target="_blank"> Kalemli-&Oumlzcan</a>, and  <a href="https://sites.google.com/site/yildirim" class ="uncolored-link" target="_blank">Y<span>&#305;</span>ld<span>&#305;</span>r<span>&#305;</span>m</a><br /> 
-        July 2024 <br />
-      [<a class = "uncolored-link" href="https://www.nber.org/papers/w31887?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" target="_blank">NBER WP</a>] [<a class = "uncolored-link"  href="https://cepr.org/publications/dp18628" target="_blank">CEPR WP</a>] [<a class = "uncolored-link"  href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1080.pdf?sc_lang=en" target="_blank">NYFED WP</a>]
-       <span class="featured">Slides:   <a class = "uncolored-link" href="./assets/slides/dGKSY_SFFed_2024.pdf" target="_blank">Pacific Basin Conference 2024</a>.</span>
-
-        <span class="featured">Featured:  Chapter 1 <a class = "uncolored-link" href="https://www.whitehouse.gov/wp-content/uploads/2025/01/ERP-2025.pdf" target="_blank">Economic Report of the President 2025</a>.</span>
-    </li>
-
-            <li><a href="assets/papers/GGS_Startups.pdf" target="_blank">Startup Employment and Career Trajectories</a>, with <a class = "uncolored-link" href="https://sites.google.com/view/gonzalogarciatrujillo/home?authuser=0" target="_blank">Garcia-Trujillo</a> and <a class = "uncolored-link" href ="https://sites.google.com/umd.edu/nathaliegonzalez-prieto/" target = "_blank">Gonzalez-Prieto</a><br />
-       April 2023<br />
-       [<a class = "uncolored-link" href="https://www.bcentral.cl/en/content/-/details/working-papers-n-978" target="_blank">CBCh WP</a>]
-    </li>    
-
-
-      </ul>
-                    <!--
-                    <div class="research-item">
-                        <h4>Neural Architecture Search for Language Models</h4>
-                        <p class="date">2023 - Present</p>
-                        <p>Investigating automated methods for designing efficient neural network architectures specifically optimized for natural language processing tasks. This project aims to reduce computational costs while maintaining state-of-the-art performance.</p>
-                    </div>
-                    -->
-                    <h3>Work in Progress</h3>
-                    <ul>
-       <li>Optimal Monetary and Exchange Rate Policy in Disaggregated Small Open Economies </li> 
-       <li>Sectoral Working Capital Constraints and Measured Total Factor Productivity in Emerging Markets</li>
-       <li>Revisiting Terms of Trade Shocks in Small Open Economies, with <a href = "https://sites.google.com/site/cokeconphd/" class ="uncolored-link" target = "_blank">Miranda-Pinto</a> </li>
-     </ul>
-                    <h3>Publications</h3>
-
-                   <ul>
-        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S016518892400160X" target="_blank">Commodity Prices and Production Networks in Small Open Economies</a>,
-        with Caraiani, <a href = "https://sites.google.com/site/cokeconphd/" class ="uncolored-link" target = "_blank">Miranda-Pinto</a>, and Olaya-Agudelo<br />
-            <span class="journal">Journal of Economic Dynamics and Control, 2024</span><br />   
-        [<a class = "uncolored-link" href="assets/papers/CMPOS_Commodity.pdf" target="_blank">Local PDF</a>]
-        <span class="featured"> Slides:<a class = "uncolored-link" href="assets/slides/Commodity_networks_slides.pdf" target="_blank"> CEBRA</a></span></li>
-                <li><a href="https://www.sciencedirect.com/science/article/pii/S030439322300065X" target="_blank">Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks</a>,
-        with <a href = "https://sites.google.com/site/cokeconphd/" class ="uncolored-link" target = "_blank">Miranda-Pinto</a> and <a href="https://sites.google.com/view/ericyoung/home" class ="uncolored-link" target = "_blank">Young</a><br />
-            <span class="journal">Journal of Monetary Economics, 2023</span><br />
-         [<a href="assets/papers/CRN_MPSY_2022.pdf" class ="uncolored-link" target="_blank">Local PDF</a>]
-         <span class="featured"><a href="https://static1.squarespace.com/static/57844f0d6a4963df86dbda1a/t/643da2a1183c6c700a06e17a/1681760929604/MirandaPintoSilvaYoung.WrittenDiscussion.pdf" class ="uncolored-link" target="_blank">Comment</a> by <a href="http://www.sakibigio.net" class ="uncolored-link" target="_blank">Saki Bigio</a> </a></span>
-    <span class="featured">Featured: <a class ="uncolored-link" href="https://faculti.net/business-cycle-asymmetry-and-input-output-structure-the-role-of-firm-to-firm-networks/" target="_blank"> Faculti</a></span></li>
-
-        <li><a href="https://link.springer.com/article/10.1007/s00181-020-01953-w" target = "_blank">Price Controls, Hyperinflation and the Inflation - Relative Price Variability Relationship</a>, with Cerda and Luders<br />
-         <span class="journal">Empirical Economics, 2020</span><br />
-         [<a href="assets/papers/CLS_RPV.pdf" class = "uncolored-link" target="_blank">Local PDF</a>]
-    </li>
-
-        <li><a href="https://www.tandfonline.com/doi/full/10.1080/00036846.2017.1412076" target="_blank">Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile</a>, with Cerda and Valente<br />
-         <span class="journal">Applied Economics, 2017</span><br />
-         [<a href="assets/papers/Uncertainty_CSV_v2.pdf" class = "uncolored-link" target="_blank">Local PDF</a>]
-    </li>
-
-
-      </ul>
-      <h3>Other Publications</h3>
-      <ul>
-        <li> <a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20231028" target="_blank">Quantifying the Inflationary Impact of Fiscal Stimulus under Supply Constraints</a>, with <a href="https://julian.digiovanni.ca" class ="uncolored-link" target="_blank" > di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" class ="uncolored-link" target="_blank"> Kalemli-&Oumlzcan</a>, and  <a href="https://sites.google.com/site/yildirim" class ="uncolored-link" target="_blank">Y<span>&#305;</span>ld<span>&#305;</span>r<span>&#305;</span>m</a><br />
-            <span class="journal">AEA Papers and Proceedings, 2023</span><br />
-            [<a href="assets/papers/dGKOSY_AEAPP_23.pdf" class ="uncolored-link" target="_blank">Local PDF</a>] [<a href="https://cepr.org/publications/dp17828" class ="uncolored-link" target="_blank">CEPR WP</a>] [<a href="https://www.nber.org/papers/w30892?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" class ="uncolored-link" target="_blank">NBER WP</a>] [<a href="https://www.newyorkfed.org/research/staff_reports/sr1050" class ="uncolored-link" target="_blank">NYFED WP</a>]
-        </li>
-        <li> <a href="https://www.ecb.europa.eu/pub/pdf/sintra/ecb.forumcentbank202206~a6bc0541ca.en.pdf" target="_blank">Global Supply Chain Pressures, International Trade, and Inflation</a>, with <a href="https://julian.digiovanni.ca" class ="uncolored-link" target="_blank" > di Giovanni</a>, <a href="https://sebnemkalemliozcan.com"class ="uncolored-link" target="_blank"> Kalemli-&Oumlzcan</a>, and  <a href="https://sites.google.com/site/yildirim" class ="uncolored-link" target="_blank">Y<span>&#305;</span>ld<span>&#305;</span>r<span>&#305;</span>m</a><br />
-        <span class="journal">Proceedings of the ECB Forum on Central Banking: "Challenges for Monetary Policy in a Rapidly Changing World", 2022</span><br />
-        [<a href="https://www.nber.org/papers/w30240?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg30" class ="uncolored-link" target="_blank">NBER WP</a>]
-                                 [<a href="https://cepr.org/active/publications/discussion_papers/dp.php?dpno=17449&utm_source=hootsuite&utm_medium=&utm_term=&utm_content=&utm_campaign=" class ="uncolored-link" target="_blank">CEPR WP</a>] [<a href="https://www.newyorkfed.org/research/staff_reports/sr1024" class ="uncolored-link" target="_blank">NYFED WP</a>]
-        <span class="featured">Featured: <a href="https://www.bloomberg.com/news/articles/2022-07-24/fed-to-inflict-more-pain-on-economy-as-it-readies-big-rate-hike?srnd=premium&sref=d16KMguM#xj4y7vzkg" class ="uncolored-link" target="_blank">Bloomberg</a>,  <a href="https://www.economist.com/finance-and-economics/2023/01/19/could-europe-end-up-with-a-worse-inflation-problem-than-america" class ="uncolored-link" target="_blank">The Economist</a>, <a href="https://www.ft.com/content/da283616-c30b-4274-9278-4f82ef562243" class ="uncolored-link" target="_blank" >Financial Times</a>, <a href="https://libertystreeteconomics.newyorkfed.org/2022/08/how-much-did-supply-constraints-boost-u-s-inflation/" class ="uncolored-link" target="_blank">NYFED Blog</a>, <a href="https://cepr.org/voxeu/columns/supply-chains-trade-and-inflation" class ="uncolored-link" target="_blank" >VOXEU</a>, <a class ="uncolored-link" href ="https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm" target="_blank">Chair Powell's 2024 Jackson Hole Speech</a>.</span>
-<span class = "featured"> Video:  <a class ="uncolored-link" href="https://www.youtube.com/watch?v=Vk5VDLMGBlE&t=1s" target="_blank">SINTRA Sebnem's Presentation</a></span>    
-<span class = "featured"> Slides: <a class ="uncolored-link" href="assets/slides/DKSY_NBER_IFM_oct14_2022.pdf" target="_blank"> NBER IFM Meeting Fall 2022. </a> </span>
-    </li>
-
-
-
-    <li> <a href="assets/papers/LAPJ_Silva_2018.pdf" target="_blank">Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step</a> <br />
-         <span class="journal">Latin American Policy Journal, 2018</span><br />
-    </li>
-
-     <li><a href="https://link.springer.com/article/10.1007/s00181-020-01953-w">School Funding in Chile</a>, with <a href="http://econweb.umd.edu/~urzua/" class = "uncolored-link" target="_blank">Urzua</a><br />
-         <span class="journal"> In Ideas en Educación II: Definiciones en Tiempos de Cambio, 2018</span><br />
-    </li>
-
-        </ul>
+                <div class="cat-photo-item">
+                    <img src="./assets/images/Kuina_and_Zoro.jpeg" alt="Kuina and Zoro" class="cat-photo">
+                    <p class="cat-caption">Kuina & Zoro</p>
                 </div>
-            </section>
-            <!-- Teaching Section -->
-             <!--
-            <section id="teaching" class="section">
-                <div class="content-section">
-                    <h2>Teaching Assistant</h2>
-                    <p>I have been a teaching assistant for the following courses.</p>
-
-                    <div class="course-item">
-                        <h4>AREC 250: Elements of Agricultural and Resource Economics</h4>
-                        <p class="date">Spring 2023</p>
-                    </div>
-
-                    <div class="course-item">
-                        <h4>AREC 326: Intermediate Applied Microeconomics</h4>
-                        <p class="date">Spring 2025</p>
-                    </div>
-
-                    <div class="course-item">
-                        <h4>AREC 365: World Hunger, Population, and Food Supplies</h4>
-                        <p class="date">Fall 2023, Summer 2024, Fall 2025</p>
-                    </div>
-                    <!--
-                    <h3>Teaching Awards</h3>
-                    <p> Excellence in Teaching Award, University of Excellence (2023)<br>
-                     Student Choice Teaching Award, Department of Computer Science (2022)<br>
-                     Outstanding New Faculty Award, College of Engineering (2019)</p>
-                     
+                <div class="cat-photo-item">
+                    <img src="./assets/images/Zoro_2.jpeg" alt="Zoro" class="cat-photo">
+                    <p class="cat-caption">Zoro</p>
                 </div>
-            </section>
-            -->
-             <!-- CV Section -->
-            <section id="discussions" class="section">
-                <div class="content-section">
-                    <h2>Discussions</h2>
-                    <ul>
-        <li><a href="assets/slides/discussions/FKLY_Discussion_Silva_Handout.pdf" target="_blank">An Anatomy of U.S. Establishments' Trade Linkages in Global Value Chains</a>, by Flaaen, Kamal, Lee and Yi<br />
-          May 2025 <br />
-         <span class="featured"><strong><em>System Committee on International Economic Analysis</em></strong></span>
-         <li><a href="assets/slides/discussions/CQRS_Discussion_Silva_Handout.pdf" target="_blank">Trade Costs and Inflation Dynamics</a>, by Cuba-Borda, Queralto, Reyes-Heroles, and Skaramucci<br />
-          August 2025 <br />
-         <span class="featured"><strong><em>CEBRA Annual Conference</em></strong></span>
-      </li>
-      </ul>
-                </div>
-            </section>
-
-                        <section id="datasets" class="section">
-                <div class="content-section">
-                    <h2>Datasets</h2>
-                          <p style="line-height:1.5;"> I helped to construct two economic uncertainty indices for Chile prior to my Ph.D. I am not in charge of updating them anymore but they are regularly updated. Feel free to use them and remember to cite our work!</p>
-                    <ol>
-                        <li class = "numbered-list"><a href="https://clapesuc.cl/indicadores/indice-de-incertidumbre-economica-iiec" target="_blank">Chile's Economic Uncertainty Index </a></li>
-                        <li class = "numbered-list"><a href="https://www.policyuncertainty.com/chile_monthly.html" target="_blank">Chile's Economic Policy Uncertainty Index </a></li>
-                    </ol>
-                </div>
-            </section>
-            
-
-
-                 <!-- Family Section -->
-            <section id="family" class="section">
-                <div class="content-section">
-                    <h2>Cats</h2>
-                    <p>Here are some pictures of our cats Kuina and Zoro. Yep, we like One Piece! Coincidentally, Zoro was almost blind in one eye when we adopted him.</p>
-
-                    <div class="photo-gallery">
-                        <div class="photo-item">
-                            <img src="./assets/images/Kuina_3.jpeg" alt="Kuina" class="family-photo">
-                            <p class="photo-caption">Kuina</p>
-                        </div>
-
-                        <div class="photo-item">
-                            <img src="./assets/images/Kuina_and_Zoro.jpeg" alt="Kuina and Zoro" class="family-photo">
-                            <p class="photo-caption"> Kuina & Zoro</p>
-                        </div>
-
-                        <div class="photo-item">
-                            <img src="./assets/images/Zoro_2.jpeg" alt="Zoro" class="family-photo">
-                            <p class="photo-caption">Zoro</p>
-                        </div>
-                    </div>
-                    <!--
-                    <p style="margin-top: 2rem; font-style: italic; color: #7f8c8d;">
-                        These moments remind me why work-life balance is so important. Family time provides the inspiration and energy that fuels my passion for research and teaching.
-                    </p>
-                    -->
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
     </div>
-
-           
-
-    <script>
-        function showSection(sectionName) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-
-            // Show the selected section
-            document.getElementById(sectionName).classList.add('active');
-
-            // Update navigation active state
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>
