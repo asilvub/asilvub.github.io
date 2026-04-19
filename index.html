@@ -12,13 +12,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvaro Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 24px 18px 48px;
             background: #ffffff;
             color: #000000;
-            font-family: Garamond, "EB Garamond", "Times New Roman", serif;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 1.45;
         }
@@ -47,6 +50,10 @@
             text-decoration: underline;
         }
 
+        .social-link {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .page {
             max-width: 860px;
             margin: 0 auto;
@@ -60,12 +67,14 @@
             margin: 0 0 4px;
             font-size: 2rem;
             font-weight: 700;
+            font-family: "Ubuntu", sans-serif;
         }
 
         h2 {
             margin: 28px 0 10px;
             font-size: 1.2rem;
             font-weight: 700;
+            font-family: "Raleway", sans-serif;
         }
 
         p {
@@ -79,8 +88,9 @@
         }
 
         ol {
-            margin: 0 0 10px 24px;
+            margin: 0 0 10px 0;
             padding: 0;
+            list-style: none;
         }
 
         li {
@@ -96,6 +106,11 @@
             display: block;
             text-align: left;
             width: max-content;
+        }
+
+        .links p,
+        .plain-list p {
+            margin: 0 0 6px;
         }
 
         .meta {
@@ -135,13 +150,13 @@
             <p>Economist, Federal Reserve Bank of Boston</p>
             <p>I work on international economics.</p>
             <p class="disclaimer-top">Disclaimer: The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
-            <ul class="links">
-                <li><a href="assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-                <li><a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures</a></li>
-                <li><a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed profile</a></li>
-                <li><a href="mailto:asilvub@gmail.com">asilvub@gmail.com</a></li>
-                <li><a href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">@asilvub</a></li>
-            </ul>
+            <div class="links">
+                <p><a href="assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
+                <p><a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures</a></p>
+                <p><a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed profile</a></p>
+                <p><a href="mailto:asilvub@gmail.com">asilvub@gmail.com</a></p>
+                <p><a class="social-link" href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">@asilvub</a></p>
+            </div>
         </header>
 
         <main>
