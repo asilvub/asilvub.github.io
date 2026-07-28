@@ -915,7 +915,9 @@ select:focus-visible {
 .coauthors {
   margin: 0.45rem 0 0;
   color: var(--muted);
-  font-size: 0.67rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .paper-meta {
@@ -1199,7 +1201,9 @@ select:focus-visible {
   display: block;
   margin-top: 0.6rem;
   color: var(--muted);
-  font-size: 0.64rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .round-link {
