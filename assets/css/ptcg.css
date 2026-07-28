@@ -19,6 +19,186 @@ html[data-theme="dragon"] {
   --accent-ink: #102229;
 }
 
+html[data-theme="normal"] {
+  --ink: #373431;
+  --muted: #746f69;
+  --cream: #efede9;
+  --paper: #fcfbf8;
+  --navy: #3f3c38;
+  --teal: #77716a;
+  --aqua: #aaa39b;
+  --gold: #d9d3ca;
+  --orange: #968a7c;
+  --heading: #33302d;
+  --line: rgba(63, 60, 56, 0.16);
+  --hero-a: #77716a;
+  --hero-b: #3f3c38;
+  --hero-c: #292725;
+  --on-dark: #ffffff;
+  --on-dark-muted: #d1ccc6;
+  --accent-ink: #302e2b;
+}
+
+html[data-theme="fire"] {
+  --ink: #431b16;
+  --muted: #875c50;
+  --cream: #f8e8df;
+  --paper: #fff9f5;
+  --navy: #3c1511;
+  --teal: #9f2f22;
+  --aqua: #e15c35;
+  --gold: #ffb648;
+  --orange: #f04a28;
+  --heading: #541a14;
+  --line: rgba(84, 26, 20, 0.16);
+  --hero-a: #a93522;
+  --hero-b: #541a14;
+  --hero-c: #2c100e;
+  --on-dark: #ffffff;
+  --on-dark-muted: #f0c6b8;
+  --accent-ink: #3c1811;
+}
+
+html[data-theme="water"] {
+  --ink: #12324b;
+  --muted: #5c7588;
+  --cream: #e5f0f7;
+  --paper: #f8fcff;
+  --navy: #0d3557;
+  --teal: #12669e;
+  --aqua: #4bafe3;
+  --gold: #a9ddf5;
+  --orange: #2e8dcb;
+  --heading: #113b5e;
+  --line: rgba(17, 59, 94, 0.15);
+  --hero-a: #12669e;
+  --hero-b: #0d3557;
+  --hero-c: #08243c;
+  --on-dark: #ffffff;
+  --on-dark-muted: #c1ddec;
+  --accent-ink: #11324a;
+}
+
+html[data-theme="grass"] {
+  --ink: #173c2a;
+  --muted: #607766;
+  --cream: #e8f2e4;
+  --paper: #f9fff7;
+  --navy: #153725;
+  --teal: #2e7247;
+  --aqua: #6dbb72;
+  --gold: #b9dc68;
+  --orange: #4b9d55;
+  --heading: #183f2a;
+  --line: rgba(24, 63, 42, 0.15);
+  --hero-a: #347a4c;
+  --hero-b: #183f2a;
+  --hero-c: #0e281a;
+  --on-dark: #ffffff;
+  --on-dark-muted: #c4ddca;
+  --accent-ink: #193a24;
+}
+
+html[data-theme="ice"] {
+  --ink: #18444d;
+  --muted: #658088;
+  --cream: #eaf7f8;
+  --paper: #fbffff;
+  --navy: #174a57;
+  --teal: #3c8792;
+  --aqua: #9ddfe6;
+  --gold: #d4f4f5;
+  --orange: #61bbc6;
+  --heading: #1b505b;
+  --line: rgba(27, 80, 91, 0.14);
+  --hero-a: #4b939d;
+  --hero-b: #1b505b;
+  --hero-c: #10333c;
+  --on-dark: #ffffff;
+  --on-dark-muted: #d0e9ec;
+  --accent-ink: #19434b;
+}
+
+html[data-theme="fighting"] {
+  --ink: #40221d;
+  --muted: #80675e;
+  --cream: #f1e8dd;
+  --paper: #fffaf5;
+  --navy: #3a1915;
+  --teal: #874034;
+  --aqua: #bd6a54;
+  --gold: #d7b47a;
+  --orange: #ad4433;
+  --heading: #4c211b;
+  --line: rgba(76, 33, 27, 0.16);
+  --hero-a: #884235;
+  --hero-b: #4c211b;
+  --hero-c: #2b110f;
+  --on-dark: #ffffff;
+  --on-dark-muted: #ddc5bb;
+  --accent-ink: #382019;
+}
+
+html[data-theme="poison"] {
+  --ink: #381842;
+  --muted: #7d6085;
+  --cream: #f0e7f2;
+  --paper: #fff9ff;
+  --navy: #35153f;
+  --teal: #743c82;
+  --aqua: #b260ba;
+  --gold: #d9a9df;
+  --orange: #994ba4;
+  --heading: #42194e;
+  --line: rgba(66, 25, 78, 0.15);
+  --hero-a: #773d85;
+  --hero-b: #42194e;
+  --hero-c: #270d2f;
+  --on-dark: #ffffff;
+  --on-dark-muted: #dbc3df;
+  --accent-ink: #34163d;
+}
+
+html[data-theme="ground"] {
+  --ink: #47311c;
+  --muted: #806e55;
+  --cream: #f3e9d2;
+  --paper: #fffaf0;
+  --navy: #493017;
+  --teal: #8c6129;
+  --aqua: #c7974d;
+  --gold: #e6c56f;
+  --orange: #b86d2f;
+  --heading: #50351b;
+  --line: rgba(80, 53, 27, 0.16);
+  --hero-a: #93652e;
+  --hero-b: #50351b;
+  --hero-c: #2d1d0f;
+  --on-dark: #ffffff;
+  --on-dark-muted: #dfceb0;
+  --accent-ink: #3d2b18;
+}
+
+html[data-theme="flying"] {
+  --ink: #292e4b;
+  --muted: #6f7290;
+  --cream: #ececf8;
+  --paper: #fbfbff;
+  --navy: #303653;
+  --teal: #6875af;
+  --aqua: #9eb8e7;
+  --gold: #d6d2f2;
+  --orange: #778bd1;
+  --heading: #333957;
+  --line: rgba(51, 57, 87, 0.15);
+  --hero-a: #6b78b2;
+  --hero-b: #333957;
+  --hero-c: #1f233b;
+  --on-dark: #ffffff;
+  --on-dark-muted: #d0d3ec;
+  --accent-ink: #2d304b;
+}
+
 html[data-theme="dark"] {
   --ink: #edf1f3;
   --muted: #a3adb5;
@@ -77,6 +257,106 @@ html[data-theme="psychic"] {
   --on-dark: #ffffff;
   --on-dark-muted: #dfc4df;
   --accent-ink: #29132f;
+}
+
+html[data-theme="bug"] {
+  --ink: #303817;
+  --muted: #707852;
+  --cream: #eef2d7;
+  --paper: #fcfff0;
+  --navy: #303b14;
+  --teal: #677d25;
+  --aqua: #a6be42;
+  --gold: #cddd66;
+  --orange: #879b2e;
+  --heading: #36431a;
+  --line: rgba(54, 67, 26, 0.16);
+  --hero-a: #6c8128;
+  --hero-b: #36431a;
+  --hero-c: #20290d;
+  --on-dark: #ffffff;
+  --on-dark-muted: #d5dcad;
+  --accent-ink: #2b3516;
+}
+
+html[data-theme="rock"] {
+  --ink: #443a2b;
+  --muted: #7f735f;
+  --cream: #efe9dc;
+  --paper: #fffaf1;
+  --navy: #493b26;
+  --teal: #826e48;
+  --aqua: #b39a68;
+  --gold: #d8c18c;
+  --orange: #9a7842;
+  --heading: #4a3d2a;
+  --line: rgba(74, 61, 42, 0.16);
+  --hero-a: #806c48;
+  --hero-b: #4a3d2a;
+  --hero-c: #2b2318;
+  --on-dark: #ffffff;
+  --on-dark-muted: #dacfb9;
+  --accent-ink: #3b3226;
+}
+
+html[data-theme="ghost"] {
+  --ink: #f0ebf7;
+  --muted: #b2a5c3;
+  --cream: #151225;
+  --paper: #211b36;
+  --navy: #0e0b1c;
+  --teal: #554276;
+  --aqua: #8a73ae;
+  --gold: #b8a5d4;
+  --orange: #755c9e;
+  --heading: #f4eff9;
+  --line: rgba(255, 255, 255, 0.13);
+  --hero-a: #41325f;
+  --hero-b: #181128;
+  --hero-c: #090711;
+  --on-dark: #ffffff;
+  --on-dark-muted: #c8bdd8;
+  --accent-ink: #201a30;
+}
+
+html[data-theme="steel"] {
+  --ink: #24343f;
+  --muted: #687883;
+  --cream: #e7edf0;
+  --paper: #f9fcfd;
+  --navy: #293844;
+  --teal: #566f7d;
+  --aqua: #91a8b4;
+  --gold: #c6d2d8;
+  --orange: #728b99;
+  --heading: #2d3d47;
+  --line: rgba(45, 61, 71, 0.15);
+  --hero-a: #5d7481;
+  --hero-b: #2d3d47;
+  --hero-c: #1b252d;
+  --on-dark: #ffffff;
+  --on-dark-muted: #cbd5da;
+  --accent-ink: #27343c;
+}
+
+html[data-theme="fairy"] {
+  --ink: #44213b;
+  --muted: #805f77;
+  --cream: #f8e9f1;
+  --paper: #fff9fc;
+  --navy: #4a213c;
+  --teal: #9b4f7d;
+  --aqua: #df8fbd;
+  --gold: #f5c4df;
+  --orange: #d86fa9;
+  --heading: #512441;
+  --line: rgba(81, 36, 65, 0.14);
+  --hero-a: #a35483;
+  --hero-b: #512441;
+  --hero-c: #311628;
+  --on-dark: #ffffff;
+  --on-dark-muted: #ead0df;
+  --accent-ink: #3c1d33;
 }
 
 :root {
