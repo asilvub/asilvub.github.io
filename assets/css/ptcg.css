@@ -920,6 +920,20 @@ select:focus-visible {
   line-height: 1.45;
 }
 
+.coauthor-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.coauthor-link:hover,
+.coauthor-link:focus-visible {
+  color: var(--teal);
+  text-decoration-color: currentColor;
+}
+
 .paper-meta {
   display: flex;
   flex-direction: column;
@@ -929,13 +943,18 @@ select:focus-visible {
   border-left: 1px solid var(--line);
 }
 
-.paper-meta > span {
+.draft-dates {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.draft-dates span {
   color: var(--ink);
   font-size: 0.68rem;
   font-weight: 700;
 }
 
-.paper-meta small {
+.draft-dates small {
   display: block;
   margin-bottom: 0.2rem;
   color: var(--muted);
@@ -1073,7 +1092,14 @@ select:focus-visible {
 .publication-body p {
   margin: 0.85rem 0 0;
   color: var(--on-dark-muted);
-  font-size: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.publication-body .coauthor-link:hover,
+.publication-body .coauthor-link:focus-visible {
+  color: var(--gold);
 }
 
 .publication-body > a {
@@ -1132,7 +1158,9 @@ select:focus-visible {
 .wip-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .discussion-list {
