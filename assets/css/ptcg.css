@@ -804,6 +804,18 @@ select:focus-visible {
   background: color-mix(in srgb, var(--gold) 8%, transparent);
 }
 
+.paper-row:nth-child(3n + 1) {
+  --paper-accent: var(--orange);
+}
+
+.paper-row:nth-child(3n + 2) {
+  --paper-accent: var(--gold);
+}
+
+.paper-row:nth-child(3n) {
+  --paper-accent: var(--teal);
+}
+
 .paper-index {
   align-self: stretch;
   display: flex;
