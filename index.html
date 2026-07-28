@@ -48,7 +48,7 @@
             fairy: '#4a213c'
         };
         try {
-            let initialTheme = localStorage.getItem('as-pokemon-type') || 'dragon';
+            let initialTheme = localStorage.getItem('as-card-palette') || 'dragon';
             if (!window.typeThemeColors[initialTheme]) initialTheme = 'dragon';
             document.documentElement.dataset.theme = initialTheme;
             document.querySelector('meta[name="theme-color"]').setAttribute('content', window.typeThemeColors[initialTheme]);
@@ -83,7 +83,7 @@
         </nav>
         <div class="theme-picker">
             <label for="theme-select">Palette</label>
-            <select id="theme-select" aria-label="Choose a Pokémon type-inspired color palette">
+            <select id="theme-select" aria-label="Choose a trading-card-inspired color palette">
                 <option value="normal">Normal</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
@@ -180,10 +180,7 @@
                         <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
                     </div>
                     <div class="paper-main">
-                        <div class="paper-labels">
-                            <p class="paper-topic">Production networks · Financial crises</p>
-                            <a class="nber-badge" href="https://www.nber.org/papers/w34604" target="_blank" rel="noopener noreferrer">NBER WP 34604 ↗</a>
-                        </div>
+                        <p class="paper-topic">Production networks · Financial crises</p>
                         <h3><a href="assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target="_blank" rel="noopener noreferrer">Connected for Better or Worse? The Role of Production Networks in Financial Crises</a></h3>
                         <p class="paper-summary">Production-network propagation in financial crises.</p>
                         <p class="coauthors">with Miranda-Pinto, Rojas, and Saffie</p>
@@ -192,6 +189,7 @@
                         <span><small>Latest draft</small>December 2025</span>
                         <div class="paper-actions">
                             <a href="assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
+                            <a href="https://www.nber.org/papers/w34604" target="_blank" rel="noopener noreferrer">NBER WP 34604 ↗</a>
                             <a href="assets/slides/slides-barcelona-summer-forum-Silva.pdf" target="_blank" rel="noopener noreferrer">Slides ↗</a>
                         </div>
                     </div>
@@ -222,10 +220,7 @@
                         <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
                     </div>
                     <div class="paper-main">
-                        <div class="paper-labels">
-                            <p class="paper-topic">Global inflation · Spillovers</p>
-                            <a class="nber-badge" href="https://www.nber.org/papers/w31887" target="_blank" rel="noopener noreferrer">NBER WP 31887 ↗</a>
-                        </div>
+                        <p class="paper-topic">Global inflation · Spillovers</p>
                         <h3><a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank" rel="noopener noreferrer">Pandemic-Era Inflation Drivers and Global Spillovers</a></h3>
                         <p class="paper-summary">Domestic drivers and international spillovers of pandemic-era inflation.</p>
                         <p class="coauthors">with di Giovanni, Kalemli-Ozcan, and Yildirim</p>
@@ -234,6 +229,7 @@
                         <span><small>Latest draft</small>July 2024</span>
                         <div class="paper-actions">
                             <a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
+                            <a href="https://www.nber.org/papers/w31887" target="_blank" rel="noopener noreferrer">NBER WP 31887 ↗</a>
                         </div>
                     </div>
                 </article>
@@ -443,7 +439,7 @@
             <strong>Alvaro Silva</strong>
             <span>Economist · Federal Reserve Bank of Boston</span>
         </div>
-        <p class="fan-note">Original trading-card-inspired design. No affiliation with The Pokémon Company.</p>
+        <p class="fan-note">Original trading-card-inspired design.</p>
     </footer>
     <script>
         const themeSelect = document.getElementById('theme-select');
@@ -455,7 +451,7 @@
             document.documentElement.dataset.theme = theme;
             document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
             try {
-                localStorage.setItem('as-pokemon-type', theme);
+                localStorage.setItem('as-card-palette', theme);
             } catch (error) {
                 // The selected palette still applies for this visit.
             }
