@@ -527,6 +527,19 @@ select:focus-visible {
   color: var(--orange);
 }
 
+.site-nav a.notes-nav-link {
+  margin: -0.38rem 0;
+  padding: 0.38rem 0.62rem;
+  border-radius: 999px;
+  color: var(--accent-ink);
+  background: var(--gold);
+}
+
+.site-nav a.notes-nav-link:hover {
+  color: var(--accent-ink);
+  background: var(--orange);
+}
+
 .theme-picker {
   justify-self: end;
   display: flex;
@@ -711,6 +724,10 @@ select:focus-visible {
 
 .profile-links a:hover {
   color: var(--orange);
+}
+
+.profile-links a.profile-note-link {
+  line-height: 1.2;
 }
 
 .eyebrow {
@@ -1436,7 +1453,7 @@ select:focus-visible {
 
   .profile-links {
     grid-column: 1 / -1;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0.7rem 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;

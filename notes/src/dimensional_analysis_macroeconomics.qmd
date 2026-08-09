@@ -1,0 +1,778 @@
+---
+title: "Dimensional Analysis in Macroeconomics"
+author: "Alvaro Silva"
+date: 2026-08-01
+date-format: "MMMM YYYY"
+description: "A practical guide to dimensional consistency, normalization, and unit invariance in macroeconomic models."
+abstract-title: "Summary"
+abstract: |
+  This note studies dimensional consistency in macroeconomic models. I use
+  dimensional analysis to distinguish stocks from flows, period quantities from
+  instantaneous rates, nominal values from real quantities, and physical productivity
+  from valuation. My starting point is simple: the predictions of a model should not
+  depend on whether an object is measured in dollars or cents, units or thousands of
+  units, and quarters or years. I show that making the underlying normalization
+  explicit is especially important for CES technologies and preferences, sectoral TFP
+  aggregation, and market-clearing conditions with heterogeneous goods. Dimensional
+  consistency does not establish that a model is economically correct. It provides a
+  useful first check that its equations have a well-defined economic meaning.
+format:
+  html:
+    theme: none
+    toc: true
+    toc-depth: 2
+    toc-location: body
+    html-math-method: mathjax
+    embed-resources: true
+    css:
+      - ../../assets/css/ptcg.css
+      - note-article.css
+    include-in-header: _note-head.html
+    include-before-body: _note-header.html
+    include-after-body: _note-footer.html
+    link-external-newwindow: true
+lang: en
+---
+
+## Why I wrote this note {#why-i-wrote-this-note .unnumbered}
+
+I wrote this note because dimensional consistency is usually left implicit in
+macroeconomics. In the models I tend to read and write---multi-sector production
+models, open-economy models, and production networks---we routinely add sectoral
+quantities, report TFP levels, take logarithms, and change substitution elasticities
+while holding "share" parameters fixed. This convention is often harmless because
+the intended normalization is understood. Yet it can also make a counterfactual
+depend on whether output is measured in dollars, thousands of dollars, tons, or units
+of an index.
+
+The issue is most relevant in quantitative work. A model can fit its baseline even
+when residual TFP or a CES coefficient absorbs the units chosen by the researcher.
+Changing an elasticity, a network weight, or sectoral composition may then change the
+meaning of a parameter that was meant to remain fixed. The purpose of the note is to
+separate this problem from harmless notational shorthand and to provide checks that
+can be applied directly to a macroeconomic model.
+
+# The problem
+
+My starting point is invariance to units. An equation should describe the same
+economy whether we measure output in dollars or cents, capital in units or thousands
+of units, and time in quarters or years. Numerical values will change, but the
+allocation and its economic meaning should not.
+
+Let $X$ denote a generic economic object and let $\operatorname{dim}\!\left(X\right)$ denote its dimension, as distinct from its
+numerical value in a particular system of units. I reserve square brackets for
+ordered index sets such as $[N]=\{1,\ldots,N\}$, where $N$ is the number of
+elements in the set. A dimension is also distinct
+from a selected unit: output may have dimension goods per unit of time and be
+measured in tons per year. The symbols used below include time $\mathsf{T}$, a monetary
+numeraire $\mathsf{N}$, a physical good $\mathsf{G}$, and labor-hours $\mathsf{H}$. The
+dimensionless class is denoted by $\mathsf{1}$. Thus, if $Y$ denotes physical
+output flow and $K$ denotes the capital stock,
+$$\operatorname{dim}\!\left(Y\right)=\frac{\mathsf{G}}{\mathsf{T}},
+    \qquad
+    \operatorname{dim}\!\left(K\right)=\mathsf{G}.$$
+Dimensions are equivalence classes under changes in measurement units. Changing
+from dollars to cents changes the numerical value of a nominal object but not its
+economic content. A well-formed equation transforms coherently under any such
+change.
+
+This perspective separates two questions that economic notation often conflates.
+First, is an equation meaningful under arbitrary unit changes? Second, is it a
+correct description of the economy? Dimensional consistency answers only the
+first question. For example, if $C_t$ denotes consumption and $Y_t$ denotes
+output at date $t$, then $C_t=2Y_t$ may be dimensionally valid and
+economically false.
+
+Time subscripts also require care. A unit of the consumption good dated $t$ and
+one dated $t+1$ are different commodities economically, but they normally share
+the same physical dimension. Intertemporal prices and returns may therefore be
+dimensionless in the physical sense while retaining economically essential date
+labels.
+
+# Rules for dimensional analysis
+
+I use the following five rules throughout the note. Together, they provide almost
+all of the required bookkeeping. In these rules, $X$ and $Y$ denote arbitrary
+scalar objects, $a$ is a scalar exponent, $t$ denotes continuous time, $F$ is a
+differentiable mapping, and $F_X:=\partial F/\partial X$ is its derivative with
+respect to $X$. A dot denotes a derivative with respect to time.
+
+::: principle
+**Principle 1** (Equality and addition). *If $X=Y$, then $\operatorname{dim}\!\left(X\right)=\operatorname{dim}\!\left(Y\right)$. If $X+Y$ is defined, then
+$\operatorname{dim}\!\left(X\right)=\operatorname{dim}\!\left(Y\right)$. In particular, because the number $1$ is dimensionless,
+$1-a$ is meaningful only if $a$ is dimensionless.*
+:::
+
+::: principle
+**Principle 2** (Products, powers, and ratios). *Dimensions multiply and divide:
+$$\operatorname{dim}\!\left(XY\right)=\operatorname{dim}\!\left(X\right)\operatorname{dim}\!\left(Y\right),
+    \qquad
+    \operatorname{dim}\!\left(X/Y\right)=\frac{\operatorname{dim}\!\left(X\right)}{\operatorname{dim}\!\left(Y\right)},
+    \qquad
+    \operatorname{dim}\!\left(X^a\right)=\operatorname{dim}\!\left(X\right)^{a},$$
+where the exponent $a$ must itself be dimensionless. A ratio is dimensionless
+only when numerator and denominator have the same dimension.*
+:::
+
+::: principle
+**Principle 3** (Derivatives and integrals). *If $Y=F(X)$, then
+$$\operatorname{dim}\!\left(F_X\right)=\frac{\operatorname{dim}\!\left(Y\right)}{\operatorname{dim}\!\left(X\right)}.$$
+Likewise, $\operatorname{dim}\!\left(\dot X\right)=\operatorname{dim}\!\left(X\right)/\mathsf{T}$ and
+$\operatorname{dim}\!\left(\int X(t)\mathop{}\!\mathrm dt\right)=\operatorname{dim}\!\left(X\right)\mathsf{T}$.*
+:::
+
+::: principle
+**Principle 4** (Nonlinear functions). *The arguments of $\log(\cdot)$, $\exp(\cdot)$, trigonometric functions, and
+power-series expressions must be dimensionless. Thus $\log X$ is shorthand for
+$\log(X/X^{\circ})$, where $X^{\circ}$ has the same dimension as $X$.*
+:::
+
+::: principle
+**Principle 5** (Parameters). *A parameter is not dimensionless by default. Its dimension is determined by the
+equation in which it appears. A parameter may therefore change numerically when
+the units of an observable change, even when the underlying economy is unchanged.*
+:::
+
+The corresponding operational test is a rescaling test. Replace each primitive
+quantity by the same economic object expressed in new units, transform every
+dimensional parameter accordingly, and ask whether the model implies the same
+allocation and prices after converting back. Failure of this test signals either
+an inconsistent equation or a hidden normalization.
+
+# Proper normalization
+
+The natural solution is to express dimensional objects relative to reference levels.
+For any dimensional object $X$, choose an explicit reference quantity
+$X^{\circ}>0$ with $\operatorname{dim}\!\left(X^{\circ}\right)=\operatorname{dim}\!\left(X\right)$, and work with
+$$\frac{X}{X^{\circ}}.$$
+This ratio is dimensionless and invariant to a common change in the units used for
+$X$ and $X^{\circ}$. The reference level may be a benchmark allocation, a
+steady state, or a fixed unit convention. It need not be an equilibrium object,
+but it must be stated.
+
+For a production function, let $Y$ denote output, $K$ capital, and $L$ labor
+services. Let $Y^{\circ}$, $K^{\circ}$, and $L^{\circ}$ be positive reference
+levels with the same dimensions as their corresponding variables, let $\theta$
+denote a dimensionless structural parameter, and let $\mathcal F$ be a
+dimensionless production mapping. A useful normalized representation is
+$$\frac{Y}{Y^{\circ}}
+    =
+    \mathcal F\!\left(
+        \frac{K}{K^{\circ}},
+        \frac{L}{L^{\circ}};
+        \theta
+    \right),
+$$ {#eq-normalized-production}
+The dimensional scales are carried by $Y^{\circ}$, $K^{\circ}$, and
+$L^{\circ}$. This representation distinguishes a change in technology from a
+change in physical units.
+
+Normalization does not make all parameters structural or comparable across
+models. It only makes the unit convention explicit. Two normalizations describe
+the same technology when their parameters are transformed so that the underlying
+mapping from physical inputs to physical output is unchanged.
+
+It is useful to distinguish three cases. First, an equation may be explicitly
+normalized, in which case every nonlinear operation is applied to dimensionless
+objects. Second, it may be dimensionally correct only because one or more
+coefficients carry units; those coefficients must change when the measurement units
+change. Third, it may simply add incommensurable objects. Only the third case is a
+formal error. The second is often legitimate, but it becomes dangerous when a
+dimensional coefficient is interpreted as a structural share and held fixed in a
+counterfactual.
+
+# Worked examples
+
+I now apply these rules to familiar macroeconomic expressions. I start with time,
+then turn to production and aggregation, and finally consider prices, preferences,
+and elasticities.
+
+## Stocks, flows, and depreciation
+
+I start with the distinction between a stock and a flow. Let $t$ index discrete
+periods, let $K_t$ be the capital stock measured at the boundary between periods,
+let $I_t$ be gross investment accumulated during period $t$, let $\Delta$ denote
+the period length, and let $\delta_{\Delta}$ be the fraction of capital lost over
+one period. Then
+$$K_{t+1}=(1-\delta_{\Delta})K_t+I_t
+$$ {#eq-discrete-capital}
+is dimensionally consistent with
+$$\operatorname{dim}\!\left(K_t\right)=\operatorname{dim}\!\left(I_t\right)=\mathsf{G},
+    \qquad
+    \operatorname{dim}\!\left(\delta_{\Delta}\right)=\mathsf{1}.$$
+The subscript $\Delta$ emphasizes the period convention. The depreciation
+fraction cannot have units
+$1/\mathsf{T}$, because then $1-\delta_{\Delta}$ would be undefined.
+For example, quarterly depreciation of 10 percent means
+$\delta_{\Delta}=0.10$ for a quarter. It is not an instantaneous rate of
+$0.10$ per unit of time.
+
+In continuous time, let $K(t)$ be the capital stock at instant $t$, let $I(t)$
+be the instantaneous investment flow, and let $\delta_c$ be the instantaneous
+depreciation rate. Then
+$$\dot K(t)=I(t)-\delta_c K(t).
+$$ {#eq-continuous-capital}
+Now
+$$\operatorname{dim}\!\left(\dot K\right)=\operatorname{dim}\!\left(I\right)=\frac{\mathsf{G}}{\mathsf{T}},
+    \qquad
+    \operatorname{dim}\!\left(\delta_c\right)=\frac{\mathsf{1}}{\mathsf{T}}.$$
+Here and below, I suppress time arguments inside the dimension operator when no
+confusion can result.
+Under exponential depreciation the exact bridge between the two conventions is
+$$1-\delta_{\Delta}=\exp(-\delta_c\Delta).
+$$ {#eq-depreciation-bridge}
+The exponent is dimensionless. For a short period,
+$\delta_{\Delta}=\delta_c\Delta+o(\Delta)$, where $o(\Delta)$ denotes a
+remainder that becomes negligible relative to $\Delta$ as $\Delta\to0$.
+
+The same distinction applies to every discrete macro equation. Consumption,
+output, and investment may denote amounts accumulated during a period or rates per
+unit of time. Either convention is admissible, but the convention must be used
+consistently on both sides of every equation.
+
+## Gross returns, net rates, and asset prices
+
+The same time distinction applies to interest rates. Let $A_t$ denote a position
+in a one-period real asset, measured in units of the date-$t$ good, and let
+$R_{t+1}$ denote its gross real return between dates $t$ and $t+1$. The asset
+exchanges $A_t$ units of the good at date $t$ for $R_{t+1}A_t$ units at date
+$t+1$. Since the two payoffs share the same
+physical dimension,
+$$\operatorname{dim}\!\left(R_{t+1}\right)=\mathsf{1}.$$
+More explicitly, $R_{t+1}$ is an intertemporal conversion rate with the economic
+label $\mathsf{G}_{t+1}/\mathsf{G}_t$, where $\mathsf{G}_t$ denotes one unit of
+the physical good delivered at date $t$; dimensional analysis suppresses dates and reduces this to
+$\mathsf{G}/\mathsf{G}=\mathsf{1}$. The one-period net rate
+$r_{t+1}=R_{t+1}-1$ is also dimensionless.
+
+The asset price is a different object. Let $Q_t^B$ be the price of a nominal
+zero-coupon bond, quoted in units of numeraire at $t$ per unit of numeraire paid
+at $t+1$, and let $R_{t+1}^N$ be its gross nominal return. Then
+$$Q_t^B:\frac{\mathsf{N}_t}{\mathsf{N}_{t+1}},
+    \qquad
+    R_{t+1}^N=\frac{1}{Q_t^B}.$$
+Here $\mathsf{N}_t$ denotes one unit of numeraire delivered at date $t$.
+Both are intertemporal conversion factors; after suppressing date labels, both
+are dimensionless ratios. This does not imply that the bond position itself is
+dimensionless: a nominal position has dimension $\mathsf{N}$.
+
+In continuous time, let $A(t)$ denote the value of the real asset position and
+let $r_c(t)$ denote its instantaneous continuously compounded return. If
+$$\dot A(t)=r_c(t)A(t),$$
+then $\operatorname{dim}\!\left(r_c\right)=\mathsf{1}/\mathsf{T}$. Let $R_{t,t+\Delta}$ denote the
+gross return over the interval from $t$ to $t+\Delta$. Using $s$ as the dummy
+time variable in the integral,
+$$R_{t,t+\Delta}
+    =\exp\!\left(\int_t^{t+\Delta}r_c(s)\mathop{}\!\mathrm ds\right)$$
+is dimensionless. Thus a gross return over a stated interval is a ratio; an
+instantaneous interest rate is a rate per unit of time.
+
+This distinction governs legitimate subtractions. In discrete time one may form
+$R_{t+1}-1-\delta_{\Delta}$. In continuous time one may form $r_c-\delta_c$.
+Mixing $r_c$ with $\delta_{\Delta}$ is not meaningful without converting them
+to the same time convention.
+
+## Production functions, TFP, and marginal products
+
+I next consider production. Let $Y$ be output flow, $K$ the capital stock,
+$L$ the flow of labor services, and $\mathsf{G}_K$ the physical dimension of the
+capital good:
+$$\operatorname{dim}\!\left(Y\right)=\frac{\mathsf{G}}{\mathsf{T}},
+    \qquad
+    \operatorname{dim}\!\left(K\right)=\mathsf{G}_K,
+    \qquad
+    \operatorname{dim}\!\left(L\right)=\frac{\mathsf{H}}{\mathsf{T}}.$$
+Let $F(K,L)$ be a production aggregator and let $Z$ denote total factor
+productivity (TFP). For the general technology
+$$Y=Z F(K,L),
+$$ {#eq-general-production}
+the dimension of measured TFP is the residual
+$$\operatorname{dim}\!\left(Z\right)=\frac{\operatorname{dim}\!\left(Y\right)}{\operatorname{dim}\!\left(F(K,L)\right)}.$$
+There is no presumption that $Z$ is dimensionless. Its numerical level depends
+on the units of output and inputs and on the normalization of $F$. TFP levels
+are therefore not automatically comparable across sectors or specifications.
+For example, measuring the same output in thousands of units divides the numerical
+value of $Z$ by one thousand if the inputs and $F$ are left unchanged. The
+technology has not changed; only its numerical representation has.
+
+For Cobb--Douglas production, let $\alpha\in(0,1)$ be the dimensionless capital
+exponent, so $1-\alpha$ is the labor exponent:
+$$Y=ZK^{\alpha}L^{1-\alpha},
+    \qquad \alpha\in(0,1),
+$$ {#eq-cobb-douglas}
+the multiplication is well defined even when $K$ and $L$ have different
+dimensions, but TFP carries the residual units
+$$\operatorname{dim}\!\left(Z\right)
+    =
+    \frac{\mathsf{G}/\mathsf{T}}
+    {\mathsf{G}_K^{\alpha}(\mathsf{H}/\mathsf{T})^{1-\alpha}}.$$
+Let $Z^{\circ}>0$ be the reference TFP level corresponding to the reference
+allocation. An explicitly normalized version is
+$$\frac{Y}{Y^{\circ}}
+    =
+    \frac{Z}{Z^{\circ}}
+    \left(\frac{K}{K^{\circ}}\right)^{\alpha}
+    \left(\frac{L}{L^{\circ}}\right)^{1-\alpha},
+$$ {#eq-normalized-cobb-douglas}
+where the reference values satisfy the level equation. Every term in
+@eq-normalized-cobb-douglas is dimensionless.
+
+This explains why the issue is easy to miss in Cobb--Douglas models. Its
+multiplicative form can absorb a change in the units of $K$, $L$, or $Y$ into
+the level of $Z$. The equation remains well formed, but the numerical TFP level is
+not an invariant object. In this sense Cobb--Douglas normally contains an
+*implicit* normalization; writing ratios as in
+@eq-normalized-cobb-douglas makes it explicit.
+
+Derivatives of the complete production mapping retain economically meaningful
+units:
+$$\operatorname{dim}\!\left(\frac{\partial Y}{\partial K}\right)=\frac{\mathsf{G}/\mathsf{T}}{\mathsf{G}_K},
+    \qquad
+    \operatorname{dim}\!\left(\frac{\partial Y}{\partial L}\right)
+    =\frac{\mathsf{G}/\mathsf{T}}{\mathsf{H}/\mathsf{T}}=\frac{\mathsf{G}}{\mathsf{H}}.$$
+If capital is measured in units of the output good, then
+$\operatorname{dim}\!\left(\partial Y/\partial K\right)=\mathsf{1}/\mathsf{T}$: the marginal product of capital is
+an output flow per unit of capital stock. The marginal product of labor is output
+per labor-hour.
+
+## Why CES requires explicit normalization
+
+The contrast between Cobb--Douglas and CES is useful. Let $\sigma>0$ denote the
+dimensionless elasticity of substitution and define the dimensionless curvature
+parameter $\rho:=(\sigma-1)/\sigma$. Retaining $\alpha$ as the capital
+distribution parameter, consider the familiar expression
+$$Y
+    =Z\left[\alpha K^{\rho}+(1-\alpha)L^{\rho}\right]^{1/\rho},
+    \qquad
+    \rho=\frac{\sigma-1}{\sigma}.
+$$ {#eq-raw-ces}
+To see the problem, suppose $K$ and $L$ have different dimensions. The two
+terms inside the brackets
+cannot be added. Assigning units to $\alpha$ does not rescue this
+parameterization: the expression $1-\alpha$ itself requires
+$\operatorname{dim}\!\left(\alpha\right)=\mathsf{1}$.
+
+This is the point made especially clearly by
+[Cantore and Levine (2012)](https://doi.org/10.1016/j.jedc.2012.05.009).
+Their starting observation, building on de Jong and Quade (1967) and de Jong and Kumar (1972),
+is that the coefficients conventionally called CES shares are generally
+*dimensional constants*: their numerical values depend on the units of the
+inputs and output. The older normalization literature develops the same lesson for
+production functions; see, among others, de La Grandville (1989), Klump and de La
+Grandville (2000), Klump and Preissler (2000), Klump and Saam (2008), and Klump,
+McAdam, and Willman (2012). Cantore and Levine also show that the issue extends
+beyond production to Dixit--Stiglitz indices in multi-sector and open-economy models.
+
+The clean calibrated-share form is
+$$\frac{Y}{Y^{\circ}}
+    =
+    \frac{Z}{Z^{\circ}}
+    \left[
+        \alpha\left(\frac{K}{K^{\circ}}\right)^{\rho}
+        +(1-\alpha)\left(\frac{L}{L^{\circ}}\right)^{\rho}
+    \right]^{1/\rho}.
+$$ {#eq-normalized-ces}
+Now the inputs to the sum are dimensionless and $\alpha$ is a genuine
+dimensionless distribution parameter. If the reference allocation satisfies the level
+equation, then the CES aggregator equals one at the reference point. As
+$\sigma\to1$, or equivalently $\rho\to0$, equation
+@eq-normalized-ces converges to the normalized Cobb--Douglas form.
+
+An alternative is to let $a_K$ and $a_L$ denote dimensional coefficients on
+capital and labor and write $a_KK^{\rho}+a_LL^{\rho}$, assigning dimensions to
+the coefficients that make the summands commensurable. These coefficients are
+then conversion factors, not shares, and in general it is meaningless to impose
+$a_K+a_L=1$. The normalized form makes the intended economic interpretation
+more transparent. A reference allocation is still a substantive choice: different
+baseline points need not generate the same comparison when the elasticity changes
+(Temple 2012). Normalization removes dependence on arbitrary measurement
+units; it does not remove every modeling choice.
+
+## Sectoral TFP and aggregation
+
+The same issue reappears when productivity is aggregated across sectors. Let
+$[N]=\{1,\ldots,N\}$, $[F]=\{1,\ldots,F\}$, and
+$[I]=\{1,\ldots,I\}$ be the ordered sets of domestic goods, factors, and
+imported goods, respectively; $n,n'$, $f$, and $i$ denote typical elements of
+those sets. For domestic sector $n$, let $Q_n$ be gross physical output, $Z_n$
+sectoral TFP, and $F_n$ its production mapping. Let $L_{nf}$ be the quantity of
+factor $f$ used by sector $n$, $M_{nn'}$ the quantity of domestic input $n'$
+purchased by sector $n$, and $M_{ni}$ the quantity of imported input $i$
+purchased by sector $n$. Sector $n$ produces according to
+$$Q_n=Z_nF_n\!\left(
+        \{L_{nf}\}_{f\in[F]},
+        \{M_{nn'}\}_{n'\in[N]},
+        \{M_{ni}\}_{i\in[I]}
+    \right).
+$$ {#eq-sector-production}
+Because $Q_n$, the input bundle, and even the Cobb--Douglas exponents may differ
+across sectors, the residual $Z_n$ need not have the same dimension as
+$Z_{n'}$. Consider a candidate aggregate TFP level $Z$ constructed with
+dimensionless weights $\omega_n$ that sum to one. The expression
+$$Z=\sum_{n\in[N]}\omega_n Z_n$$
+is not generally defined, even if the weights sum to one. The reason is that the
+weights are not physical conversion factors.
+
+This does not mean that productivity cannot be aggregated. It means that the
+object being aggregated must first be defined. One possibility is to aggregate
+normalized productivity indices. Let $Z_n^{\circ}>0$ denote sector $n$'s
+reference TFP level and let $\mathcal Z$ denote the resulting dimensionless
+aggregate:
+$$\mathcal Z
+    =\prod_{n\in[N]}
+      \left(\frac{Z_n}{Z_n^{\circ}}\right)^{\omega_n},
+    \qquad
+    \sum_{n\in[N]}\omega_n=1,$$
+which is dimensionless and depends on the stated reference levels. Alternatively,
+under the assumptions that justify it, let $\lambda_n$ denote sector $n$'s
+dimensionless Domar weight---its nominal gross sales divided by nominal GDP. One
+can then write a local growth-accounting formula such as
+$$\mathop{}\!\mathrm d\log \mathcal Z
+    =\sum_{n\in[N]}\lambda_n\,\mathop{}\!\mathrm d\log Z_n,$$
+which aggregates log changes; it does not prove that the physical TFP levels can
+be added.
+
+## Prices and nominal versus real units
+
+Prices provide one way to make heterogeneous goods commensurable. Continue to let
+sector $n\in[N]=\{1,\ldots,N\}$ produce physical output flow $Q_n$ of good
+$n$, let $\mathsf{G}_n$ denote the physical dimension of that good, and let
+$P_n$ be its price in a common numeraire. Define total nominal sales
+of sector $n$ as the flow $S_n:=P_nQ_n$. Then
+$$\operatorname{dim}\!\left(Q_n\right)=\frac{\mathsf{G}_n}{\mathsf{T}},
+    \qquad
+    \operatorname{dim}\!\left(P_n\right)=\frac{\mathsf{N}}{\mathsf{G}_n},
+    \qquad
+    S_n=P_nQ_n,
+    \qquad
+    \operatorname{dim}\!\left(S_n\right)=\frac{\mathsf{N}}{\mathsf{T}}.$$
+Prices are conversion factors. The physical sum $Q_n+Q_{n'}$ is undefined when
+the sectors produce different goods, while the value sum $S_n+S_{n'}$ is well
+defined. This is why heterogeneous goods can be aggregated in nominal value.
+
+The conversion is not economically neutral. Nominal sales combine physical
+quantity and valuation:
+$$\mathrm d\log S_n
+    =\mathrm d\log P_n+\mathrm d\log Q_n.$$
+Consequently, revenue productivity generally combines physical productivity with
+relative prices, markups, quality, and demand. Prices solve the problem of adding
+heterogeneous goods by replacing it with an economic valuation problem.
+
+A relative price need not be dimensionless in the strict physical sense. If
+$P_n/P_{n'}$ compares different goods, then
+$$\operatorname{dim}\!\left(P_n/P_{n'}\right)=\frac{\mathsf{G}_{n'}}{\mathsf{G}_n}.$$
+It is a conversion rate between goods. Let $P_{nt}$ denote the price of good $n$
+at date $t$ and let date $0$ be the reference date. The normalized change
+$(P_{nt}/P_{n't})/(P_{n0}/P_{n'0})$ is dimensionless.
+
+Nominal and real objects must not be mixed in a budget constraint. In discrete
+time, let $C_t$ be consumption of the composite good, $P_t$ its price index,
+$B_t$ a nominal bond position chosen before date $t$, $H_t$ hours worked, $W_t$
+the nominal wage per hour, $R_t^N$ the gross nominal return on the bond, and
+$\Pi_t$ nominal profits received at date $t$. The relevant dimensions include
+$\operatorname{dim}\!\left(P_t\right)=\mathsf{N}/\mathsf{G}$,
+$\operatorname{dim}\!\left(B_t\right)=\mathsf{N}$,
+$\operatorname{dim}\!\left(H_t\right)=\mathsf{H}$, and
+$\operatorname{dim}\!\left(W_t\right)=\mathsf{N}/\mathsf{H}$. A nominal budget constraint may then contain
+$$P_tC_t+B_{t+1}
+    =W_tH_t+R_t^N B_t+\Pi_t,$$
+because every term has dimension $\mathsf{N}$. Dividing the entire equation by one
+price index produces a real budget constraint; dividing only selected terms does
+not.
+
+## Good-market clearing in a multi-sector model
+
+The distinction between good-specific and aggregate market clearing is important.
+For each $n\in[N]$, let $Q_n$ denote gross output of domestic good $n$, $C_n$
+domestic consumption of good $n$, and $X_n$ exports of good $n$. With the
+buyer-first input convention, $M_{n'n}$ is the amount of good $n$ purchased as
+an intermediate input by sector $n'$. A valid market-clearing condition for each
+domestic good is
+$$Q_n=C_n+X_n+\sum_{n'\in[N]}M_{n'n},
+    \qquad n\in[N].
+$$ {#eq-good-market-clearing}
+Every term in @eq-good-market-clearing is measured in units of good
+$n$, either as a period amount or as a flow under a common time convention. The
+fact that the uses differ economically does not create a dimensional problem; they
+are all claims on the same physical good.
+
+The problem arises when we add the physical clearing conditions across heterogeneous
+goods and define total output as $\sum_{n\in[N]}Q_n$. If $Q_n$ is steel and
+$Q_{n'}$ is computers, the sum has no physical unit. Multiplying each condition
+by its own price converts every term into the common numeraire:
+$$P_nQ_n
+    =P_nC_n+P_nX_n+\sum_{n'\in[N]}P_nM_{n'n}.
+$$ {#eq-value-market-clearing}
+The value equations may then be summed over $n$. Alternatively, a model may use
+an explicit quantity aggregator, but its arguments and normalization must be stated.
+In the familiar aggregate resource constraint $Y=C+I+G+NX$, $Y$ denotes
+aggregate output, $C$ aggregate consumption, $I$ aggregate investment, $G$
+government purchases, and $NX$ net exports. This constraint is valid only if
+all five objects are already quantities of the same composite good or all are valued
+in the same numeraire. A common label such as "real" does not by itself make them
+commensurable.
+
+## Profit accounting and factor prices
+
+Profit accounting combines the previous distinctions. In continuous time, let
+$\Pi$ be nominal profit flow, $P$ the output price, $Y$ output flow, $W$ the
+nominal wage per labor-hour, $L$ labor-services flow, $W^K$ the rental price per
+unit of capital per unit of time, and $K$ the capital stock. Then
+$$\Pi=PY-WL-W^K K.
+$$ {#eq-profit}
+The required dimensions are
+$$\operatorname{dim}\!\left(P\right)=\frac{\mathsf{N}}{\mathsf{G}},
+    \qquad
+    \operatorname{dim}\!\left(W\right)=\frac{\mathsf{N}}{\mathsf{H}},
+    \qquad
+    \operatorname{dim}\!\left(W^K\right)=\frac{\mathsf{N}}{\mathsf{G}_K\mathsf{T}}.$$
+It follows that
+$$\operatorname{dim}\!\left(PY\right)=\operatorname{dim}\!\left(WL\right)=\operatorname{dim}\!\left(W^KK\right)=\operatorname{dim}\!\left(\Pi\right)=\frac{\mathsf{N}}{\mathsf{T}}.$$
+The object $W^K$ is a rental price per unit of capital per unit of time, not a
+dimensionless gross return.
+
+The competitive first-order conditions are dimensionally informative:
+$$P\frac{\partial Y}{\partial L}=W,
+    \qquad
+    P\frac{\partial Y}{\partial K}=W^K.$$
+Indeed, the first left-hand side has units $\mathsf{N}/\mathsf{H}$, while the second has units
+$\mathsf{N}/(\mathsf{G}_K\mathsf{T})$. If $\mathsf{G}_K=\mathsf{G}$, the real rental rate $W^K/P$ has units
+$1/\mathsf{T}$ and can be compared with a continuous-time interest rate and depreciation
+rate. In a discrete-period profit equation, factor payments and revenue are
+instead amounts over the period, and the rental payment per unit of capital is
+measured per period.
+
+## Logs, exponentials, and growth rates
+
+Logs of dimensional levels are common in macroeconomics and are usually harmless
+shorthand. Let $X>0$ denote any dimensional scalar and let $X^{\circ}>0$ be its
+fixed reference level. Strictly,
+$$\log X
+    \quad\text{means}\quad
+    \log\left(\frac{X}{X^{\circ}}\right)$$
+up to a constant determined by the unit convention. Let $X_t$ denote the value
+of $X$ in discrete period $t$. Log differences eliminate that constant:
+$$\log X_t-\log X_{t-1}
+    =\log\left(\frac{X_t}{X_{t-1}}\right).$$
+The discrete log change is dimensionless. For a differentiable path $X(t)$,
+define its instantaneous growth rate $g_X(t)$ by
+$$g_X(t)=\frac{\mathop{}\!\mathrm d}{\mathop{}\!\mathrm dt}\log\left(\frac{X(t)}{X^{\circ}}\right)$$
+This rate has dimension $1/\mathsf{T}$. Hence the exponential path, where $s$ is a dummy
+time variable,
+$$X(t)=X(0)\exp\left(\int_0^t g_X(s)\mathop{}\!\mathrm ds\right)$$
+is well formed because the exponent is dimensionless.
+
+The same rule applies to discounting. A one-period discount factor $\beta$ is
+dimensionless. A continuous-time discount rate $\varrho$ has dimension
+$1/\mathsf{T}$, so $e^{-\varrho t}$ is dimensionless.
+
+## Utility, CRRA, and labor disutility
+
+Preferences provide a second example in which normalization is often left implicit.
+Utility is an ordinal index, so its overall scale is not a physical observable.
+Nevertheless, the terms added within a chosen cardinal representation must be
+commensurable, and unit changes must not inadvertently change their relative
+weight.
+
+Let $u(C,L)$ denote period utility, where $C>0$ is consumption and $L\geq0$
+is labor supplied. Let $\gamma>0$ be the curvature coefficient on consumption,
+$\varphi\geq0$ the curvature coefficient on labor, and $\chi>0$ the relative
+weight on labor disutility. Suppose the period utility function is written as
+$$u(C,L)
+    =\frac{C^{1-\gamma}}{1-\gamma}
+    -\chi\frac{L^{1+\varphi}}{1+\varphi}.
+$$ {#eq-raw-utility}
+Unless consumption and labor have specially chosen units, the coefficient $\chi$
+must carry the dimensions required to make the two terms commensurable:
+$$\operatorname{dim}\!\left(\chi\right)
+    =\frac{\operatorname{dim}\!\left(C\right)^{1-\gamma}}{\operatorname{dim}\!\left(L\right)^{1+\varphi}}.$$
+Holding the numerical value of $\chi$ fixed while changing the units of $C$ or
+$L$ can therefore change the model.
+
+Let $C^{\circ}>0$ and $L^{\circ}>0$ be fixed reference levels with the same
+dimensions as consumption and labor, respectively. A unit-invariant
+representation is
+$$u(C,L)
+    =
+    \frac{(C/C^{\circ})^{1-\gamma}-1}{1-\gamma}
+    -\chi
+    \frac{(L/L^{\circ})^{1+\varphi}-1}{1+\varphi},
+$$ {#eq-normalized-utility}
+where $\gamma$, $\varphi$, and $\chi$ are dimensionless. The limit as
+$\gamma\to1$ is the dimensionally correct logarithmic specification
+$$\log(C/C^{\circ}).$$
+Define $u_C:=\partial u/\partial C$ and $u_L:=\partial u/\partial L$ as the
+marginal utilities of consumption and labor. They inherit reciprocal units:
+$$u_C
+    =\frac{1}{C^{\circ}}
+      \left(\frac{C}{C^{\circ}}\right)^{-\gamma},
+    \qquad
+    -u_L
+    =\frac{\chi}{L^{\circ}}
+      \left(\frac{L}{L^{\circ}}\right)^{\varphi}.$$
+Thus $-u_L/u_C$ has dimension $\operatorname{dim}\!\left(C\right)/\operatorname{dim}\!\left(L\right)$, exactly the dimension of the
+real wage relevant for the intratemporal first-order condition.
+
+In discrete time, let $u_t:=u(C_t,L_t)$ be period utility at date $t$. The
+objective $\sum_{t\geq0}\beta^t u_t$ uses the dimensionless one-period discount
+factor $\beta$ defined above. In continuous time, let
+$u(t):=u(C(t),L(t))$ denote instantaneous utility. Using the continuous-time
+discount rate $\varrho$ defined above,
+$$\int_0^\infty e^{-\varrho t}u(t)\mathop{}\!\mathrm dt$$
+inherits a factor of time. Multiplying the objective by $\varrho$ makes it
+dimensionless and, for a fixed positive $\varrho$, does not alter choices.
+
+## Ratios, shares, and elasticities
+
+I close the examples with ratios and elasticities. Ratios of like-dimensional
+objects are dimensionless. This qualification is important. For example, $K/Y$
+is not dimensionless after accounting for the stock--flow distinction: with
+$\operatorname{dim}\!\left(K\right)=\mathsf{G}$ and $\operatorname{dim}\!\left(Y\right)=\mathsf{G}/\mathsf{T}$, the capital-output ratio has dimension
+$\mathsf{T}$. By contrast, let $W_f$ be the price of factor $f$, $L_{nf}$ the
+quantity of that factor used by sector $n$, and $TC_n$ sector $n$'s total nominal
+cost flow. The factor expenditure share of buyer $n$ is
+$$\Omega_{nf}=\frac{W_fL_{nf}}{TC_n}$$
+and is dimensionless because numerator and denominator are nominal flows. The
+first subscript of $\Omega_{nf}$ identifies the buyer and the second identifies
+the purchased factor.
+
+For positive variables $X$ and $Y$ connected by a differentiable relationship,
+define $\varepsilon_{YX}$ as the elasticity of $Y$ with respect to $X$:
+$$\varepsilon_{YX}
+    =\frac{\partial\log Y}{\partial\log X}
+    =\frac{\partial Y}{\partial X}\frac{X}{Y}.
+$$ {#eq-elasticity}
+The derivative contributes units $\operatorname{dim}\!\left(Y\right)/\operatorname{dim}\!\left(X\right)$, which the ratio cancels.
+Elasticities and log changes are therefore invariant to constant rescalings of the
+underlying variables. This is one reason productivity growth is often more
+comparable across unit conventions than productivity levels. If output is
+measured by revenue rather than physical quantity, however, its log change still
+contains the change in price.
+
+# Common macroeconomic pitfalls
+
+The examples above point to ten recurring mistakes. I state them briefly here and
+leave the mechanical procedure for the final checklist.
+
+1.  *Mixing period amounts and instantaneous flows.* Discrete $I_t$
+    is normally investment accumulated over a period, while continuous $I(t)$ is
+    a flow per unit of time.
+
+2.  *Treating a period fraction as a continuous rate.* The discrete
+    depreciation fraction and net interest rate are dimensionless, while their
+    continuous-time counterparts have units $1/\mathsf{T}$.
+
+3.  *Adding heterogeneous physical quantities.* Tons of steel and
+    computers cannot be summed without an aggregator or valuation; market clearing
+    must be written good by good before value aggregation.
+
+4.  *Assuming TFP is unit-free or directly additive across sectors.* In
+    a level production function, TFP absorbs residual dimensions. Raw sectoral TFP
+    levels therefore need not be commensurable.
+
+5.  *Confusing rental prices with returns.* A capital rental price is a
+    payment per capital unit per period or per unit of time. A gross asset return is
+    a payoff-to-value ratio.
+
+6.  *Mixing nominal and real terms.* Every term in an accounting
+    identity must use the same valuation convention.
+
+7.  *Taking logs of raw dimensional levels.* A suppressed reference
+    level is harmless for many log differences but can matter for constants,
+    comparisons of levels, and nonlinear transformations.
+
+8.  *Holding dimensional preference parameters fixed after changing
+    units.* In separable CRRA specifications, this can change the consumption--labor
+    tradeoff rather than merely relabeling the same economy.
+
+9.  *Calling every ratio dimensionless.* The capital-output ratio has
+    units of time, and a relative price between different physical goods is a
+    conversion rate between those goods.
+
+10. *Inferring technology from nominal sales.* Prices permit aggregation
+    but embed valuation, demand, markups, and equilibrium scarcity. 
+
+# Compact checklist
+
+The following is the procedure I use for any model equation.
+
+1.  Define every symbol when it first appears. Label every primitive as a stock,
+    a period amount, or an instantaneous flow, and record its physical, nominal,
+    and time units.
+
+2.  Check that the left- and right-hand sides have the same dimensions.
+
+3.  Check every sum and subtraction term by term.
+
+4.  Propagate dimensions through products, ratios, powers, derivatives, and
+    integrals.
+
+5.  Require dimensionless arguments for logarithms, exponentials, and related
+    nonlinear functions.
+
+6.  Distinguish asset values, rental prices, gross returns, and instantaneous
+    rates.
+
+7.  Do not aggregate heterogeneous physical goods before specifying prices or
+    an explicit quantity aggregator; write market clearing good by good.
+
+8.  Treat TFP and calibration coefficients as potentially dimensional until
+    the equation proves otherwise, and aggregate normalized TFP indices or log
+    changes rather than raw sectoral levels.
+
+9.  Normalize CES quantities, utility arguments, and other nonlinear
+    aggregates by explicit reference levels.
+
+10. Perform a rescaling test: change units, transform dimensional parameters,
+    and verify that the economic allocation is unchanged.
+
+The shortest useful diagnostic is therefore: equality check, sum check, function
+check, and rescaling check. Passing all four does not prove the model correct, but
+failing any one identifies a precise defect in its mathematical formulation.
+
+**Hence, next time you are working on a multi-sector model, please be careful to check the units of every term!**
+
+# References {.unnumbered}
+
+::: {.thebibliography}
+
+Cantore, C. and P. Levine (2012).
+Getting normalization right: Dealing with "dimensional constants" in
+macroeconomics.
+*Journal of Economic Dynamics and Control* 36, 1931--1949.
+[doi:10.1016/j.jedc.2012.05.009](https://doi.org/10.1016/j.jedc.2012.05.009).
+
+[de Jong, F. J.](https://cir.nii.ac.jp/crid/1980023484813980815) and
+[W. Quade](https://cir.nii.ac.jp/crid/1981993809659276419) (1967).
+*Dimensional Analysis for Economists*.
+North-Holland.
+
+De Jong, F. J. and T. K. Kumar (1972).
+Some considerations on a class of macro-economic production functions.
+*De Economist* 120, 134--152.
+
+de La Grandville, O. (1989).
+In quest of the Slutsky diamond.
+*American Economic Review* 79, 468--481.
+
+Klump, R. and O. de La Grandville (2000).
+Economic growth and the elasticity of substitution: Two theorems and some
+suggestions.
+*American Economic Review* 90, 282--291.
+
+Klump, R. and H. Preissler (2000).
+CES production functions and economic growth.
+*Scandinavian Journal of Economics* 102, 41--56.
+
+Klump, R. and M. Saam (2008).
+Calibration of normalized CES production functions in dynamic models.
+*Economics Letters* 99, 256--259.
+
+Klump, R., P. McAdam, and A. Willman (2012).
+The normalized CES production function: theory and empirics.
+*Journal of Economic Surveys* 26(5), 769--799.
+
+Temple, J. (2012).
+The calibration of CES production functions.
+*Journal of Macroeconomics* 34, 294--303.
+:::

@@ -1,0 +1,302 @@
+body {
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.note-site-header {
+  position: relative;
+}
+
+.note-site-header .site-nav a[aria-current="page"] {
+  color: var(--accent-ink);
+}
+
+.quarto-note {
+  width: min(100% - 2.5rem, 58rem);
+  margin: 1.5rem auto 5rem;
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  overflow-x: hidden;
+  border-top: 8px solid var(--gold);
+  border-radius: 0.55rem;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: 0 20px 50px color-mix(in srgb, var(--navy) 13%, transparent);
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.note-breadcrumb {
+  display: inline-block;
+  margin-bottom: 3rem;
+  color: var(--teal);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.note-breadcrumb:hover {
+  color: var(--orange);
+}
+
+.quarto-note #title-block-header {
+  margin-bottom: 2.8rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.quarto-note h1,
+.quarto-note h2,
+.quarto-note h3 {
+  color: var(--heading);
+  font-family: var(--condensed);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+
+.quarto-note .title {
+  max-width: 15ch;
+  margin: 0 0 1rem;
+  font-size: clamp(3.5rem, 8vw, 6.8rem);
+  line-height: 0.84;
+  letter-spacing: -0.045em;
+}
+
+.quarto-note h1 {
+  margin: 4rem 0 1rem;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+}
+
+.quarto-note h2 {
+  margin: 3rem 0 0.85rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.quarto-note h3 {
+  margin: 2.3rem 0 0.75rem;
+  font-size: 1.55rem;
+}
+
+.quarto-note .author,
+.quarto-note .date {
+  display: inline;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.quarto-note .author::after {
+  content: " \00b7 ";
+  color: var(--orange);
+}
+
+.quarto-note .abstract {
+  margin-top: 2rem;
+  padding: 1.35rem 1.5rem;
+  border-left: 4px solid var(--gold);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--gold) 10%, var(--cream));
+  font-size: 0.82rem;
+}
+
+.quarto-note .abstract-title {
+  margin-bottom: 0.4rem;
+  color: var(--teal);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.quarto-note .abstract p,
+.quarto-note .principle p {
+  margin: 0;
+}
+
+.quarto-note #TOC {
+  margin: 2.5rem 0 4rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  background: var(--cream);
+  font-size: 0.75rem;
+}
+
+.quarto-note #TOC::before {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--teal);
+  content: "Contents";
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.quarto-note #TOC > h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.quarto-note #TOC ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.quarto-note #TOC > ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.quarto-note #TOC li {
+  margin: 0.28rem 0;
+}
+
+.quarto-note p,
+.quarto-note li {
+  font-size: 0.9rem;
+}
+
+.quarto-note p {
+  margin: 0.9rem 0;
+}
+
+.quarto-note ol,
+.quarto-note ul {
+  padding-left: 1.5rem;
+}
+
+.quarto-note li {
+  margin: 0.5rem 0;
+}
+
+.quarto-note a {
+  color: var(--teal);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.17em;
+}
+
+.quarto-note a:hover {
+  color: var(--orange);
+}
+
+.quarto-note .principle {
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--aqua);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--aqua) 8%, var(--cream));
+}
+
+.quarto-note .principle em {
+  font-style: normal;
+}
+
+.quarto-note .math.display,
+.quarto-note mjx-container[display="true"] {
+  display: block;
+  max-width: 100%;
+  margin: 1.35rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.quarto-note .thebibliography p {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  font-size: 0.78rem;
+}
+
+.notebook-citation {
+  margin-top: 4rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--gold);
+  color: var(--ink);
+  background: var(--cream);
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+.notebook-citation strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--teal);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.notebook-citation p {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+}
+
+.notebook-citation .suggested-citation {
+  color: var(--muted);
+}
+
+.notebook-citation .suggested-citation a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 660px) {
+  .quarto-note {
+    width: min(100% - 1.5rem, 58rem);
+    margin-top: 0.5rem;
+    padding: 1.5rem 1.15rem 2rem;
+    border-top-width: 5px;
+    border-radius: 0.3rem;
+  }
+
+  .note-breadcrumb {
+    margin-bottom: 2.3rem;
+  }
+
+  .quarto-note .title {
+    font-size: 3.5rem;
+  }
+
+  .quarto-note #TOC {
+    padding: 1rem;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .note-site-header,
+  .note-breadcrumb,
+  .site-footer {
+    display: none;
+  }
+
+  .quarto-note {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .quarto-note #TOC {
+    break-after: page;
+  }
+
+  .quarto-note a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
