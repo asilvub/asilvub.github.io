@@ -24,28 +24,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/ptcg.css">
     <link rel="stylesheet" href="../assets/css/notes.css?v=20260808">
+    <link rel="stylesheet" href="../assets/css/minimal.css">
+    <link rel="stylesheet" href="../assets/css/notes-entry-minimal.css">
 </head>
 <body class="notes-page">
     <!-- Copy this file into notes/entries/. After copying, add ../ to each asset/home path. -->
     <a class="skip-link" href="#note-content">Skip to note</a>
 
-    <header class="site-header">
-        <a class="wordmark" href="../index.html" aria-label="Alvaro Silva home">
-            <span class="wordmark-mark" aria-hidden="true">
-                <i></i><i></i><i></i>
-            </span>
-            <span>
-                <strong>Alvaro Silva</strong>
-                <small>Personal notebook</small>
-            </span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="../index.html">Research</a>
-            <a class="notes-nav-link" href="index.html" aria-current="page">Things I Learn and Forget</a>
+    <header class="experiment-header note-site-header">
+        <a class="experiment-name" href="../index.html">Alvaro Silva</a>
+        <nav class="experiment-nav" aria-label="Primary navigation">
+            <a href="../index.html#papers">Papers</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="index.html" aria-current="page">Things I Learn and Forget</a>
+            <a href="../index.html#more-research">More research</a>
         </nav>
-        <div class="theme-picker">
+        <div class="experiment-theme">
             <label for="theme-select">Palette</label>
-            <select id="theme-select" aria-label="Choose a trading-card-inspired color palette">
+            <select id="theme-select" aria-label="Choose a color palette">
                 <option value="normal">Normal</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
@@ -68,10 +64,33 @@
         </div>
     </header>
 
-    <main class="note-entry-main">
+    <main class="portfolio-layout note-experiment-layout">
+        <aside class="portfolio-sidebar">
+            <section class="intro" aria-labelledby="profile-title">
+                <div class="intro-photo">
+                    <img src="../assets/images/profile_market.jpg" alt="Portrait of Alvaro Silva">
+                </div>
+                <div class="intro-copy">
+                    <h1 id="profile-title">Alvaro Silva</h1>
+                    <p class="intro-text">I am an economist at the Federal Reserve Bank of Boston. I work on international economics.</p>
+                    <div class="intro-actions" aria-label="Key links">
+                        <a class="primary-action" href="../index.html#papers">Papers</a>
+                        <a href="../assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                        <a href="../assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures</a>
+                        <span class="intro-contact">Email: asilvub@gmail.com</span>
+                        <a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed Page</a>
+                        <a href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">X</a>
+                    </div>
+                    <p class="intro-disclaimer">The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
+                </div>
+            </section>
+        </aside>
+
+        <div class="portfolio-content">
+        <article class="note-entry-main">
         <header class="entry-hero">
             <div class="notes-shell">
-                <a class="entry-back" href="index.html">← All notes</a>
+                <a class="entry-back" href="index.html">All notes</a>
                 <p class="entry-kicker">Note TODO · Topic</p>
                 <h1>TODO: Note Title</h1>
                 <p class="entry-deck">TODO: State the question this note answers in one or two sentences.</p>
@@ -132,15 +151,9 @@
                 <p class="entry-updated">Last updated Month DD, YYYY</p>
             </article>
         </div>
-    </main>
-
-    <footer class="site-footer">
-        <div>
-            <strong>Things I Learn and Forget</strong>
-            <span>A personal notebook by Alvaro Silva</span>
+        </article>
         </div>
-        <p class="fan-note"><a href="index.html">Browse all notes</a></p>
-    </footer>
+    </main>
 
     <script src="../assets/js/theme.js"></script>
 </body>

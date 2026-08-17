@@ -11,11 +11,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal collection by Alvaro Silva for mathematical ideas, economic intuitions, questions, and thoughts worth returning to.">
+    <meta name="description" content="Things I Learn and Forget, Alvaro Silva's notes on mathematics, economics, and ideas worth returning to.">
     <meta name="theme-color" content="#082a38">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Things I Learn and Forget · Alvaro Silva">
-    <meta property="og:description" content="Alvaro Silva's personal Pensieve for mathematical ideas, economic intuitions, questions, and thoughts.">
+    <meta property="og:description" content="Alvaro Silva's personal collection of mathematical ideas, economic intuitions, questions, and thoughts.">
     <meta property="og:url" content="https://asilvub.github.io/notes/">
     <title>Things I Learn and Forget · Alvaro Silva</title>
     <script src="../assets/js/theme-bootstrap.js"></script>
@@ -23,28 +23,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/ptcg.css">
-    <link rel="stylesheet" href="../assets/css/notes.css?v=20260808">
+    <link rel="stylesheet" href="../assets/css/minimal.css">
+    <link rel="stylesheet" href="../assets/css/notes-minimal.css">
 </head>
-<body class="notes-page">
+<body id="top" class="notes-minimal">
     <a class="skip-link" href="#notes-library">Skip to notes</a>
 
-    <header class="site-header">
-        <a class="wordmark" href="../index.html" aria-label="Alvaro Silva home">
-            <span class="wordmark-mark" aria-hidden="true">
-                <i></i><i></i><i></i>
-            </span>
-            <span>
-                <strong>Alvaro Silva</strong>
-                <small>Personal notebook</small>
-            </span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="../index.html">Research</a>
-            <a class="notes-nav-link" href="index.html" aria-current="page">Things I Learn and Forget</a>
+    <header class="experiment-header">
+        <a class="experiment-name" href="../index.html">Alvaro Silva</a>
+        <nav class="experiment-nav" aria-label="Primary navigation">
+            <a href="../index.html#papers">Papers</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="#notes-library" aria-current="page">Things I Learn and Forget</a>
+            <a href="../index.html#more-research">More research</a>
         </nav>
-        <div class="theme-picker">
+        <div class="experiment-theme">
             <label for="theme-select">Palette</label>
-            <select id="theme-select" aria-label="Choose a trading-card-inspired color palette">
+            <select id="theme-select" aria-label="Choose a color palette">
                 <option value="normal">Normal</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
@@ -67,81 +62,66 @@
         </div>
     </header>
 
-    <main>
-        <section class="notes-hero" aria-labelledby="notes-title">
-            <div class="notes-shell">
-                <p class="eyebrow">A growing personal Pensieve</p>
-                <h1 id="notes-title">Things I <span class="hero-deck">Learn</span><br>and Forget</h1>
-                <div class="notes-hero-copy">
-                    <p>My version of Dumbledore’s Pensieve: a place to store mathematical arguments, economic intuitions, questions, and other thoughts so I can return to them later. An entry can be as short or as long as the subject requires.</p>
-                    <div class="notes-hero-key"><i aria-hidden="true"></i>Math · Economics · Thoughts</div>
+    <main class="portfolio-layout">
+        <aside class="portfolio-sidebar">
+            <section class="intro" aria-labelledby="intro-title">
+                <div class="intro-photo">
+                    <img src="../assets/images/profile_market.jpg" alt="Portrait of Alvaro Silva">
                 </div>
-            </div>
-        </section>
-
-        <aside class="notes-use-notice" aria-label="Using and acknowledging these notes">
-            <div class="notes-shell">
-                <strong>Using these notes</strong>
-                <p>If a note here is useful, please link directly to the individual note and acknowledge it as the source. A citation can list the author, note title, date, collection title, and direct URL. Some entries were written and edited in part with OpenAI Codex.</p>
-            </div>
+                <div class="intro-copy">
+                    <h1 id="intro-title">Alvaro Silva</h1>
+                    <p class="intro-text">I am an economist at the Federal Reserve Bank of Boston. I work on international economics.</p>
+                    <div class="intro-actions" aria-label="Key links">
+                        <a class="primary-action" href="../index.html#papers">Papers</a>
+                        <a href="../assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                        <a href="../assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures</a>
+                        <span class="intro-contact">Email: asilvub@gmail.com</span>
+                        <a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed Page</a>
+                        <a href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">X</a>
+                    </div>
+                    <p class="intro-disclaimer">The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
+                </div>
+            </section>
         </aside>
 
-        <section class="notes-library" id="notes-library" aria-labelledby="library-title">
-            <div class="notes-shell">
-                <header class="notes-library-heading">
-                    <div>
-                        <p class="eyebrow">The shelf</p>
-                        <h2 id="library-title">Browse the notes</h2>
-                    </div>
-                    <p>These are working entries for my future self. They may contain polished explanations, exploratory thinking, or questions I want to revisit, and may change as my understanding does.</p>
+        <div class="portfolio-content">
+            <section class="content-section notes-library-section" id="notes-library" aria-labelledby="notes-title">
+                <header class="section-heading-minimal">
+                    <h2 id="notes-title">Things I Learn and Forget</h2>
+                    <p class="section-description">Mathematical arguments, economic intuitions, questions, and other thoughts I want to return to later.</p>
                 </header>
 
-                <div class="note-tools" data-note-tools hidden>
-                    <div class="note-search">
-                        <label for="note-search">Find a note</label>
-                        <input id="note-search" type="search" placeholder="Search titles, topics, or ideas…" autocomplete="off">
-                    </div>
-                    <div class="note-filters" id="note-filters" aria-label="Filter notes by topic"></div>
-                </div>
-
-                <p class="note-count" id="note-result-count" aria-live="polite">2 notes</p>
-
-                <div class="note-grid">
-                    <article class="note-card" data-note-card data-topics="About">
-                        <a href="entries/about-this-notebook.html">
-                            <span class="note-card-number">001</span>
-                            <p class="note-card-topic">About the notebook</p>
-                            <h3>Why these notes exist</h3>
-                            <p class="note-card-summary">Why I keep this personal Pensieve, what belongs here, and how the entries may evolve.</p>
-                            <p class="note-card-meta"><time datetime="2026-08-08">August 8, 2026</time> · 2 min read</p>
-                        </a>
+                <div class="entry-list">
+                    <article class="paper-entry note-library-entry">
+                        <div class="entry-copy">
+                            <h3><a href="entries/dimensional_analysis_macroeconomics.html">Dimensional Analysis in Macroeconomics</a></h3>
+                            <p class="note-summary">A guide to unit invariance, stocks and flows, normalization, CES models, sectoral aggregation, and market clearing.</p>
+                            <p class="entry-meta"><time datetime="2026-08-08">August 8, 2026</time> · 20 min read</p>
+                        </div>
                     </article>
 
-                    <article class="note-card" data-note-card data-topics="Macroeconomics,Mathematics">
-                        <a href="entries/dimensional_analysis_macroeconomics.html">
-                            <span class="note-card-number">002</span>
-                            <p class="note-card-topic">Macroeconomics · Mathematics</p>
-                            <h3>Dimensional Analysis in Macroeconomics</h3>
-                            <p class="note-card-summary">A guide to unit invariance, stocks and flows, normalization, CES models, sectoral aggregation, and market clearing.</p>
-                            <p class="note-card-meta"><time datetime="2026-08-01">August 1, 2026</time> · 20 min read</p>
-                        </a>
+                    <article class="paper-entry note-library-entry">
+                        <div class="entry-copy">
+                            <h3><a href="entries/about-this-notebook.html">Why These Notes Exist</a></h3>
+                            <p class="note-summary">Why I keep this personal Pensieve, what belongs here, and how the entries may evolve.</p>
+                            <p class="entry-meta"><time datetime="2026-08-08">August 8, 2026</time> · 2 min read</p>
+                        </div>
                     </article>
                 </div>
+            </section>
 
-                <p class="note-empty-state" id="note-empty-state" hidden>No notes match that search yet.</p>
-            </div>
-        </section>
+            <section class="content-section notes-about-section" aria-labelledby="using-notes-title">
+                <header class="section-heading-minimal">
+                    <h2 id="using-notes-title">Using these notes</h2>
+                </header>
+                <div class="notes-experiment-copy">
+                    <p>These are working entries for my future self. They may contain polished explanations, exploratory thinking, or questions I want to revisit, and may change as my understanding does.</p>
+                    <p>If a note is useful, please link directly to the individual note and acknowledge it as the source. Some entries were written and edited in part with OpenAI Codex.</p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="site-footer">
-        <div>
-            <strong>Things I Learn and Forget</strong>
-            <span>A personal notebook by Alvaro Silva</span>
-        </div>
-        <p class="fan-note"><a href="../index.html">Back to research</a></p>
-    </footer>
-
     <script src="../assets/js/theme.js"></script>
-    <script src="../assets/js/notes.js"></script>
 </body>
 </html>

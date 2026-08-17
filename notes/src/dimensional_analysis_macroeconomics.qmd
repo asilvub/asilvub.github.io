@@ -2,7 +2,7 @@
 title: "Dimensional Analysis in Macroeconomics"
 author: "Alvaro Silva"
 date: 2026-08-08
-date-format: "MMMM YYYY"
+date-format: "MMMM D, YYYY"
 description: "A practical guide to dimensional consistency, normalization, and unit invariance in macroeconomic models."
 abstract-title: "Summary"
 abstract: |
@@ -27,6 +27,8 @@ format:
     css:
       - ../../assets/css/ptcg.css
       - note-article.css
+      - ../../assets/css/minimal.css
+      - ../../assets/css/notes-entry-minimal.css
     include-in-header: _note-head.html
     include-before-body: _note-header.html
     include-after-body: _note-footer.html

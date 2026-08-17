@@ -17,8 +17,8 @@ The website serves the files in `entries/` directly, so it does not require a bu
 1. Save the editable source as `src/descriptive-kebab-case-title.qmd` or `.md`.
 2. Render or export it to `entries/descriptive-kebab-case-title.html`.
 3. Make sure the HTML has the notebook navigation, shared styles, description metadata, and a working link back to the index.
-4. Add one `.note-card` article to `index.html`. Set `data-topics` to a comma-separated list so the index filters are generated automatically.
-5. Use the next three-digit note number and an ISO date in the `<time>` element.
+4. Add one `.paper-entry.note-library-entry` article to `index.html`.
+5. Include an ISO date in the `<time>` element and a short summary and reading time.
 
 For a Quarto source, run the render command from `notes/src/` so relative styles and includes resolve correctly:
 
@@ -29,8 +29,6 @@ quarto render descriptive-kebab-case-title.qmd --output-dir ../entries
 ## HTML-only notes
 
 If HTML is the only source, place a copy directly in `entries/`. The reusable `entry-template.html` provides the notebook shell and MathJax configuration. After copying the template into `entries/`, add one extra `../` to each local asset and navigation path because the entry is one directory deeper. The existing `entries/about-this-notebook.html` is a path reference.
-
-Suggested broad topics are `Mathematics`, `Microeconomics`, `Macroeconomics`, `Econometrics`, `International`, `Networks`, and `Methods`. Prefer one primary topic and only add another when it will genuinely help retrieve the note later.
 
 MathJax is already configured in the template. Use `\( ... \)` for inline mathematics and `\[ ... \]` for displayed mathematics.
 

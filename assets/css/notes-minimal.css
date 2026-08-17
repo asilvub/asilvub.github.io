@@ -1,0 +1,33 @@
+.notes-minimal .notes-library-section {
+  border-top: 0;
+}
+
+.notes-minimal .note-summary {
+  max-width: 44rem;
+  color: var(--muted);
+  font-size: var(--entry-author-size);
+  line-height: 1.55;
+}
+
+.notes-minimal .notes-experiment-copy {
+  max-width: 44rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--heading);
+  color: var(--ink);
+  font-size: var(--entry-author-size);
+  line-height: 1.65;
+}
+
+.notes-minimal .notes-experiment-copy p {
+  margin: 0;
+}
+
+.notes-minimal .notes-experiment-copy p + p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+  .notes-minimal .notes-library-section {
+    border-top: 1px solid var(--line);
+  }
+}

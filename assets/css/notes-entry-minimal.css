@@ -1,0 +1,242 @@
+body {
+  background: var(--cream);
+  font-size: 14px;
+}
+
+.note-site-header {
+  position: sticky;
+}
+
+.note-experiment-layout {
+  align-items: start;
+}
+
+.note-entry-main,
+.quarto-note {
+  min-width: 0;
+  color: var(--ink);
+  background: transparent;
+}
+
+.note-entry-main {
+  width: auto;
+}
+
+.entry-hero {
+  padding: 3.25rem 0 2rem;
+  color: var(--ink);
+  background: transparent;
+}
+
+.entry-hero .notes-shell,
+.entry-layout.notes-shell {
+  width: auto;
+  margin: 0;
+}
+
+.entry-back,
+.note-breadcrumb {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.entry-back:hover,
+.note-breadcrumb:hover {
+  color: var(--teal);
+}
+
+.entry-kicker {
+  margin-bottom: 0.55rem;
+  color: var(--teal);
+  font-size: 12px;
+}
+
+.entry-hero h1,
+.quarto-note .title {
+  max-width: 20ch;
+  margin: 0;
+  color: var(--heading);
+  font: 800 clamp(1.9rem, 3.2vw, 2.45rem)/0.94 var(--condensed);
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.entry-deck {
+  max-width: 44rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.entry-meta {
+  margin-top: 1rem;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.entry-layout {
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 2.5rem;
+  justify-content: stretch;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid var(--heading);
+}
+
+.entry-toc {
+  top: 6rem;
+}
+
+.entry-toc p,
+.entry-toc a {
+  font-size: 12px;
+}
+
+.entry-content {
+  max-width: 46rem;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.entry-content h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.entry-content h3 {
+  font-size: 1.45rem;
+}
+
+.entry-citation-note,
+.notebook-citation {
+  font-size: 14px;
+}
+
+.quarto-note {
+  width: auto;
+  margin: 0;
+  padding: 3.25rem 0 5rem;
+  overflow-x: hidden;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.quarto-note #title-block-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.75rem;
+}
+
+.quarto-note .author,
+.quarto-note .date {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.quarto-note .abstract {
+  margin-top: 1.5rem;
+  padding: 1rem 1.15rem;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.quarto-note #TOC {
+  margin: 2rem 0 3rem;
+  padding: 1rem 1.15rem;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.quarto-note #TOC > h2 {
+  font-size: 1.35rem;
+}
+
+.quarto-note h1 {
+  margin-top: 3.25rem;
+  font-size: 2rem;
+}
+
+.quarto-note h2 {
+  margin-top: 2.6rem;
+  font-size: 1.65rem;
+}
+
+.quarto-note h3 {
+  margin-top: 2.1rem;
+  font-size: 1.35rem;
+}
+
+.quarto-note p,
+.quarto-note li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.quarto-note .abstract p,
+.quarto-note .notebook-citation p {
+  font-size: inherit;
+}
+
+.quarto-note .principle,
+.quarto-note blockquote {
+  font-size: 15px;
+}
+
+.quarto-note .thebibliography p {
+  font-size: 14px;
+}
+
+.notebook-citation {
+  margin-top: 3rem;
+  border-top-width: 3px;
+}
+
+@media (max-width: 860px) {
+  .entry-hero,
+  .quarto-note {
+    padding-top: 3.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .entry-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .entry-toc {
+    position: static;
+  }
+
+  .quarto-note .title,
+  .entry-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media print {
+  .experiment-header,
+  .portfolio-sidebar,
+  .experiment-footer,
+  .note-breadcrumb,
+  .entry-back {
+    display: none;
+  }
+
+  .note-experiment-layout {
+    display: block;
+    width: 100%;
+  }
+
+  .quarto-note,
+  .note-entry-main {
+    padding: 0;
+  }
+}

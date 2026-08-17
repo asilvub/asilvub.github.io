@@ -20,71 +20,33 @@
     <meta property="og:image" content="https://asilvub.github.io/assets/images/og-ptcg.png">
     <meta property="og:image:width" content="1536">
     <meta property="og:image:height" content="804">
-    <meta property="og:image:alt" content="Alvaro Silva's research deck, with his portrait presented as a cream and gold trading card.">
+    <meta property="og:image:alt" content="Alvaro Silva's research website, featuring his portrait and research portfolio.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Alvaro Silva · Research">
     <meta name="twitter:description" content="International economics, production networks, trade, and inflation.">
     <meta name="twitter:image" content="https://asilvub.github.io/assets/images/og-ptcg.png">
     <title>Alvaro Silva · Research</title>
-    <script>
-        window.typeThemeColors = {
-            normal: '#3f3c38',
-            fire: '#3c1511',
-            water: '#0d3557',
-            electric: '#242039',
-            grass: '#153725',
-            ice: '#174a57',
-            fighting: '#3a1915',
-            poison: '#35153f',
-            ground: '#493017',
-            flying: '#303653',
-            psychic: '#29133a',
-            bug: '#303b14',
-            rock: '#493b26',
-            ghost: '#0e0b1c',
-            dragon: '#082a38',
-            dark: '#080a0e',
-            steel: '#293844',
-            fairy: '#4a213c'
-        };
-        try {
-            let initialTheme = localStorage.getItem('as-card-palette') || 'dragon';
-            if (!window.typeThemeColors[initialTheme]) initialTheme = 'dragon';
-            document.documentElement.dataset.theme = initialTheme;
-            document.querySelector('meta[name="theme-color"]').setAttribute('content', window.typeThemeColors[initialTheme]);
-        } catch (error) {
-            document.documentElement.dataset.theme = 'dragon';
-        }
-    </script>
+    <script src="assets/js/theme-bootstrap.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/ptcg.css">
+    <link rel="stylesheet" href="assets/css/minimal.css">
 </head>
-<body>
-    <a class="skip-link" href="#working-papers">Skip to working papers</a>
+<body id="top">
+    <a class="skip-link" href="#papers">Skip to papers</a>
 
-    <header class="site-header">
-        <a class="wordmark" href="#" aria-label="Alvaro Silva home">
-            <span class="wordmark-mark" aria-hidden="true">
-                <i></i><i></i><i></i>
-            </span>
-            <span>
-                <strong>Alvaro Silva</strong>
-                <small>Research deck</small>
-            </span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="#working-papers">Working papers</a>
+    <header class="experiment-header">
+        <a class="experiment-name" href="#top">Alvaro Silva</a>
+        <nav class="experiment-nav" aria-label="Primary navigation">
+            <a href="#papers">Papers</a>
             <a href="#publications">Publications</a>
-            <a href="#discussions">Discussions</a>
-            <a href="#datasets">Datasets</a>
-            <a class="notes-nav-link" href="notes/index.html">Things I Learn and Forget</a>
-            <a href="#earlier-work">Earlier work</a>
+            <a href="#notebook">Things I Learn and Forget</a>
+            <a href="#more-research">More research</a>
         </nav>
-        <div class="theme-picker">
+        <div class="experiment-theme">
             <label for="theme-select">Palette</label>
-            <select id="theme-select" aria-label="Choose a trading-card-inspired color palette">
+            <select id="theme-select" aria-label="Choose a color palette">
                 <option value="normal">Normal</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
@@ -107,372 +69,194 @@
         </div>
     </header>
 
-    <main>
-        <aside class="disclaimer-banner">
-            <strong>Disclaimer</strong>
-            <p>The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
+    <main class="portfolio-layout">
+        <aside class="portfolio-sidebar">
+            <section class="intro" aria-labelledby="intro-title">
+                <div class="intro-photo">
+                    <img src="assets/images/profile_market.jpg" alt="Portrait of Alvaro Silva">
+                </div>
+                <div class="intro-copy">
+                    <h1 id="intro-title">Alvaro Silva</h1>
+                    <p class="intro-text">I am an economist at the Federal Reserve Bank of Boston. I work on international economics.</p>
+                    <div class="intro-actions" aria-label="Key links">
+                        <a class="primary-action" href="#papers">Papers</a>
+                        <a href="assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                        <a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures</a>
+                        <span class="intro-contact">Email: asilvub@gmail.com</span>
+                        <a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed Page</a>
+                        <a href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">X</a>
+                    </div>
+                    <p class="intro-disclaimer">The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Boston or the Federal Reserve System.</p>
+                </div>
+            </section>
         </aside>
 
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="network-field" aria-hidden="true">
-                <span class="node node-a"></span>
-                <span class="node node-b"></span>
-                <span class="node node-c"></span>
-                <span class="node node-d"></span>
-                <span class="node node-e"></span>
-                <span class="edge edge-ab"></span>
-                <span class="edge edge-ac"></span>
-                <span class="edge edge-bd"></span>
-                <span class="edge edge-cd"></span>
-                <span class="edge edge-de"></span>
-            </div>
+        <div class="portfolio-content">
 
-            <div class="hero-inner">
-                <article class="identity-card">
-                    <img src="assets/images/profile_market.jpg" alt="Portrait of Alvaro Silva">
-                    <div class="identity-copy">
-                        <p>Active researcher · International economics</p>
-                        <h1 id="hero-title">Alvaro Silva</h1>
-                        <span>Economist, Federal Reserve Bank of Boston</span>
-                    </div>
-                    <div class="profile-links">
-                        <a href="assets/pdfs/out/AS_CV.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
-                        <a href="assets/pdfs/out/AS_CV_failures.pdf" target="_blank" rel="noopener noreferrer">CV of failures ↗</a>
-                        <a href="https://www.bostonfed.org/people/bank/alvaro-silva.aspx" target="_blank" rel="noopener noreferrer">Boston Fed ↗</a>
-                        <a href="mailto:asilvub@gmail.com">Email ↗</a>
-                        <a href="https://twitter.com/Asilvub" target="_blank" rel="noopener noreferrer">@asilvub ↗</a>
-                        <a class="profile-note-link" href="notes/index.html">Things I Learn and Forget ↗</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="papers-section" id="working-papers" aria-labelledby="working-title">
-            <header class="section-heading">
-                <div>
-                    <p class="eyebrow">Current hand · Five cards</p>
-                    <h2 id="working-title">Working papers</h2>
-                </div>
+        <section class="content-section" id="papers" aria-labelledby="papers-title">
+            <header class="section-heading-minimal">
+                <h2 id="papers-title">Working papers</h2>
             </header>
 
-            <div class="paper-list">
-                <article class="paper-row featured-paper">
-                    <div class="paper-index">
-                        <span>01</span>
-                        <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="paper-main">
-                        <p class="paper-topic">Tariffs · Firms</p>
+            <div class="entry-list">
+                <article class="paper-entry">
+                    <div class="entry-copy">
                         <h3><a href="assets/papers/BSSS_2026_update.pdf" target="_blank" rel="noopener noreferrer">Trade Wars on the Income Statement: The Effects of Tariffs on Firms</a></h3>
-                        <p class="paper-summary">Firm-level effects of tariffs on income statements.</p>
-                        <p class="coauthors">with <a class="coauthor-link" href="https://obarbiero.github.io" target="_blank" rel="noopener noreferrer">Barbiero</a>, <a class="coauthor-link" href="https://sites.google.com/site/viacheslavsheremirov/" target="_blank" rel="noopener noreferrer">Sheremirov</a>, and <a class="coauthor-link" href="https://www.hillary-stein.com/home" target="_blank" rel="noopener noreferrer">Stein</a></p>
-                    </div>
-                    <div class="paper-meta">
-                        <div class="draft-dates">
-                            <span><small>Latest draft</small>May 2026</span>
-                            <span><small>First draft</small>November 2025</span>
-                        </div>
-                        <div class="paper-actions">
-                            <a href="assets/papers/BSSS_2026_update.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
-                            <a href="assets/slides/midwest_macro_tariffs_slides.pdf" target="_blank" rel="noopener noreferrer">Slides ↗</a>
-                        </div>
+                        <p>with <a href="https://obarbiero.github.io" target="_blank" rel="noopener noreferrer">Barbiero</a>, <a href="https://sites.google.com/site/viacheslavsheremirov/" target="_blank" rel="noopener noreferrer">Sheremirov</a>, and <a href="https://www.hillary-stein.com/home" target="_blank" rel="noopener noreferrer">Stein</a></p>
+                        <p class="entry-meta">May 2026 · <a href="assets/slides/midwest_macro_tariffs_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
                     </div>
                 </article>
 
-                <article class="paper-row network-paper">
-                    <div class="paper-index">
-                        <span>02</span>
-                        <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="paper-main">
-                        <p class="paper-topic">Production networks · Financial crises</p>
+                <article class="paper-entry">
+                    <div class="entry-copy">
                         <h3><a href="assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target="_blank" rel="noopener noreferrer">Connected for Better or Worse? The Role of Production Networks in Financial Crises</a></h3>
-                        <p class="paper-summary">Production-network propagation in financial crises.</p>
-                        <p class="coauthors">with <a class="coauthor-link" href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a>, <a class="coauthor-link" href="https://sites.google.com/site/erojasba1/home" target="_blank" rel="noopener noreferrer">Rojas</a>, and <a class="coauthor-link" href="https://sites.google.com/site/fesaffie/home" target="_blank" rel="noopener noreferrer">Saffie</a></p>
-                    </div>
-                    <div class="paper-meta">
-                        <div class="draft-dates">
-                            <span><small>Latest draft</small>December 2025</span>
-                            <span><small>First draft</small>May 2025</span>
-                        </div>
-                        <div class="paper-actions">
-                            <a href="assets/papers/SS_Networks_MPRSS_NBER_Dec25.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
-                            <a href="https://www.nber.org/papers/w34604" target="_blank" rel="noopener noreferrer">NBER WP 34604 ↗</a>
-                            <a href="assets/slides/slides-barcelona-summer-forum-Silva.pdf" target="_blank" rel="noopener noreferrer">Slides ↗</a>
-                        </div>
+                        <p>with <a href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a>, <a href="https://sites.google.com/site/erojasba1/home" target="_blank" rel="noopener noreferrer">Rojas</a>, and <a href="https://sites.google.com/site/fesaffie/home" target="_blank" rel="noopener noreferrer">Saffie</a></p>
+                        <p class="entry-meta">December 2025 · <a href="https://x.com/Asilvub/status/2005773585814806609" target="_blank" rel="noopener noreferrer">X thread</a> · <a href="https://www.nber.org/papers/w34604" target="_blank" rel="noopener noreferrer">NBER WP 34604</a> · <a href="assets/slides/slides-barcelona-summer-forum-Silva.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
                     </div>
                 </article>
 
-                <article class="paper-row">
-                    <div class="paper-index">
-                        <span>03</span>
-                        <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="paper-main">
-                        <p class="paper-topic">Inflation · Small open economies</p>
+                <article class="paper-entry">
+                    <div class="entry-copy">
                         <h3><a href="assets/papers/AS_JMP.pdf" target="_blank" rel="noopener noreferrer">Inflation in Disaggregated Small Open Economies</a></h3>
-                        <p class="paper-summary">Inflation across disaggregated sectors in small open economies.</p>
-                        <p class="coauthors">Solo paper</p>
-                    </div>
-                    <div class="paper-meta">
-                        <div class="draft-dates">
-                            <span><small>Latest draft</small>September 2024</span>
-                            <span><small>First draft</small>October 2023</span>
-                        </div>
-                        <div class="paper-actions">
-                            <a href="assets/papers/AS_JMP.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
-                        </div>
+                        <p class="entry-meta">September 2024 · <a href="https://twitter.com/Asilvub/status/1724901408871440570" target="_blank" rel="noopener noreferrer">X thread</a></p>
                     </div>
                 </article>
 
-                <article class="paper-row">
-                    <div class="paper-index">
-                        <span>04</span>
-                        <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="paper-main">
-                        <p class="paper-topic">Global inflation · Spillovers</p>
+                <article class="paper-entry">
+                    <div class="entry-copy">
                         <h3><a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank" rel="noopener noreferrer">Pandemic-Era Inflation Drivers and Global Spillovers</a></h3>
-                        <p class="paper-summary">Domestic drivers and international spillovers of pandemic-era inflation.</p>
-                        <p class="coauthors">with <a class="coauthor-link" href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a class="coauthor-link" href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a class="coauthor-link" href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
-                    </div>
-                    <div class="paper-meta">
-                        <div class="draft-dates">
-                            <span><small>Latest draft</small>July 2024</span>
-                            <span><small>First draft</small>January 2023</span>
-                        </div>
-                        <div class="paper-actions">
-                            <a href="assets/papers/DGKOSY_GlobalInflation.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
-                            <a href="https://www.nber.org/papers/w31887" target="_blank" rel="noopener noreferrer">NBER WP 31887 ↗</a>
-                        </div>
+                        <p>with <a href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
+                        <p class="entry-meta">July 2024 · <a href="https://www.nber.org/papers/w31887" target="_blank" rel="noopener noreferrer">NBER WP 31887</a></p>
                     </div>
                 </article>
 
-                <article class="paper-row">
-                    <div class="paper-index">
-                        <span>05</span>
-                        <div class="mini-network" aria-hidden="true"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="paper-main">
-                        <p class="paper-topic">Startups · Labor</p>
+                <article class="paper-entry">
+                    <div class="entry-copy">
                         <h3><a href="assets/papers/GGS_Startups.pdf" target="_blank" rel="noopener noreferrer">Startup Employment and Career Trajectories</a></h3>
-                        <p class="paper-summary">Startup employment and longer-run career trajectories.</p>
-                        <p class="coauthors">with <a class="coauthor-link" href="https://sites.google.com/view/gonzalogarciatrujillo/home?authuser=0" target="_blank" rel="noopener noreferrer">Garcia-Trujillo</a> and <a class="coauthor-link" href="https://sites.google.com/view/nathalie-gonzalez-prieto/" target="_blank" rel="noopener noreferrer">Gonzalez-Prieto</a></p>
-                    </div>
-                    <div class="paper-meta">
-                        <div class="draft-dates">
-                            <span><small>Latest draft</small>April 2023</span>
-                            <span><small>First draft</small>October 2022</span>
-                        </div>
-                        <div class="paper-actions">
-                            <a href="assets/papers/GGS_Startups.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a>
-                        </div>
+                        <p>with <a href="https://sites.google.com/view/gonzalogarciatrujillo/home?authuser=0" target="_blank" rel="noopener noreferrer">Garcia-Trujillo</a> and <a href="https://sites.google.com/view/nathalie-gonzalez-prieto/" target="_blank" rel="noopener noreferrer">Gonzalez-Prieto</a></p>
+                        <p class="entry-meta">April 2023</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="publications-section" id="publications" aria-labelledby="publications-title">
-            <header class="section-heading publication-heading">
-                <div>
-                    <h2 id="publications-title">Publications</h2>
-                </div>
-                <div class="prize-counter" aria-label="Six publication prize cards">
-                    <i></i><i></i><i></i><i></i><i></i><i></i>
-                </div>
+        <section class="content-section" id="publications" aria-labelledby="publications-title">
+            <header class="section-heading-minimal">
+                <h2 id="publications-title">Publications</h2>
             </header>
 
-            <div class="publication-grid">
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>Journal of Economic<br>Dynamics and Control</span>
-                        <strong>2024</strong>
-                    </header>
-                    <div class="publication-body">
+            <div class="entry-list publication-list">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S016518892400160X" target="_blank" rel="noopener noreferrer">Commodity Prices and Production Networks in Small Open Economies</a></h3>
-                        <p>with <a class="coauthor-link" href="https://www.imba.fabiz.ase.ro/member/petre-caraiani/" target="_blank" rel="noopener noreferrer">Caraiani</a>, <a class="coauthor-link" href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a>, and Olaya-Agudelo</p>
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S016518892400160X" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://analytics.fabiz.ase.ro/petre-caraiani/" target="_blank" rel="noopener noreferrer">Caraiani</a>, <a href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a>, and <a href="https://au.linkedin.com/in/juan-manuel-olaya-agudelo-29a76090" target="_blank" rel="noopener noreferrer">Olaya-Agudelo</a></p>
+                        <p class="publication-venue"><em>Journal of Economic Dynamics and Control</em>, 2024 · <a href="assets/papers/CMPOS_Commodity.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
 
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>Journal of<br>Monetary Economics</span>
-                        <strong>2023</strong>
-                    </header>
-                    <div class="publication-body">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://www.sciencedirect.com/science/article/pii/S030439322300065X" target="_blank" rel="noopener noreferrer">Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks</a></h3>
-                        <p>with <a class="coauthor-link" href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a> and <a class="coauthor-link" href="https://sites.google.com/view/ericyoung/home" target="_blank" rel="noopener noreferrer">Young</a></p>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S030439322300065X" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://sites.google.com/site/cokeconphd/" target="_blank" rel="noopener noreferrer">Miranda-Pinto</a> and <a href="https://sites.google.com/view/ericyoung/home" target="_blank" rel="noopener noreferrer">Young</a></p>
+                        <p class="publication-venue"><em>Journal of Monetary Economics</em>, 2023 · <a href="assets/papers/CRN_MPSY_2022.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
 
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>AEA Papers and<br>Proceedings</span>
-                        <strong>2023</strong>
-                    </header>
-                    <div class="publication-body">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20231028" target="_blank" rel="noopener noreferrer">Quantifying the Inflationary Impact of Fiscal Stimulus under Supply Constraints</a></h3>
-                        <p>with <a class="coauthor-link" href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a class="coauthor-link" href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a class="coauthor-link" href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
-                        <a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20231028" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
+                        <p class="publication-venue"><em>AEA Papers and Proceedings</em>, 2023 · <a href="assets/papers/dGKOSY_AEAPP_23.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
 
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>ECB Forum on<br>Central Banking</span>
-                        <strong>2022</strong>
-                    </header>
-                    <div class="publication-body">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://www.ecb.europa.eu/pub/pdf/sintra/ecb.forumcentbank202206~a6bc0541ca.en.pdf" target="_blank" rel="noopener noreferrer">Global Supply Chain Pressures, International Trade, and Inflation</a></h3>
-                        <p>with <a class="coauthor-link" href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a class="coauthor-link" href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a class="coauthor-link" href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
-                        <a href="https://www.ecb.europa.eu/pub/pdf/sintra/ecb.forumcentbank202206~a6bc0541ca.en.pdf" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://julian.digiovanni.ca" target="_blank" rel="noopener noreferrer">di Giovanni</a>, <a href="https://sebnemkalemliozcan.com" target="_blank" rel="noopener noreferrer">Kalemli-Ozcan</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener noreferrer">Yildirim</a></p>
+                        <p class="publication-venue"><em>ECB Forum on Central Banking</em>, 2022 · <a href="assets/papers/Sintra_DKSY.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
 
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>Empirical<br>Economics</span>
-                        <strong>2020</strong>
-                    </header>
-                    <div class="publication-body">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://link.springer.com/article/10.1007/s00181-020-01953-w" target="_blank" rel="noopener noreferrer">Price Controls, Hyperinflation and the Inflation–Relative Price Variability Relationship</a></h3>
-                        <p>with Cerda and Luders</p>
-                        <a href="https://link.springer.com/article/10.1007/s00181-020-01953-w" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://derecho.uc.cl/cn/profesores/nomina-por-departamento/departamento-de-derecho-economico-comercial-y-tributario/25489-cerda-norambuena-rodrigo" target="_blank" rel="noopener noreferrer">Cerda</a> and <a href="https://economiayadministracion.uc.cl/docentes/rolf-luders/" target="_blank" rel="noopener noreferrer">Lüders</a></p>
+                        <p class="publication-venue"><em>Empirical Economics</em>, 2020 · <a href="assets/papers/CLS_RPV.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
 
-                <article class="publication-card">
-                    <header class="publication-stamp">
-                        <span>Applied<br>Economics</span>
-                        <strong>2017</strong>
-                    </header>
-                    <div class="publication-body">
+                <article class="publication-entry">
+                    <div class="entry-copy">
                         <h3><a href="https://www.tandfonline.com/doi/full/10.1080/00036846.2017.1412076" target="_blank" rel="noopener noreferrer">Impact of Economic Uncertainty in a Small Open Economy: The Case of Chile</a></h3>
-                        <p>with Cerda and Valente</p>
-                        <a href="https://www.tandfonline.com/doi/full/10.1080/00036846.2017.1412076" target="_blank" rel="noopener noreferrer">Open article ↗</a>
+                        <p>with <a href="https://derecho.uc.cl/cn/profesores/nomina-por-departamento/departamento-de-derecho-economico-comercial-y-tributario/25489-cerda-norambuena-rodrigo" target="_blank" rel="noopener noreferrer">Cerda</a> and <a href="https://cl.linkedin.com/in/jose-tomas-valente" target="_blank" rel="noopener noreferrer">Valente</a></p>
+                        <p class="publication-venue"><em>Applied Economics</em>, 2017 · <a href="assets/papers/Uncertainty_CSV_v2.pdf" target="_blank" rel="noopener noreferrer">Ungated version</a></p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="wip-section" id="work-in-progress" aria-labelledby="wip-title">
-            <header class="section-heading compact-heading">
-                <div>
-                    <p class="eyebrow">Other cards in the deck</p>
-                    <h2 id="wip-title">Work in progress</h2>
-                </div>
+        <section class="content-section notebook-section" id="notebook" aria-labelledby="notebook-title">
+            <header class="section-heading-minimal">
+                <h2 id="notebook-title">Things I Learn and Forget</h2>
+                <p class="section-description">Mathematical arguments, economic intuitions, questions, and other thoughts I want to return to later.</p>
+                <a class="notebook-index-link" href="notes/index.html">Visit the notebook</a>
             </header>
 
-            <div class="wip-list">
-                <article>
-                    <span>Draft available</span>
-                    <h3><a href="assets/papers/BSS_2026_Incomplete.pdf" target="_blank" rel="noopener noreferrer">The Contribution of Imports to Domestic Prices ↗</a></h3>
-                    <p>with <a class="coauthor-link" href="https://obarbiero.github.io" target="_blank" rel="noopener noreferrer">Barbiero</a> and <a class="coauthor-link" href="https://www.hillary-stein.com/home" target="_blank" rel="noopener noreferrer">Stein</a> · Preliminary draft, June 2026 · <a href="assets/slides/sed-2026-silva.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
-                </article>
-                <article>
-                    <span>In progress</span>
-                    <h3>Intergenerational Heterogeneity in Real Measures: A Migration Story</h3>
-                    <p>with <a class="coauthor-link" href="https://mnav-umd.github.io" target="_blank" rel="noopener noreferrer">Navarrete</a></p>
-                </article>
-            </div>
-        </section>
-
-        <section class="discussions-section" id="discussions" aria-labelledby="discussions-title">
-            <header class="section-heading">
-                <div>
-                    <h2 id="discussions-title">Discussions</h2>
-                </div>
-                <p>Slides and handouts from papers I have discussed.</p>
-            </header>
-            <div class="discussion-list">
-                <article>
-                    <div class="discussion-event"><strong>May</strong><span>2025</span></div>
-                    <div>
-                        <p>System Committee on International Economic Analysis</p>
-                        <h3><a href="assets/slides/discussions/FKLY_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer">An Anatomy of U.S. Establishments’ Trade Linkages in Global Value Chains</a></h3>
-                        <span>Flaaen, Kamal, Lee, and Yi</span>
-                    </div>
-                    <a class="round-link" href="assets/slides/discussions/FKLY_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open discussion of U.S. establishments' trade linkages">↗</a>
-                </article>
-                <article>
-                    <div class="discussion-event"><strong>Aug</strong><span>2025</span></div>
-                    <div>
-                        <p>CEBRA Annual Conference</p>
-                        <h3><a href="assets/slides/discussions/CQRS_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer">Trade Costs and Inflation Dynamics</a></h3>
-                        <span>Cuba-Borda, Queralto, Reyes-Heroles, and Skaramucci</span>
-                    </div>
-                    <a class="round-link" href="assets/slides/discussions/CQRS_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open discussion of Trade Costs and Inflation Dynamics">↗</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="datasets-section" id="datasets" aria-labelledby="datasets-title">
-            <div class="datasets-inner">
-                <header class="section-heading">
-                    <div>
-                        <h2 id="datasets-title">Datasets</h2>
-                    </div>
-                    <p>I helped construct two economic uncertainty indices for Chile prior to my Ph.D. They continue to be updated.</p>
-                </header>
-                <div class="dataset-grid">
-                    <a href="https://clapesuc.cl/indicadores/indice-de-incertidumbre-economica-iiec" target="_blank" rel="noopener noreferrer">
-                        <span>Series 01</span>
-                        <strong>Chile Economic Uncertainty Index</strong>
-                        <i aria-hidden="true">↗</i>
-                    </a>
-                    <a href="https://www.policyuncertainty.com/chile_monthly.html" target="_blank" rel="noopener noreferrer">
-                        <span>Series 02</span>
-                        <strong>Chile Economic Policy Uncertainty Index</strong>
-                        <i aria-hidden="true">↗</i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="earlier-section" id="earlier-work" aria-labelledby="earlier-title">
-            <header>
-                <p class="eyebrow">Archive · Smaller deck</p>
-                <h2 id="earlier-title">Earlier work</h2>
-            </header>
-            <div class="earlier-list">
-                <a href="assets/papers/LAPJ_Silva_2018.pdf" target="_blank" rel="noopener noreferrer">
-                    <span>Latin American Policy Journal · 2018</span>
-                    <strong>Towards Measuring Economic Policy Uncertainty in Latin America: A First Little Step</strong>
-                    <i aria-hidden="true">↗</i>
+            <div class="note-list">
+                <a href="notes/entries/dimensional_analysis_macroeconomics.html">
+                    <strong>Dimensional Analysis in Macroeconomics</strong>
+                    <span>Macroeconomics · Mathematics · August 8, 2026 · 20 min read</span>
                 </a>
-                <div>
-                    <span>Ideas en Educación II · 2018</span>
-                    <strong>School Funding in Chile</strong>
-                    <p>with Urzua</p>
-                </div>
+                <a href="notes/entries/about-this-notebook.html">
+                    <strong>Why these notes exist</strong>
+                    <span>About the notebook · August 8, 2026 · 2 min read</span>
+                </a>
             </div>
         </section>
+
+        <section class="content-section" id="more-research" aria-labelledby="more-title">
+            <header class="section-heading-minimal">
+                <h2 id="more-title">More research</h2>
+            </header>
+
+            <div class="more-grid">
+                <section aria-labelledby="wip-title">
+                    <h3 id="wip-title">Work in progress</h3>
+                    <ul>
+                        <li><a href="assets/papers/BSS_2026_Incomplete.pdf" target="_blank" rel="noopener noreferrer">The Contribution of Imports to Domestic Prices</a><small><span class="more-authors">with <a href="https://obarbiero.github.io" target="_blank" rel="noopener noreferrer">Barbiero</a> and <a href="https://www.hillary-stein.com/home" target="_blank" rel="noopener noreferrer">Stein</a></span><span class="more-meta">June 2026</span></small></li>
+                        <li>Intergenerational Heterogeneity in Real Measures: A Migration Story<small><span class="more-authors">with <a href="https://mnav-umd.github.io" target="_blank" rel="noopener noreferrer">Navarrete</a></span></small></li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="discussions-title">
+                    <h3 id="discussions-title">Discussions</h3>
+                    <ul>
+                        <li><a href="assets/slides/discussions/FKLY_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer">An Anatomy of U.S. Establishments’ Trade Linkages in Global Value Chains</a><small><span class="more-authors">by <a href="https://www.federalreserve.gov/econres/aaron-b-flaaen.htm" target="_blank" rel="noopener noreferrer">Flaaen</a>, <a href="https://www.federalreserve.gov/econres/fariha-kamal.htm" target="_blank" rel="noopener noreferrer">Kamal</a>, <a href="https://www.eunhee-lee.com/home" target="_blank" rel="noopener noreferrer">Lee</a>, and <a href="https://www.dallasfed.org/people/research/economists/yi" target="_blank" rel="noopener noreferrer">Yi</a></span><span class="more-meta">SCIEA · May 2025</span></small></li>
+                        <li><a href="assets/slides/discussions/CQRS_Discussion_Silva_Handout.pdf" target="_blank" rel="noopener noreferrer">Trade Costs and Inflation Dynamics</a><small><span class="more-authors">by <a href="https://pcubaborda.net/" target="_blank" rel="noopener noreferrer">Cuba-Borda</a>, <a href="https://www.federalreserve.gov/econres/albert-queralto.htm" target="_blank" rel="noopener noreferrer">Queralto</a>, <a href="https://www.dallasfed.org/people/research/economists/reyesheroles" target="_blank" rel="noopener noreferrer">Reyes-Heroles</a>, and <a href="https://economics.ucla.edu/person/mikael-scaramucci/" target="_blank" rel="noopener noreferrer">Scaramucci</a></span><span class="more-meta">CEBRA · August 2025</span></small></li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="data-title">
+                    <h3 id="data-title">Data</h3>
+                    <ul>
+                        <li><a href="https://clapesuc.cl/indicadores/indice-de-incertidumbre-economica-iiec" target="_blank" rel="noopener noreferrer">Chile Economic Uncertainty Index</a></li>
+                        <li><a href="https://www.policyuncertainty.com/chile_monthly.html" target="_blank" rel="noopener noreferrer">Chile Economic Policy Uncertainty Index</a></li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="earlier-title">
+                    <h3 id="earlier-title">Earlier work</h3>
+                    <ul>
+                        <li><a href="assets/papers/LAPJ_Silva_2018.pdf" target="_blank" rel="noopener noreferrer">Towards Measuring Economic Policy Uncertainty in Latin America</a><small><span class="more-meta"><em>Latin American Policy Journal</em>, 2018</span></small></li>
+                        <li>School Funding in Chile<small><span class="more-authors">with <a href="http://econweb.umd.edu/~urzua/" target="_blank" rel="noopener noreferrer">Urzua</a></span><span class="more-meta"><em>Ideas en Educación II</em>, 2018</span></small></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        </div>
     </main>
 
-    <footer class="site-footer">
-        <div>
-            <strong>Alvaro Silva</strong>
-            <span>Economist · Federal Reserve Bank of Boston</span>
-        </div>
-        <p class="fan-note">Original trading-card-inspired design.</p>
-    </footer>
-    <script>
-        const themeSelect = document.getElementById('theme-select');
-        const themeColors = window.typeThemeColors;
-
-        themeSelect.value = document.documentElement.dataset.theme || 'dragon';
-        themeSelect.addEventListener('change', function () {
-            const theme = themeSelect.value;
-            document.documentElement.dataset.theme = theme;
-            document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
-            try {
-                localStorage.setItem('as-card-palette', theme);
-            } catch (error) {
-                // The selected palette still applies for this visit.
-            }
-        });
-    </script>
+    <script src="assets/js/theme.js"></script>
 </body>
 </html>

@@ -1,0 +1,553 @@
+body {
+  --portfolio-width: 1120px;
+  --entry-title-size: 18px;
+  --entry-author-size: 15px;
+  --entry-meta-size: 14px;
+  background: var(--cream);
+  font-size: 14px;
+}
+
+.experiment-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  min-height: 4.25rem;
+  padding: 0 max(1.25rem, calc((100vw - var(--portfolio-width)) / 2));
+  border-top: 4px solid var(--gold);
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--cream) 94%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.experiment-name {
+  width: max-content;
+  color: var(--heading);
+  font: 800 1.05rem/1 var(--condensed);
+  letter-spacing: 0.045em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.experiment-nav {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.experiment-nav a {
+  position: relative;
+  color: var(--ink);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.experiment-nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -0.32rem;
+  left: 0;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 150ms ease;
+}
+
+.experiment-nav a:hover::after,
+.experiment-nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.experiment-theme {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.experiment-theme label {
+  color: var(--muted);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.experiment-theme select {
+  min-width: 6rem;
+  padding: 0.38rem 1.35rem 0.38rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font: 700 0.6rem/1 var(--sans);
+  cursor: pointer;
+}
+
+.portfolio-layout {
+  width: min(100% - 2.5rem, var(--portfolio-width));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: minmax(210px, 250px) minmax(0, 1fr);
+  gap: clamp(3rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.portfolio-sidebar {
+  position: static;
+  min-width: 0;
+}
+
+.portfolio-content {
+  min-width: 0;
+}
+
+.intro {
+  padding: 3.25rem 0;
+}
+
+.intro-photo {
+  position: relative;
+  width: min(100%, 11rem);
+  margin-bottom: 2rem;
+}
+
+.intro-photo::after {
+  content: "";
+  position: absolute;
+  right: -0.6rem;
+  bottom: -0.6rem;
+  z-index: -1;
+  width: 76%;
+  height: 66%;
+  background: var(--gold);
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.82;
+  border: 1px solid var(--heading);
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.92) contrast(1.02);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--teal);
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.intro-copy h1 {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--heading);
+  font: 800 clamp(2.7rem, 4.5vw, 3.15rem)/0.86 var(--condensed);
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  max-width: 23rem;
+  margin: 0;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.intro-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1.3rem;
+  border-top: 1px solid var(--heading);
+}
+
+.intro-actions a,
+.intro-actions .intro-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.58rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.intro-actions a:hover,
+.intro-actions a:focus-visible {
+  color: var(--teal);
+  background: transparent;
+}
+
+.notebook-index-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.15rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--heading);
+  color: var(--heading);
+  background: transparent;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.intro-disclaimer {
+  margin: 1.35rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.content-section {
+  padding: 3.25rem 0;
+  border-top: 1px solid var(--line);
+}
+
+#papers {
+  border-top: 0;
+}
+
+.section-heading-minimal {
+  margin-bottom: 1.75rem;
+}
+
+.section-heading-minimal h2 {
+  margin: 0;
+  color: var(--heading);
+  font: 800 clamp(1.9rem, 3.2vw, 2.45rem)/0.94 var(--condensed);
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.section-description {
+  max-width: 37rem;
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: var(--entry-meta-size);
+  line-height: 1.6;
+}
+
+.entry-list,
+.note-list {
+  border-top: 1px solid var(--heading);
+}
+
+.paper-entry,
+.publication-entry {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.entry-copy h3 {
+  max-width: 48ch;
+  margin: 0;
+  color: var(--heading);
+  font: 600 var(--entry-title-size)/1.35 var(--sans);
+  letter-spacing: -0.008em;
+}
+
+.entry-copy h3 a {
+  text-decoration: none;
+}
+
+.entry-copy h3 a:hover,
+.entry-copy h3 a:focus-visible {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.17rem;
+}
+
+.entry-copy > p {
+  max-width: 48rem;
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: var(--entry-author-size);
+  line-height: 1.55;
+}
+
+.entry-copy > p a,
+.more-grid small a {
+  color: inherit;
+  text-underline-offset: 0.15rem;
+}
+
+.entry-copy > p:not(.entry-meta):not(.publication-venue) a,
+.more-grid .more-authors a {
+  text-decoration: none;
+}
+
+.entry-copy > p a:hover,
+.more-grid small a:hover {
+  color: var(--teal);
+}
+
+.entry-copy .entry-meta,
+.entry-copy .publication-venue {
+  color: var(--ink);
+  font-size: var(--entry-meta-size);
+}
+
+.publication-venue em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notebook-index-link {
+  margin-top: 1.15rem;
+  color: var(--on-dark);
+  background: var(--heading);
+  font-size: 12px;
+}
+
+.notebook-index-link:hover,
+.notebook-index-link:focus-visible {
+  color: var(--accent-ink);
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+.note-list > a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.note-list strong {
+  font: 600 var(--entry-title-size)/1.35 var(--sans);
+  letter-spacing: -0.008em;
+}
+
+.note-list span {
+  color: var(--muted);
+  font-size: var(--entry-meta-size);
+  line-height: 1.55;
+}
+
+.note-list > a:hover strong,
+.note-list > a:focus-visible strong {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 0.17rem;
+}
+
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+}
+
+.more-grid section {
+  border-top: 1px solid var(--heading);
+}
+
+.more-grid h3 {
+  margin: 0.8rem 0 0.8rem;
+  color: var(--heading);
+  font: 700 1rem/1 var(--condensed);
+  text-transform: uppercase;
+}
+
+.more-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.more-grid li {
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font: 600 var(--entry-title-size)/1.35 var(--sans);
+  letter-spacing: -0.008em;
+}
+
+.more-grid li > a {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 0.16rem;
+}
+
+.more-grid li > a:hover,
+.more-grid li > a:focus-visible {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.more-grid li small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font: 400 var(--entry-meta-size)/1.55 var(--sans);
+  letter-spacing: normal;
+}
+
+.more-grid li small > span {
+  display: block;
+}
+
+.more-grid .more-authors {
+  font-size: var(--entry-author-size);
+}
+
+.more-grid .more-meta {
+  color: var(--ink);
+  font-size: var(--entry-meta-size);
+}
+
+.more-grid .more-meta em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .experiment-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .portfolio-sidebar {
+    position: static;
+  }
+
+  .experiment-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: stretch;
+    justify-content: center;
+    padding: 0.45rem 0 0.75rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .intro-photo {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #papers {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 700px) {
+  .experiment-header {
+    position: relative;
+  }
+
+  .experiment-nav {
+    justify-content: flex-start;
+    gap: 0.9rem 1.1rem;
+    overflow-x: auto;
+  }
+
+  .intro {
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 2rem;
+    min-height: 0;
+    padding: 3.25rem 0;
+  }
+
+  .intro-copy h1 {
+    font-size: clamp(2.7rem, 10vw, 3.15rem);
+  }
+
+  .note-list > a,
+  .more-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .note-list > a {
+    gap: 0.35rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .experiment-header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .experiment-theme label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .experiment-theme select {
+    min-width: 5.4rem;
+  }
+
+  .portfolio-layout {
+    width: min(100% - 2rem, var(--portfolio-width));
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-photo {
+    width: 8.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
