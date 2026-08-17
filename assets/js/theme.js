@@ -1,10 +1,12 @@
 (function () {
+    const defaultTheme = 'dragon';
+    const themeStorageKey = 'as-card-palette-v2';
     const themeSelect = document.getElementById('theme-select');
     const themeColors = window.typeThemeColors || {};
 
     function activeTheme() {
-        const theme = document.documentElement.dataset.theme || 'dragon';
-        return themeColors[theme] ? theme : 'dragon';
+        const theme = document.documentElement.dataset.theme || defaultTheme;
+        return themeColors[theme] ? theme : defaultTheme;
     }
 
     function syncSiteLinks() {
@@ -38,7 +40,7 @@
         if (themeColor) themeColor.setAttribute('content', themeColors[theme]);
 
         try {
-            localStorage.setItem('as-card-palette', theme);
+            localStorage.setItem(themeStorageKey, theme);
         } catch (error) {
             // The palette still travels with links between local pages.
         }

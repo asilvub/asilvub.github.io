@@ -1,4 +1,7 @@
 (function () {
+    const defaultTheme = 'dragon';
+    const themeStorageKey = 'as-card-palette-v2';
+
     window.typeThemeColors = {
         normal: '#3f3c38',
         fire: '#3c1511',
@@ -32,13 +35,13 @@
     let initialTheme = requestedTheme;
     if (!themeColors[initialTheme]) {
         try {
-            initialTheme = localStorage.getItem('as-card-palette') || 'dragon';
+            initialTheme = localStorage.getItem(themeStorageKey) || defaultTheme;
         } catch (error) {
-            initialTheme = 'dragon';
+            initialTheme = defaultTheme;
         }
     }
 
-    if (!themeColors[initialTheme]) initialTheme = 'dragon';
+    if (!themeColors[initialTheme]) initialTheme = defaultTheme;
     document.documentElement.dataset.theme = initialTheme;
 
     const themeColor = document.querySelector('meta[name="theme-color"]');
